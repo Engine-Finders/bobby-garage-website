@@ -1,0 +1,93 @@
+{
+  "id": "symptoms",
+  "eyebrow": "Engine Symptoms Guide",
+  "heading": [
+    { "text": "Engine Failure Symptoms:\n" },
+    { "text": "Knocking, Smoke,", "highlight": true },
+    { "text": " Timing Noise\nand " },
+    { "text": "Overheating", "highlight": true }
+  ],
+  "intro": "A symptom tells us where to start, not what must be replaced. Tell us when it appeared and whether it followed a warning, overheating, recent work or an earlier breakdown.",
+  "backgrounds": [
+    { "src": "/test-images/engine.webp", "position": "top-right", "opacity": 0.95 },
+    { "src": "/test-images/engine.webp", "position": "bottom-right", "opacity": 0.14 }
+  ],
+  "warningLight": {
+    "icon": "engine",
+    "label": "Check engine warning light"
+  },
+  "columns": {
+    "notice": { "title": "What You Notice", "icon": "eye" },
+    "establish": { "title": "What Needs Establishing", "icon": "cog" }
+  },
+  "rows": [
+    {
+      "notice": "Timing Rattle or Suspected Lost Timing",
+      "establish": "Noise source, timing condition and any internal damage",
+      "fullText": {
+        "notice": "Timing rattle or suspected lost timing",
+        "establish": "Noise source, timing condition and any internal damage"
+      },
+      "icon": "volume",
+      "iconTone": "ink"
+    },
+    {
+      "notice": "Deep Knocking or Oil-Pressure Concern",
+      "establish": "Oil-supply evidence, bearings/rotating components and core condition",
+      "fullText": {
+        "notice": "Deep knocking or oil-pressure concern",
+        "establish": "Oil-supply evidence, bearings/rotating components and core condition"
+      },
+      "icon": "piston",
+      "iconTone": "ink"
+    },
+    {
+      "notice": "Smoke or Increasing Oil Use",
+      "establish": "Leaks, ventilation, turbo-related issues and cylinder sealing",
+      "fullText": {
+        "notice": "Smoke or increasing oil use",
+        "establish": "Leaks, ventilation, turbo-related issues and cylinder sealing"
+      },
+      "icon": "cloud",
+      "iconTone": "ink"
+    },
+    {
+      "notice": "Coolant Loss or Overheating",
+      "establish": "Leak source and whether sealing/head/internal condition has been affected",
+      "fullText": {
+        "notice": "Coolant loss or overheating",
+        "establish": "Leak source and whether sealing/head/internal condition has been affected"
+      },
+      "icon": "thermometer",
+      "iconTone": "ink"
+    },
+    {
+      "notice": "Misfire, Rough Running or Non-Start",
+      "establish": "Fuel/ignition, timing and relevant mechanical condition",
+      "fullText": {
+        "notice": "Misfire, rough running or non-start",
+        "establish": "Fuel/ignition, timing and relevant mechanical condition"
+      },
+      "icon": "engine",
+      "iconTone": "brand"
+    },
+    {
+      "notice": "Reduced Power, EGR/DPF or Boost Warning",
+      "establish": "Connected-system fault versus confirmed internal engine damage",
+      "fullText": {
+        "notice": "Reduced power, EGR/DPF or boost warning",
+        "establish": "Connected-system fault versus confirmed internal engine damage"
+      },
+      "icon": "gauge",
+      "iconTone": "ink"
+    }
+  ],
+  "warning": {
+    "icon": "alertTriangle",
+    "text": [
+      { "text": "With serious mechanical noise, pressure loss or suspected timing failure, " },
+      { "text": "stop running the engine", "highlight": true },
+      { "text": " and arrange assessment. Repeated starts or further driving can change the damage and the available repair options." }
+    ]
+  }
+}

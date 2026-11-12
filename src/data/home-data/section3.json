@@ -1,0 +1,96 @@
+{
+  "id": "prices",
+  "eyebrow": "Rebuild Price Guides",
+  "heading": [
+    { "text": "How Much Does an Engine Rebuild Cost?" },
+    { "text": "Fitted Rebuild Guide Prices", "highlight": true }
+  ],
+  "intro": "The examples below apply to the named model and engine. They are starting guides for the relevant rebuild on a suitable core, not one price for every engine or a quotation for a minor repair. We identify the vehicle and damage before agreeing the written scope.",
+  "bgImage": {
+    "src": "/test-images/engine.webp",
+    "position": "top-right",
+    "opacity": 0.28
+  },
+  "tableColumns": {
+    "vehicle": "Vehicle and Confirmed Engine",
+    "guide": "Rebuild Guide",
+    "application": "Application to Establish",
+    "applicationMobile": "Application to establish"
+  },
+  "rows": [
+    {
+      "vehicle": "BMW 3 Series – N47 diesel",
+      "fullText": "BMW 3 Series - N47 diesel",
+      "logo": "/test-images/cars-logos.png",
+      "logoAlt": "BMW",
+      "guide": "From £2,000",
+      "application": "Relevant F30/F31/F34 N47 installation"
+    },
+    {
+      "vehicle": "Mercedes-Benz C-Class – OM651 diesel",
+      "fullText": "Mercedes-Benz C-Class - OM651 diesel",
+      "logo": "/test-images/cars-logos.png",
+      "logoAlt": "Mercedes-Benz",
+      "guide": "From £4,000",
+      "application": "Relevant W205-family OM651 2.1 installation"
+    },
+    {
+      "vehicle": "Jaguar XF – 204DTD diesel",
+      "fullText": "Jaguar XF - 204DTD diesel",
+      "logo": "/test-images/cars-logos.png",
+      "logoAlt": "Jaguar",
+      "guide": "From £4,500",
+      "application": "Relevant X260 two-litre diesel"
+    },
+    {
+      "vehicle": "Land Rover Discovery Sport – 204DTD diesel",
+      "fullText": "Land Rover Discovery Sport - 204DTD diesel",
+      "logo": "/test-images/cars-logos.png",
+      "logoAlt": "Land Rover",
+      "guide": "From £4,000",
+      "application": "Relevant L550 two-litre diesel"
+    },
+    {
+      "vehicle": "Audi A3 – standard-output EA888 petrol",
+      "fullText": "Audi A3 - standard-output EA888 petrol",
+      "logo": "/test-images/cars-logos.png",
+      "logoAlt": "Audi",
+      "guide": "From £4,000",
+      "application": "Relevant 8V EA888 application"
+    },
+    {
+      "vehicle": "Volkswagen Golf – high-output EA888 petrol",
+      "fullText": "Volkswagen Golf - high-output EA888 petrol",
+      "logo": "/test-images/cars-logos.png",
+      "logoAlt": "Volkswagen",
+      "guide": "From £5,200",
+      "application": "Relevant Mk7/Mk7.5 derivative"
+    },
+    {
+      "vehicle": "MINI Hatch 3-Door – B38 petrol",
+      "fullText": "MINI Hatch 3-Door - B38 petrol",
+      "logo": "/test-images/cars-logos.png",
+      "logoAlt": "MINI",
+      "guide": "From £3,000",
+      "application": "Relevant F56 petrol installation"
+    },
+    {
+      "vehicle": "Porsche Macan – EA888 petrol",
+      "fullText": "Porsche Macan - EA888 petrol",
+      "logo": "/test-images/cars-logos.png",
+      "logoAlt": "Porsche",
+      "guide": "From £4,000",
+      "application": "Relevant 95B 2.0 petrol installation"
+    }
+  ],
+  "notes": [
+    {
+      "icon": "info",
+      "text": "The guides include standard engine removal/refitting and standard fluids/consumables. The quotation identifies the engine parts and machining. Turbochargers, injectors, other ancillaries and optional collection are separate unless itemised. Significant block, crankshaft or head damage can change the scope; additional work is explained and agreed before proceeding."
+    },
+    {
+      "icon": "engine",
+      "text": "Other engines, Ford applications, hybrids and unusual installations have their own guides or individual quotes. A matching family code in another vehicle does not establish the same installed price. A contained timing, sealing or cooling repair is quoted as its own job."
+    }
+  ]
+}

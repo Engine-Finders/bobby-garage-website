@@ -1,0 +1,509 @@
+{
+  "meta": {
+    "title": "BMW Engine Rebuild & Repair Specialists | Boby Engine Work",
+    "description": "BMW engine rebuilding, reconditioning and repair at Boby Engine Work. Coverage across diesel, petrol and M engines with written scope before work begins."
+  },
+  "section1": {
+    "id": "hero",
+    "eyebrow": "BMW SPECIALISTS",
+    "heading": [
+      { "text": "BMW Engine Rebuild & Repair " },
+      { "text": "Specialists", "highlight": true }
+    ],
+    "paragraphs": [
+      "BMW engine failure rarely announces itself gently. A diesel 320d can lose timing; a six-cylinder petrol can show low oil pressure; an M-car can develop a knock that stops being background noise. What the badge says and what is fitted can differ, so the right first step is identification, not a guess.",
+      {
+        "quote": true,
+        "text": "At Boby Engine Work, we specialise in BMW engine rebuilding, reconditioning and repair. From a 320d with timing damage to a six-cylinder petrol BMW with oil consumption or pressure concerns, we assess the engine already in the car and quote to the findings — not a generic menu price."
+      },
+      "With more than 10 years of workshop experience and 1,000+ clients across the business, we focus on German and premium vehicles where correct parts, measurement and assembly matter."
+    ],
+    "cta": {
+      "label": "Request a BMW Engine Assessment by Email",
+      "href": "#engine-quote",
+      "icon": "mail"
+    },
+    "image": {
+      "src": "/test-images/hero-section.webp",
+      "alt": "Technician working on a BMW engine in the workshop"
+    },
+    "trustBar": [
+      { "icon": "calendar", "value": "10+", "label": "Years of Experience" },
+      { "icon": "users", "value": "1,000+", "label": "Satisfied Clients" },
+      {
+        "logoSrc": "/test-images/cars-logos.png",
+        "value": "BMW Engine Specialists",
+        "label": "",
+        "sub": "All Models & Engine Types"
+      },
+      { "icon": "shieldCheck", "value": "German & Premium", "label": "Vehicle Experts" }
+    ]
+  },
+  "section2": {
+    "id": "models",
+    "eyebrow": "BMW MODELS",
+    "heading": [
+      { "text": "BMW Models " },
+      { "text": "We Cover", "highlight": true }
+    ],
+    "intro": "Our BMW coverage includes major combustion-engine models from the last three decades, together with selected older cars. Model names organise the enquiry; exact engine and generation checks determine the work.",
+    "rows": [
+      {
+        "title": [{ "text": "BMW " }, { "text": "1 Series to 8 Series", "highlight": true }],
+        "paragraphs": [
+          "We cover the 1 Series, 2 Series, 3 Series, 4 Series, 5 Series, 6 Series, 7 Series and 8 Series. This includes relevant saloon, Touring, coupé, convertible, Gran Coupé and Gran Turismo versions, as well as Active Tourer and Gran Tourer applications within the 2 Series range.",
+          "The smaller cars can require the same careful engine work as a larger executive BMW once the correct engine identity is confirmed."
+        ],
+        "image": { "src": "/test-images/car-image.webp", "alt": "BMW saloon" },
+        "models": ["1 Series", "2 Series", "3 Series", "4 Series", "5 Series", "6 Series", "7 Series", "8 Series"]
+      },
+      {
+        "title": [{ "text": "BMW X Models and " }, { "text": "Z Sports Cars", "highlight": true }],
+        "paragraphs": [
+          "Our model coverage includes X1, X2, X3, X4, X5, X6 and X7, with the installation checked for the relevant sDrive or xDrive version.",
+          "The Z Series route covers Z3 and Z4 enquiries where the fitted engine and service history need to be confirmed before quoting."
+        ],
+        "image": { "src": "/test-images/car-image.webp", "alt": "BMW X model" },
+        "models": ["X1", "X2", "X3", "X4", "X5", "X6", "X7", "Z3", "Z4"]
+      },
+      {
+        "title": [{ "text": "BMW M and " }, { "text": "Performance Models", "highlight": true }],
+        "paragraphs": [
+          "We assess 1M Coupé, M2, M3, M4, M5, M6, M8, X3 M, X4 M, X5 M, X6 M and XM engine work.",
+          "M Performance versions such as M140i, M240i and M340i sit with their respective model families; they are not automatically the same engine as a full M car and are quoted individually."
+        ],
+        "image": { "src": "/test-images/car-image.webp", "alt": "BMW M performance model" },
+        "models": ["1M", "M2", "M3", "M4", "M5", "M6", "M8", "X3 M", "X4 M", "X5 M", "X6 M", "XM"]
+      }
+    ]
+  },
+  "section3": {
+    "id": "approach-costs",
+    "approach": {
+      "eyebrow": "OUR APPROACH",
+      "heading": [
+        { "text": "How We Approach a " },
+        { "text": "BMW Engine", "highlight": true }
+      ],
+      "paragraphs": [
+        "A BMW badge does not tell us which engine is fitted or how it failed. A 320d may carry an N47, B47 or another diesel four-cylinder depending on year and market; a petrol six-cylinder enquiry may be N-series or B-series; an M-car needs its exact S-engine confirmed."
+      ],
+      "quote": "We start with registration, symptoms and history, then match what we find to the appropriate inspection route — timing, lubrication, cooling, turbocharging and contamination are checked in context, not from a one-size label.",
+      "closing": "Alongside BMW we service Mercedes-Benz, Audi, Volkswagen, Porsche, MINI, Jaguar and Land Rover; enquiries for those brands follow the same assessment-first approach.",
+      "image": { "src": "/test-images/engine.webp", "alt": "BMW engine on a workshop stand" }
+    },
+    "costs": {
+      "id": "rebuild-costs",
+      "eyebrow": "REBUILD COSTS",
+      "heading": [
+        { "text": "BMW Engine Rebuild " },
+        { "text": "Costs", "highlight": true },
+        { "text": ": Guide Prices and What They Cover" }
+      ],
+      "intro": "These figures are starting guides for a suitable core — not a fixed quote for every BMW or a price for a minor repair.",
+      "tableColumns": {
+        "application": "BMW Application or Engine",
+        "guide": "Rebuild Guide",
+        "relates": "What the Guide Relates To"
+      },
+      "tables": [
+        [
+          {
+            "code": "N47",
+            "type": "Four-cylinder diesel",
+            "guide": "From £2,000",
+            "relates": "The appropriate N47 rebuild route after inspection.",
+            "image": { "src": "/test-images/engine.webp", "alt": "" }
+          },
+          {
+            "code": "B47",
+            "type": "Four-cylinder diesel",
+            "guide": "From £3,500",
+            "relates": "Later diesel rebuild work; exact installation checked.",
+            "image": { "src": "/test-images/engine.webp", "alt": "" }
+          },
+          {
+            "code": "B48",
+            "type": "Petrol — 3 Series example",
+            "guide": "From £4,000",
+            "relates": "The 3 Series application; other models can differ.",
+            "image": { "src": "/test-images/engine.webp", "alt": "" }
+          },
+          {
+            "code": "N57",
+            "type": "Six-cylinder diesel",
+            "guide": "From £5,000",
+            "relates": "Rebuild guide for those models; 3 Series, 5 Series and other N57 applications quoted after assessment.",
+            "image": { "src": "/test-images/engine.webp", "alt": "" }
+          }
+        ],
+        [
+          {
+            "code": "B58",
+            "type": "Petrol",
+            "guide": "From £7,000",
+            "relates": "Rebuild guide for those models; 340i, M340i, M140i and M240i quoted after assessment.",
+            "image": { "src": "/test-images/engine.webp", "alt": "" }
+          },
+          {
+            "code": "S55",
+            "type": "Performance engine",
+            "guide": "From £7,000",
+            "relates": "Rebuild scope appropriate to the individual M engine.",
+            "image": { "src": "/test-images/engine.webp", "alt": "" }
+          },
+          {
+            "code": "S58",
+            "type": "Performance engine",
+            "guide": "From £7,500",
+            "relates": "Damage, exact version and installation assessed.",
+            "image": { "src": "/test-images/engine.webp", "alt": "" }
+          }
+        ]
+      ],
+      "note": "Guides assume a suitable core, standard removal/refitting where quoted, fluids, consumables and VAT. Turbochargers, injectors, ancillaries and machining are separate unless itemised. Timing-chain replacement may be a distinct preventative job.",
+      "ctaStrip": {
+        "label": "Request a Quote",
+        "hint": "Send your registration, mileage, symptoms, where the car is and whether it runs — and tell us whether you prefer a call or message.",
+        "href": "#engine-quote"
+      }
+    }
+  },
+  "section4": {
+    "id": "capabilities",
+    "capabilities": {
+      "eyebrow": "OUR CAPABILITIES",
+      "heading": [
+        { "text": "BMW Engines " },
+        { "text": "We Rebuild", "highlight": true }
+      ],
+      "bgImage": { "src": "/test-images/engine.webp", "alt": "" },
+      "items": [
+        {
+          "icon": "engine",
+          "title": "Diesel: M47, M57, N47, N57, B47 and B57",
+          "text": "The generation and installation determine how we inspect timing, lubrication, bearings, cooling and contamination. If there is an oil-pressure warning or deep knock, stop the engine and describe when it first appeared."
+        },
+        {
+          "icon": "piston",
+          "title": "Petrol: older engines, N-series and B-series",
+          "text": "BMW petrol enquiries span older four- and six-cylinder units, N20/N54/N55 turbo engines and B38/B48/B58 applications. Smoke or oil use can come from ventilation, turbocharger sealing or internal wear; testing identifies the likely route before major work is authorised."
+        },
+        {
+          "icon": "flag",
+          "title": "M and performance engines",
+          "text": "S54, S55, S58 and other performance engines call for individual scope and parts decisions. An M Performance badge does not make the car mechanically identical to an M3. We quote to the actual engine and installation."
+        }
+      ]
+    },
+    "failures": {
+      "eyebrow": "FAILURE ROUTES",
+      "heading": [
+        { "text": "How BMW Engine Failures " },
+        { "text": "Differ by Engine", "highlight": true }
+      ],
+      "intro": "The table maps an enquiry to an initial investigation. It is not a diagnosis or a second price list.",
+      "tables": [
+        {
+          "columns": ["Failure Route We Investigate", "First Checks"],
+          "rows": [
+            {
+              "icon": "cog",
+              "cells": ["Timing noise, lost timing or oil-pressure concerns", "Engine identity, timing condition, mechanical damage and contamination."]
+            },
+            {
+              "icon": "turbo",
+              "cells": ["Knock, low pressure, cooling or turbo-related damage", "Oil supply, bearings, cooling history and connected components."]
+            },
+            {
+              "icon": "engine",
+              "cells": ["Engine family N47 / B47 diesels", "Timing or oil-pump-drive symptoms."]
+            },
+            {
+              "icon": "engine",
+              "cells": ["Engine family M47 / M57 / N57 / B57 diesels", "Timing drive, pressure evidence and debris; confirm the specific engine."]
+            }
+          ]
+        },
+        {
+          "columns": ["Engine Family", "Failure Route", "First Checks"],
+          "rows": [
+            {
+              "icon": "engine",
+              "cells": ["N20 petrol", "Misfire, oil use or head damage", "Fuelling and ignition, compression, ventilation and cooling."]
+            },
+            {
+              "icon": "engine",
+              "cells": ["N43 / N46 and older petrol", "Misfire, oil use or head damage", "Fuelling and ignition, compression, ventilation and cooling."]
+            },
+            {
+              "icon": "engine",
+              "cells": ["B48 / B58 petrol", "Oil use, smoke or pressure loss", "External leaks, breather and turbo systems, compression and internal condition."]
+            },
+            {
+              "icon": "flag",
+              "cells": ["S-series M engines", "Mechanical or performance-engine failure", "Exact variant, history, damage and intended use."]
+            }
+          ]
+        }
+      ],
+      "callout": [
+        { "text": "BMW has run " },
+        { "text": "EGR-cooler campaigns", "highlight": true },
+        { "text": " on certain diesel vehicles concerning coolant leakage and fire risk. This is separate from an engine rebuild. Ask a BMW dealer to check your registration for any open campaign; dates and eligibility differ by vehicle." }
+      ]
+    }
+  },
+  "section5": {
+    "id": "rebuild-process",
+    "choice": {
+      "eyebrow": "REBUILD OR REPLACE",
+      "heading": [
+        { "text": "Rebuild Your " },
+        { "text": "BMW", "highlight": true },
+        { "text": " Engine or Fit a " },
+        { "text": "Replacement?", "highlight": true }
+      ],
+      "blocks": [
+        {
+          "icon": "engine",
+          "title": "Repair or Rebuild the Engine Already in Your Car",
+          "text": "Where the core is suitable, rebuilding the fitted engine keeps the original installation matched to the vehicle. Scope depends on inspection — heads, blocks, timing, lubrication and ancillaries are assessed before major parts are ordered."
+        },
+        {
+          "icon": "search",
+          "title": "Replacement-Engine Enquiries Begin with an Assessment",
+          "text": "A replacement route is discussed when rebuild is not appropriate or not economic. We still need the same vehicle details, symptoms and history; supplier engines are not quoted sight-unseen."
+        }
+      ],
+      "image": { "src": "/test-images/engine.webp", "alt": "BMW engine on an engine stand" }
+    },
+    "process": {
+      "id": "bmw-process",
+      "eyebrow": "OUR PROCESS",
+      "heading": [
+        { "text": "Our " },
+        { "text": "BMW", "highlight": true },
+        { "text": " Engine " },
+        { "text": "Rebuild Process", "highlight": true }
+      ],
+      "steps": [
+        {
+          "number": "01",
+          "title": "Enquiry and Vehicle Identification",
+          "text": "We record model, registration, mileage, symptoms and any prior work so the correct engine family is in view before the car arrives.",
+          "image": { "src": "/test-images/engine.webp", "alt": "" }
+        },
+        {
+          "number": "02",
+          "title": "Arrival and Initial Diagnosis",
+          "text": "Fault codes, oil condition, cooling history and running checks are matched to the symptoms described at enquiry.",
+          "image": { "src": "/test-images/engine.webp", "alt": "" }
+        },
+        {
+          "number": "03",
+          "title": "Engine Removal Where Required",
+          "text": "Access and workshop handling are planned; some preliminary checks may be possible in the bay before removal.",
+          "image": { "src": "/test-images/engine.webp", "alt": "" }
+        },
+        {
+          "number": "04",
+          "title": "Strip-down and Inspection",
+          "text": "Components are cleaned and examined for wear, cracking, contamination or impact damage.",
+          "image": { "src": "/test-images/engine.webp", "alt": "" }
+        },
+        {
+          "number": "05",
+          "title": "Measurement and Machining Decisions",
+          "text": "Heads, blocks and rotating assemblies are measured; machining is agreed only where the specification requires it.",
+          "image": { "src": "/test-images/engine.webp", "alt": "" }
+        },
+        {
+          "number": "06",
+          "title": "Parts Selection and Assembly",
+          "text": "Approved components are fitted with checked clearances and correct torques for the specific BMW engine.",
+          "image": { "src": "/test-images/engine.webp", "alt": "" }
+        },
+        {
+          "number": "07",
+          "title": "Initial Running and Checks",
+          "text": "Oil pressure, leaks and relevant diagnostics are monitored on first start.",
+          "image": { "src": "/test-images/engine.webp", "alt": "" }
+        },
+        {
+          "number": "08",
+          "title": "Road Testing Where Appropriate",
+          "text": "Drive cycles confirm temperatures, performance and noise under load when safe to do so.",
+          "image": { "src": "/test-images/engine.webp", "alt": "" }
+        },
+        {
+          "number": "09",
+          "title": "Collection and Aftercare",
+          "text": "You receive an explanation of work completed, running-in guidance and warranty terms.",
+          "image": { "src": "/test-images/engine.webp", "alt": "" }
+        }
+      ]
+    }
+  },
+  "section6": {
+    "id": "parts-gallery-warranty",
+    "parts": {
+      "eyebrow": "OUR PARTS",
+      "heading": [
+        { "text": "Parts We Use " },
+        { "text": "and Why", "highlight": true }
+      ],
+      "intro": "OEM or OE-quality components are specified for BMW rebuilds where they match the engine’s requirements. The written quote lists what is included; cleanliness and controlled assembly protect the finished unit.",
+      "image": { "src": "/test-images/engine.webp", "alt": "BMW engine parts on a workbench" },
+      "features": [
+        { "icon": "cog", "title": "OEM or OE-Quality Parts", "text": "Matched to the identified BMW engine and installation." },
+        { "icon": "clipboardCheck", "title": "Specified in Your Quote", "text": "Major components and consumables are itemised before work proceeds." },
+        { "icon": "caliper", "title": "Measured for Accuracy", "text": "Critical tolerances are checked, not assumed from a generic kit." },
+        { "icon": "link", "title": "Timing & Assembly Checked", "text": "Chain, belt and phased components verified on build." },
+        { "icon": "shieldCheck", "title": "Clean, Controlled Build Process", "text": "Workshop standards limit contamination during strip and assembly." }
+      ]
+    },
+    "gallery": {
+      "id": "bmw-gallery",
+      "eyebrow": "WORKSHOP GALLERY",
+      "heading": [
+        { "text": "Recent BMW Work From " },
+        { "text": "Our Workshop", "highlight": true }
+      ],
+      "items": [
+        {
+          "image": { "src": "/test-images/engine.webp", "alt": "N47 engine strip-down" },
+          "caption": "N47 Engine – Strip-Down and Inspection"
+        },
+        {
+          "image": { "src": "/test-images/engine.webp", "alt": "Cylinder head assessment" },
+          "caption": "Cylinder Head – Cleaning and Assessment"
+        },
+        {
+          "image": { "src": "/test-images/engine.webp", "alt": "Timing system reassembly" },
+          "caption": "Timing System – Replacement and Reassembly"
+        },
+        {
+          "image": { "src": "/test-images/engine.webp", "alt": "Engine build final assembly" },
+          "caption": "Engine Build – Final Assembly and Checks"
+        }
+      ]
+    },
+    "warranty": {
+      "eyebrow": "WARRANTY & SUPPORT",
+      "heading": [
+        { "text": "Warranty, Recovery " },
+        { "text": "and Turnaround", "highlight": true }
+      ],
+      "image": { "src": "/test-images/car-image.webp", "alt": "BMW vehicle" },
+      "items": [
+        {
+          "icon": "shieldCheck",
+          "title": "Warranty",
+          "text": "Rebuilds and replacement engine work carry a 12-month unlimited-mileage warranty on the engine scope agreed in writing, subject to terms. Ancillaries such as turbochargers are excluded unless itemised."
+        },
+        {
+          "icon": "wrench",
+          "title": "Running-In Service",
+          "text": "A running-in service is required at Boby's workshop, typically around 2,000 miles after collection, so fluids and fasteners can be checked under load."
+        },
+        {
+          "icon": "towTruck",
+          "title": "Recovery & Turnaround",
+          "text": "Mainland UK collection and delivery can be quoted separately. Completion depends on diagnosis, machining and parts availability once the engine is inspected."
+        }
+      ]
+    }
+  },
+  "section7": {
+    "id": "contact-faqs-cta",
+    "contact": {
+      "id": "contact",
+      "eyebrow": "GET IN TOUCH",
+      "heading": [
+        { "text": "Visit or Contact " },
+        { "text": "the Workshop", "highlight": true }
+      ],
+      "intro": "Boby's workshop is in Essex. Send registration, mileage, symptoms and photos or recordings by email if the car is not with us yet.",
+      "details": [
+        {
+          "icon": "mapPin",
+          "label": "Workshop Address",
+          "value": "Unit D1, Windsor Road, Ramsden Heath, Billericay, CM11 1QE"
+        },
+        {
+          "icon": "clock",
+          "label": "Business Hours",
+          "value": "Mon–Fri: 9am–6pm · Sat: 11am–2pm"
+        },
+        {
+          "icon": "mail",
+          "label": "Email Us",
+          "value": "info@bobyenginework.co.uk",
+          "href": "mailto:info@bobyenginework.co.uk"
+        }
+      ],
+      "sidebar": [
+        "If you are local, you can visit by arrangement once we know what you need.",
+        "For a BMW engine assessment, include registration, mileage, symptoms, where the vehicle is and whether it still runs or rolls."
+      ],
+      "image": { "src": "/test-images/hero-section.webp", "alt": "Boby's Engine Workshop exterior" }
+    },
+    "faqs": {
+      "id": "faqs",
+      "eyebrow": "FAQS",
+      "heading": [
+        { "text": "BMW Engine Rebuild " },
+        { "text": "Questions", "highlight": true }
+      ],
+      "items": [
+        {
+          "icon": "link",
+          "question": "Does a BMW timing-chain fault always need an engine rebuild?",
+          "answer": "No. Some timing-related faults have a smaller repair scope if caught early and inspection shows contained damage. If timing has been lost, mechanical consequences must be checked before a limited repair can be recommended."
+        },
+        {
+          "icon": "engine",
+          "question": "Do you rebuild older BMW engines?",
+          "answer": "Yes. Enquiries cover older combustion-engine BMWs and later models; exact generation and engine code still need confirming before quoting."
+        },
+        {
+          "icon": "car",
+          "question": "Can I get a price without knowing the engine code?",
+          "answer": "You can start with registration, model, year and symptoms. We identify the likely engine, then confirm what is fitted before a written quote is issued."
+        },
+        {
+          "icon": "search",
+          "question": "Do you sell brand-new BMW engines?",
+          "answer": "The focus is repair and rebuild of the engine you have. Replacement supply is discussed only when appropriate after assessment."
+        },
+        {
+          "icon": "calendar",
+          "question": "How long will the rebuild take?",
+          "answer": "It depends on diagnosis, machining and parts lead time once the engine is inspected. We discuss timing after the initial assessment."
+        },
+        {
+          "icon": "towTruck",
+          "question": "Can you help if the BMW no longer starts?",
+          "answer": "Yes. Describe whether the car rolls, where it is and any recent work. Collection across mainland UK can be quoted separately where needed."
+        }
+      ]
+    },
+    "cta": {
+      "id": "engine-quote",
+      "eyebrow": "NEXT STEP",
+      "heading": [
+        { "text": "Request Your " },
+        { "text": "BMW Engine", "highlight": true },
+        { "text": " Rebuild " },
+        { "text": "Assessment", "highlight": true }
+      ],
+      "intro": "Send registration, mileage, symptoms, where the car is and whether it runs. Add photos, oil samples or a short recording of the noise if helpful.",
+      "button": {
+        "label": "Request a BMW Engine Assessment by Email",
+        "href": "mailto:info@bobyenginework.co.uk",
+        "icon": "mail"
+      }
+    }
+  }
+}

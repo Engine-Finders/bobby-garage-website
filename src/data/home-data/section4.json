@@ -1,0 +1,94 @@
+{
+  "reviews": {
+    "id": "reviews",
+    "eyebrow": "CUSTOMER REVIEWS",
+    "enabled": true,
+    "heading": [
+      {
+        "text": "Customer Reviews of Our\nEngine "
+      },
+      {
+        "text": "Rebuilding and Repairs",
+        "highlight": true
+      }
+    ],
+    "intro": "Choosing an engine workshop is a significant decision. Customer feedback can help you understand the assessment, communication and repair experience behind the service.",
+    "backgroundImage": "/test-images/engine.webp",
+    "verifiedLabel": "Verified Customer",
+    "sourceLabel": "View on Original Source",
+    "skeletonWidths": [
+      [
+        "w-full",
+        "w-[92%]",
+        "w-[68%]"
+      ],
+      [
+        "w-full",
+        "w-[88%]",
+        "w-[72%]"
+      ],
+      [
+        "w-full",
+        "w-[94%]",
+        "w-[66%]"
+      ]
+    ],
+    "items": [
+      {
+        "quote": "The inspection was explained in plain English, and I understood the proposed work before deciding how to proceed.",
+        "author": "",
+        "sourceUrl": ""
+      },
+      {
+        "quote": "The written scope made it clear what the engine work covered and which additional items needed a separate decision.",
+        "author": "",
+        "sourceUrl": ""
+      },
+      {
+        "quote": "I appreciated being able to discuss the symptoms, the engine details and the next assessment step directly with the workshop.",
+        "author": "",
+        "sourceUrl": ""
+      }
+    ]
+  },
+  "workshop": {
+    "id": "workshop",
+    "eyebrow": "MEET THE EXPERT",
+    "heading": [
+      {
+        "text": "Meet Boby and See the Engine "
+      },
+      {
+        "text": "Rebuild Workshop",
+        "highlight": true
+      }
+    ],
+    "paragraphs": [
+      "Boby is the mechanic behind Boby Engine Work. The business brings more than ten years' experience and over 1,000 clients across its work on German, British and other selected vehicles.",
+      "The useful difference is a repair tied to the actual engine. Identification, inspection and a clear scope explain why a rebuild is needed, which components can be retained and what sits outside the engine-core work. An existing report is useful evidence, but it still needs to agree with the condition of the fitted engine.",
+      "Talk to Boby about the symptoms, earlier repairs and how you use the vehicle. That conversation helps distinguish a practical repair from assumptions based only on a badge or fault code."
+    ],
+    "cta": {
+      "label": "Talk to Boby",
+      "href": "#engine-quote"
+    },
+    "images": {
+      "portrait": {
+        "src": "/test-images/hero-section.webp",
+        "alt": "Portrait of Boby, lead mechanic and workshop owner",
+        "caption": "Boby",
+        "subCaption": "Lead Mechanic & Workshop Owner"
+      },
+      "workshop": {
+        "src": "/test-images/car-image.webp",
+        "alt": "Wide view of the engine rebuild workshop",
+        "caption": "Our Workshop"
+      },
+      "inspection": {
+        "src": "/test-images/engine.webp",
+        "alt": "Engine component inspection in the workshop",
+        "caption": "Component Inspection"
+      }
+    }
+  }
+}

@@ -1,0 +1,58 @@
+{
+  "id": "removal-warranty",
+  "removal": {
+    "eyebrow": "Removal & Collection",
+    "heading": [
+      { "text": "Engine Removal, Refitting\nand " },
+      { "text": "Mainland UK Collection", "highlight": true }
+    ],
+    "paragraphs": [
+      "Engine rebuilding takes place at our workshop in Ramsden Heath, Billericay. Customers can arrange a booked arrival or discuss optional mainland UK collection and delivery, subject to availability and a separate transport quote.",
+      "Tell us whether the vehicle starts, turns over, rolls and can be accessed for recovery. Provide the location and any restrictions before booking. A vehicle with a severe pressure warning, timing concern or mechanical noise should not be driven simply to reach the workshop.",
+      "Removal/refitting scope follows the actual installation and written quote. Already-removed engines, unusual conversions and previous dismantling should be discussed individually rather than assumed to match a standard installed-rebuild guide."
+    ],
+    "points": [
+      { "icon": "mapPin", "text": "Workshop: Ramsden Heath, Billericay" },
+      { "icon": "towTruck", "text": "Booked Arrival or Optional UK Collection" },
+      { "icon": "clipboardCheck", "text": "Confirm Vehicle Condition, Location and Access" },
+      { "icon": "wrench", "text": "Removal/Refitting Based on Actual Installation and Quote" }
+    ],
+    "image": { "src": "/test-images/hero-section.webp", "alt": "" }
+  },
+  "warranty": {
+    "eyebrow": "Warranty & Service",
+    "heading": [
+      { "text": "Engine Rebuild Warranty\nand the " },
+      { "text": "2,000-Mile Service", "highlight": true }
+    ],
+    "paragraphs": [
+      "Covered rebuild components and associated workmanship have a 12-month unlimited-mileage warranty, subject to the full conditions. Excluded ancillaries are not covered simply because the engine has been rebuilt.",
+      "The chargeable running-in service at 2,000 miles, within the stated 200-mile tolerance, must be completed at Boby's workshop. The published terms state that missing it voids the warranty. Read the conditions before booking; statutory rights are unaffected. Discuss towing, hire, modifications or track use before agreeing the work and applicable cover.",
+      "Read the warranty and full terms. Completion schedules are discussed for the actual repair and can change with strip-down findings, machining or parts availability."
+    ],
+    "cards": [
+      {
+        "icon": "shieldCheck",
+        "title": "12-Month Unlimited-Mileage Warranty",
+        "text": "Covers rebuild components and associated workmanship, subject to the full conditions. Excluded ancillaries are not covered simply because the engine has been rebuilt."
+      },
+      {
+        "icon": "calendar",
+        "title": "2,000-Mile Running-In Service",
+        "text": "The chargeable running-in service at 2,000 miles, within the stated 200-mile tolerance, must be completed at Boby's workshop. The published terms state that missing it voids the warranty."
+      }
+    ],
+    "cta": {
+      "label": "Read the warranty and full terms.",
+      "href": "#"
+    }
+  },
+  "bottomBar": {
+    "icon": "engine",
+    "title": [
+      { "text": "A Rebuild You Can " },
+      { "text": "Plan With Confidence", "highlight": true }
+    ],
+    "text": "The right work, the right parts, and clear terms from start to finish."
+  }
+}

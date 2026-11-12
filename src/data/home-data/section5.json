@@ -1,0 +1,66 @@
+{
+  "id": "services",
+  "eyebrow": "OUR SPECIALIST SERVICES",
+  "heading": [
+    { "text": "Engine Rebuilding, Diagnostics and\n" },
+    { "text": "Specialist " },
+    { "text": "Repair Services", "highlight": true }
+  ],
+  "intro": "The right engine job starts with the cause and condition, not an automatic order for a whole engine. We discuss the relevant services below as part of an assessed, written scope.",
+  "bgImage": {
+    "src": "/test-images/engine.webp",
+    "position": "top-right",
+    "opacity": 0.8
+  },
+  "services": [
+    {
+      "title": "Engine Rebuilds and Reconditioning",
+      "text": "Strip-down, cleaning, inspection, measurement and the agreed overhaul of a recoverable engine. Parts, machining and assembly are matched to the actual unit and damage rather than a universal package for every model.",
+      "fullText": "Strip-down, cleaning, inspection, measurement and the agreed overhaul of a recoverable engine. Parts, machining and assembly are matched to the actual unit and damage rather than a universal package for every model.",
+      "icon": "engine",
+      "image": { "src": "/test-images/engine.webp", "alt": "Engine being stripped down for reconditioning" }
+    },
+    {
+      "title": "Engine Diagnostics and Fault Finding",
+      "text": "Assessment of non-start, mechanical noise, smoke, pressure, cooling and running concerns. Fault-code information is combined with appropriate mechanical evidence; a warning message alone does not identify internal damage.",
+      "fullText": "Assessment of non-start, mechanical noise, smoke, pressure, cooling and running concerns. Fault-code information is combined with appropriate mechanical evidence; a warning message alone does not identify internal damage or prove that rebuilding is required.",
+      "icon": "laptop",
+      "image": { "src": "/test-images/car-image.webp", "alt": "Vehicle undergoing engine diagnostics" }
+    },
+    {
+      "title": "Timing-Chain, Timing-Belt and Timing-Failure Repairs",
+      "text": "The fitted engine determines the drive system and access. Contained timing work and repair after internal damage are different jobs. We establish the condition before recommending a limited repair or a larger overhaul.",
+      "fullText": "The fitted engine determines the drive system and access. Contained timing work and repair after internal damage are different jobs. We establish the condition before recommending a limited repair or a larger overhaul.",
+      "icon": "link",
+      "image": { "src": "/test-images/engine.webp", "alt": "Engine timing chain and sprockets" }
+    },
+    {
+      "title": "Cylinder-Head, Crankshaft and Engine-Block Assessment",
+      "text": "Inspection and measurement establish what can be recovered. Machining is specified where technically suitable; significant hard-part repair or replacement is separately agreed. Not every head needs skimming, and not every crankshaft is recoverable.",
+      "fullText": "Inspection and measurement establish what can be recovered. Machining is specified where technically suitable; significant hard-part repair or replacement is separately agreed. Not every head needs skimming, and not every damaged crankshaft is economically recoverable.",
+      "icon": "gauge",
+      "image": { "src": "/test-images/car-image.webp", "alt": "Cylinder head and engine block inspection" }
+    },
+    {
+      "title": "Cooling, Lubrication and Engine Ancillary Repairs",
+      "text": "The original cause may involve oil supply, cooling, ventilation, fuel or forced-induction equipment. Turbocharger, injector and exhaust-system concerns are assessed and itemised where relevant to the engine work; they are not automatically renewed within every rebuild.",
+      "fullText": "The original cause may involve oil supply, cooling, ventilation, fuel or forced-induction equipment. Turbocharger, injector and exhaust-system concerns are assessed and itemised where relevant to the engine work; they are not automatically renewed within every rebuild.",
+      "icon": "turbo",
+      "image": { "src": "/test-images/engine.webp", "alt": "Turbocharger and engine ancillary components" }
+    },
+    {
+      "title": "Associated Clutch, Flywheel and Mechanical Work",
+      "text": "Where removal or the agreed repair exposes related mechanical requirements, discuss them before work proceeds. Clutch, flywheel or connected-system work has its own condition and scope rather than being silently included in the engine guide.",
+      "fullText": "Where removal or the agreed repair exposes related mechanical requirements, discuss them before work proceeds. Clutch, flywheel or connected-system work has its own condition and scope rather than being silently included in the engine guide.",
+      "icon": "coins",
+      "image": { "src": "/test-images/car-image.webp", "alt": "Clutch and flywheel assembly" }
+    },
+    {
+      "title": "Bespoke Performance Engine Projects",
+      "text": "Discuss the engine, intended use, modifications and build goals with Boby before agreeing a project. Parts specification, testing and applicable terms are set separately. A standard road-engine rebuild guide or warranty should not be assumed to cover every tuned or track-focused build.",
+      "fullText": "Discuss the engine, intended use, modifications and build goals with Boby before agreeing a project. Parts specification, testing and applicable terms are set separately. A standard road-engine rebuild guide or warranty should not be assumed to cover every tuned or track-focused build.",
+      "icon": "flag",
+      "image": { "src": "/test-images/engine.webp", "alt": "Performance engine build" }
+    }
+  ]
+}

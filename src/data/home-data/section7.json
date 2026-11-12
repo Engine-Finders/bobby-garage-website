@@ -1,0 +1,107 @@
+{
+  "id": "engine-codes",
+  "eyebrow": "Engine Code Directory",
+  "heading": [
+    { "text": "Engine Codes We Rebuild:" },
+    { "text": "N47, OM651, Ingenium", "highlight": true },
+    { "text": " and More" }
+  ],
+  "intro": [
+    [
+      { "text": "An engine code helps narrow the repair, but its generation, output and vehicle installation still matter. Explore the family relevant to your vehicle or send the " },
+      { "text": "registration", "highlight": true },
+      { "text": " if you are unsure. A grouped directory name is not a promise of interchangeability." }
+    ]
+  ],
+  "fullIntro": "An engine code helps narrow the repair, but its generation, output and vehicle installation still matter. Explore the family relevant to your vehicle or send the registration if you are unsure. A grouped directory name is not a promise of interchangeability.",
+  "backdropImage": {
+    "src": "/test-images/engine.webp"
+  },
+  "coverageBar": {
+    "icon": "cog",
+    "title": "Coverage to Identify",
+    "items": [
+      { "icon": "car", "lines": ["Model &", "Generation"] },
+      { "icon": "engine", "lines": ["Engine Code", "& Family"] },
+      { "icon": "gauge", "lines": ["Capacity", "& Output"] },
+      { "icon": "wrench", "lines": ["Installation", "& Vehicle"] }
+    ]
+  },
+  "tableColumns": {
+    "enquiry": "Engine enquiry",
+    "coverage": "Coverage to identify"
+  },
+  "cardImage": {
+    "src": "/test-images/engine.webp"
+  },
+  "rows": [
+    {
+      "code": "N47 / B47",
+      "enquiry": "BMW N47, B47, N57 and B57 diesels",
+      "coverage": "Actual model, generation and installed diesel",
+      "logo": { "src": "/test-images/cars-logos.png", "alt": "BMW logo" }
+    },
+    {
+      "code": "B48 / B58",
+      "enquiry": "BMW B38/B48/B58 and M engines",
+      "coverage": "Petrol family, performance derivative and vehicle",
+      "logo": { "src": "/test-images/cars-logos.png", "alt": "BMW logo" }
+    },
+    {
+      "code": "OM651 / OM654",
+      "enquiry": "Mercedes OM651, OM654, OM642 and OM656",
+      "coverage": "Capacity, diesel family and installation",
+      "logo": { "src": "/test-images/cars-logos.png", "alt": "Mercedes-Benz logo" }
+    },
+    {
+      "code": "M-Series / AMG",
+      "enquiry": "Mercedes petrol M-series and AMG",
+      "coverage": "Actual M-code, generation and performance specification",
+      "logo": { "src": "/test-images/cars-logos.png", "alt": "Mercedes-Benz logo" }
+    },
+    {
+      "code": "Ingenium",
+      "enquiry": "Jaguar/Land Rover Ingenium diesel and PT204 petrol",
+      "coverage": "Fuel, code and model-specific route",
+      "logo": { "src": "/test-images/cars-logos.png", "alt": "Land Rover logo" }
+    },
+    {
+      "code": "AJ126 / AJ133",
+      "enquiry": "JLR 306DT, AJ126, AJ133 and later engines",
+      "coverage": "V6/V8 or later architecture and exact application",
+      "logo": { "src": "/test-images/cars-logos.png", "alt": "Jaguar logo" }
+    },
+    {
+      "code": "EA888 / EA288",
+      "enquiry": "Audi/VW EA888 and EA189/EA288 TDI",
+      "coverage": "Generation, output, petrol/diesel and vehicle",
+      "logo": { "src": "/test-images/cars-logos.png", "alt": "Audi and Volkswagen logo" }
+    },
+    {
+      "code": "V6 / V8",
+      "enquiry": "Audi five-cylinder/V6/V8 and Porsche engines",
+      "coverage": "Exact family/derivative, not a shared group label alone",
+      "logo": { "src": "/test-images/cars-logos.png", "alt": "Audi and Porsche logo" }
+    },
+    {
+      "code": "MINI N / B",
+      "enquiry": "MINI N-series and B-series petrol/diesel",
+      "coverage": "Chassis, generation and actual engine",
+      "logo": { "src": "/test-images/cars-logos.png", "alt": "MINI logo" }
+    },
+    {
+      "code": "EcoBoost",
+      "enquiry": "Ford EcoBoost, EcoBlue, TDCi and V8",
+      "coverage": "Engine family, capacity, installation and use",
+      "logo": { "src": "/test-images/cars-logos.png", "alt": "Ford logo" }
+    }
+  ],
+  "note": {
+    "icon": "info",
+    "paragraphs": [
+      "The model guides carry vehicle-specific detail. Engine pages explain the relevant family mechanics and rebuild approach.",
+      "Hybrids are assessed for the combustion-engine concern; electric-only traction motors and batteries are outside this engine rebuild page."
+    ]
+  },
+  "fullText": "The model guides carry vehicle-specific detail. Engine pages explain the relevant family mechanics and rebuild approach. Hybrids are assessed for the combustion-engine concern; electric-only traction motors and batteries are outside this engine rebuild page."
+}

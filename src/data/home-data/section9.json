@@ -1,0 +1,74 @@
+{
+  "id": "process",
+  "eyebrow": "OUR PROCESS",
+  "heading": [
+    { "text": "Our Engine Rebuild Process:\nFrom " },
+    { "text": "Inspection to Handover", "highlight": true }
+  ],
+  "intro": "A structured, 9-stage process to ensure your engine is rebuilt with the right parts, to the correct specification, and tested before it gets back on the road.",
+  "background": {
+    "src": "/test-images/engine.webp",
+    "alt": ""
+  },
+  "stages": [
+    {
+      "number": "01",
+      "icon": "towTruck",
+      "title": "Recovery or Booked Workshop Arrival",
+      "text": "We record the vehicle, symptoms and running status, review existing reports and agree how it will arrive. Optional transport is separately quoted rather than assumed to be included."
+    },
+    {
+      "number": "02",
+      "icon": "monitor",
+      "title": "Engine Identification and Diagnosis",
+      "text": "The fitted engine and relevant symptoms determine the checks. Appropriate mechanical evidence is considered alongside diagnostic information before the scope of removal or dismantling is agreed."
+    },
+    {
+      "number": "03",
+      "icon": "engineHoist",
+      "title": "Engine Removal Where Required",
+      "text": "Access, drivetrain and connected equipment are considered for the actual vehicle. A compact car, SUV and van may have different installation requirements even when the family name is familiar."
+    },
+    {
+      "number": "04",
+      "icon": "cog",
+      "title": "Strip-down, Cleaning and Inspection",
+      "text": "The engine is dismantled sufficiently to establish the damage and overhaul scope. Cleaning and inspection help distinguish reusable components from worn, damaged or contaminated parts."
+    },
+    {
+      "number": "05",
+      "icon": "caliper",
+      "title": "Measurement and Machining Decisions",
+      "text": "Relevant bores, journals and head components are assessed against the applicable repair requirements. Machining is specified where suitable; major structural damage can require a revised quotation or a different route."
+    },
+    {
+      "number": "06",
+      "icon": "piston",
+      "title": "Parts Selection and Engine Assembly",
+      "text": "The agreed internal, timing and sealing components are matched to the engine derivative. Assembly addresses the identified cause and condition, with ancillary work separately specified where needed."
+    },
+    {
+      "number": "07",
+      "icon": "engine",
+      "title": "Refitting and Controlled First Start",
+      "text": "After refitting, appropriate fluid, connection and initial-running checks follow the repair scope. Coding or adaptation is carried out where the actual installation requires it, rather than promised universally."
+    },
+    {
+      "number": "08",
+      "icon": "road",
+      "title": "Running Checks and Road Test",
+      "text": "Checks consider the original symptom and operation after the repair. A road test is performed where safe and appropriate; a dyno power run is not assumed to be included in every rebuild."
+    },
+    {
+      "number": "09",
+      "icon": "key",
+      "title": "Collection, Handover and Follow-up",
+      "text": "We explain the completed work, maintenance and warranty conditions. The required chargeable running-in service is arranged in line with the terms, and any later concern should be reported promptly."
+    }
+  ],
+  "closingBar": {
+    "icon": "checkCircle",
+    "title": "A Clear, Step-by-Step Rebuild Process",
+    "text": "From diagnosis to handover, every stage is planned, checked and carried out to the right specification for your engine and vehicle."
+  }
+}

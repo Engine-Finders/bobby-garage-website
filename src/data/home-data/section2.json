@@ -1,0 +1,114 @@
+{
+  "id": "brands",
+  "eyebrow": "Our Engine Coverage",
+  "heading": [
+    { "text": "Engine Rebuilding for BMW, Mercedes, Jaguar, Land Rover " },
+    { "text": "and More", "highlight": true }
+  ],
+  "intro": "Choose your brand to explore the relevant models, engine families and repair routes. A model name helps organise the enquiry; the actual engine and damage determine the work. Our main coverage is combustion-engine generations still produced in 2015 or later, including some launched earlier.",
+  "bgImages": [
+    { "src": "/test-images/engine.webp", "position": "top-left", "opacity": 0.28 },
+    { "src": "/test-images/engine.webp", "position": "top-right", "opacity": 0.28 }
+  ],
+  "brands": [
+    {
+      "id": "bmw",
+      "name": "BMW",
+      "title": "BMW Engine Rebuilds & Repairs",
+      "text": "Coverage includes 1 Series to 8 Series, X models, Z Series and relevant M cars.",
+      "fullText": "Coverage includes 1 Series to 8 Series, X models, Z Series and relevant M cars. N47/B47 diesels, modular petrol engines and performance units need their own identification. A 320d, M340i and M3 are different engine enquiries, not interchangeable rebuild packages.",
+      "buttonLabel": "Explore BMW Engine Repairs",
+      "href": "#engine-quote",
+      "logo": { "src": "/test-images/cars-logos.png", "alt": "BMW logo" },
+      "image": { "src": "/test-images/car-image.webp", "alt": "BMW engine rebuild coverage" }
+    },
+    {
+      "id": "mercedes",
+      "name": "Mercedes-Benz",
+      "title": "Mercedes-Benz Engine Rebuilding",
+      "text": "A-Class, C-Class, E-Class, SUVs, AMG, roadster and relevant van enquiries.",
+      "fullText": "A-Class, C-Class, E-Class, SUVs, AMG, roadster and relevant van enquiries span several engine generations. OM651 and OM654 diesels, petrol M-series and AMG units are assessed by the fitted specification, not the badge alone.",
+      "buttonLabel": "Explore Mercedes Engine Repairs",
+      "href": "#engine-quote",
+      "logo": { "src": "/test-images/cars-logos.png", "alt": "Mercedes-Benz logo" },
+      "image": { "src": "/test-images/car-image.webp", "alt": "Mercedes-Benz engine rebuilding" }
+    },
+    {
+      "id": "jaguar",
+      "name": "Jaguar",
+      "title": "Jaguar Engine Rebuild Specialists",
+      "text": "XE, XF, XJ, F-Type, F-Pace and E-Pace coverage includes relevant diesel and petrol.",
+      "fullText": "XE, XF, XJ, F-Type, F-Pace and E-Pace coverage includes the relevant diesel, petrol V6/V8 and Ingenium routes. Identify the model and engine before applying a guide; similar capacities can have different installations and repair scopes.",
+      "buttonLabel": "Explore Jaguar Engine Repairs",
+      "href": "#engine-quote",
+      "logo": { "src": "/test-images/cars-logos.png", "alt": "Jaguar logo" },
+      "image": { "src": "/test-images/car-image.webp", "alt": "Jaguar engine rebuild specialists" }
+    },
+    {
+      "id": "land-rover",
+      "name": "Land Rover",
+      "title": "Land Rover & Range Rover Engine Rebuilds",
+      "text": "Defender, Discovery, Range Rover, Range Rover Sport, Evoque and Velar.",
+      "fullText": "Defender, Discovery, Discovery Sport, Range Rover, Range Rover Sport, Evoque and Velar have different engines across generations. V6 diesel, Ingenium, petrol V6/V8 and later-engine enquiries are individually identified before a rebuild is quoted.",
+      "buttonLabel": "Explore Land Rover Engine Repairs",
+      "href": "#engine-quote",
+      "logo": { "src": "/test-images/cars-logos.png", "alt": "Land Rover logo" },
+      "image": { "src": "/test-images/car-image.webp", "alt": "Land Rover and Range Rover engine rebuilds" }
+    },
+    {
+      "id": "audi",
+      "name": "Audi",
+      "title": "Audi TFSI, TDI, S & RS Engine Repairs",
+      "text": "Covers A, Q, TT, S/RS and rare-engine enquiries across petrol and diesel units.",
+      "fullText": "Our Audi directory covers the relevant A, Q, TT, S/RS and rare-engine enquiries. Standard and high-output petrol, four-cylinder/V6 diesel and performance engines have separate routes; a TFSI or TDI badge is not a complete engine specification.",
+      "buttonLabel": "Explore Audi Engine Repairs",
+      "href": "#engine-quote",
+      "logo": { "src": "/test-images/cars-logos.png", "alt": "Audi logo" },
+      "image": { "src": "/test-images/car-image.webp", "alt": "Audi TFSI, TDI, S and RS engine repairs" }
+    },
+    {
+      "id": "volkswagen",
+      "name": "Volkswagen",
+      "title": "Volkswagen TSI, TDI & Van Engine Rebuilds",
+      "text": "Golf, Polo, Passat, Tiguan, Touareg and van models including Transporter and Caddy.",
+      "fullText": "Golf, Polo, Passat, Tiguan, Touareg and the other listed passenger models sit alongside Transporter, Caravelle, Multivan, Amarok and Caddy enquiries. Petrol output classes, passenger-car diesels and van BiTDI work are kept distinct.",
+      "buttonLabel": "Explore Volkswagen Engine Repairs",
+      "href": "#engine-quote",
+      "logo": { "src": "/test-images/cars-logos.png", "alt": "Volkswagen logo" },
+      "image": { "src": "/test-images/car-image.webp", "alt": "Volkswagen TSI, TDI and van engine rebuilds" }
+    },
+    {
+      "id": "mini",
+      "name": "MINI",
+      "title": "MINI Cooper, Cooper S & JCW Engine Rebuilds",
+      "text": "Hatch, Convertible, Clubman, Countryman, Coupe, Roadster, Paceman and JCW routes.",
+      "fullText": "Hatch, Convertible, Clubman, Countryman, Coupe, Roadster, Paceman and JCW routes span different petrol/diesel families. A Cooper badge does not identify the engine; chassis, generation and actual code matter before parts or prices are selected.",
+      "buttonLabel": "Explore MINI Engine Repairs",
+      "href": "#engine-quote",
+      "logo": { "src": "/test-images/cars-logos.png", "alt": "MINI logo" },
+      "image": { "src": "/test-images/car-image.webp", "alt": "MINI Cooper, Cooper S and JCW engine rebuilds" }
+    },
+    {
+      "id": "porsche",
+      "name": "Porsche",
+      "title": "Porsche Engine Repair & Rebuilding",
+      "text": "911, Boxster, Cayman, Cayenne, Panamera and combustion-engine Macan enquiries.",
+      "fullText": "911, Boxster, Cayman, Cayenne, Panamera and combustion-engine Macan enquiries include flat-four, flat-six, V6 and V8 routes. Generation and derivative must be established. Specialist Turbo/GT and unusual installations are assessed individually.",
+      "buttonLabel": "Explore Porsche Engine Repairs",
+      "href": "#engine-quote",
+      "logo": { "src": "/test-images/cars-logos.png", "alt": "Porsche logo" },
+      "image": { "src": "/test-images/car-image.webp", "alt": "Porsche engine repair and rebuilding" }
+    },
+    {
+      "id": "ford",
+      "name": "Ford",
+      "title": "Ford EcoBoost, EcoBlue & TDCi Engine Repairs",
+      "text": "Mustang, Focus ST/RS, Ranger, Transit, Transit Custom, Edge and Explorer.",
+      "fullText": "Selected Mustang, Focus ST/RS, Ranger, Transit, Transit Custom, Edge and combustion/hybrid Explorer enquiries are included. These names span different petrol and diesel engines; a familiar family name does not define the whole repair.",
+      "buttonLabel": "Explore Ford Engine Repairs",
+      "href": "#engine-quote",
+      "logo": { "src": "/test-images/cars-logos.png", "alt": "Ford logo" },
+      "image": { "src": "/test-images/car-image.webp", "alt": "Ford EcoBoost, EcoBlue and TDCi engine repairs" }
+    }
+  ]
+}
