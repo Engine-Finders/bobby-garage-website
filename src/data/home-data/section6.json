@@ -1,0 +1,38 @@
+{
+  "id": "how-it-works",
+  "eyebrow": "Your Enquiry Journey",
+  "heading": [
+    { "text": "How an Engine Rebuild " },
+    { "text": "Enquiry Works", "highlight": true }
+  ],
+  "intro": "A clear and straightforward process from your first message to the completed repair, with assessment, quotation and handover at every stage.",
+  "bgImages": [
+    { "src": "/test-images/hero-section.webp", "position": "top-right", "opacity": 0.4 },
+    { "src": "/test-images/engine.webp", "position": "bottom-left", "opacity": 0.4 }
+  ],
+  "stepLabel": "Step",
+  "steps": [
+    {
+      "number": "01",
+      "icon": "car",
+      "title": "Tell Us the Vehicle and Symptoms",
+      "text": "Start with the registration, model/year, mileage, location and whether the engine runs. Include any existing diagnosis, photographs or engine details.",
+      "fullText": "Start with the registration, model/year, mileage, location and whether the engine runs. Include any existing diagnosis, photographs or engine details. If the vehicle should not be driven, discuss arrival or recovery before moving it."
+    },
+    {
+      "number": "02",
+      "icon": "clipboardCheck",
+      "title": "Establish the Engine and Agree the Assessment",
+      "text": "We identify the likely engine route and discuss the checks needed. Inspection and, where necessary, agreed dismantling establish the condition and the work that can be quoted.",
+      "fullText": "We identify the likely engine route and discuss the checks needed. The initial guide is not a remote diagnosis. Inspection and, where necessary, agreed dismantling establish the condition and the work that can be quoted.",
+      "highlight": true
+    },
+    {
+      "number": "03",
+      "icon": "handshake",
+      "title": "Approve the Scope, Then Arrange Work and Handover",
+      "text": "The quotation explains the proposed repair, included work and separate items. Changes revealed during strip-down are discussed before extra work proceeds. After completion, handover covers the repair and next service.",
+      "fullText": "The quotation explains the proposed repair, included work and separate items. Changes revealed during strip-down are discussed before extra work proceeds. After completion, handover covers the repair, maintenance and required follow-up service."
+    }
+  ]
+}

@@ -1,0 +1,66 @@
+{
+  "id": "parts-quality",
+  "parts": {
+    "eyebrow": "Parts & Quality",
+    "heading": [
+      { "text": "Engine Rebuild Parts,\nMachining and\n" },
+      { "text": "Quality Checks", "highlight": true }
+    ],
+    "intro": "A proper rebuild specification identifies the actual components and work. We use OEM or appropriate OE-quality parts matched to the engine and agreed scope.",
+    "checklist": [
+      "Bearings, rings, timing and sealing work as appropriate.",
+      "Ancillaries (turbo, injector, fuel pump) are assessed separately.",
+      "Any additional damage and extra work is explained in advance."
+    ],
+    "details": [
+      "The condition of the block, crankshaft, head and reusable internals informs the decision; rebuilding does not mean every surrounding component is automatically new.",
+      "The purpose is an engine repair based on compatibility, condition and the diagnosed cause, not a cosmetic refresh or an unsupported promise of better-than-factory performance."
+    ],
+    "fullText": [
+      "A proper rebuild specification identifies the actual components and work. We use OEM or appropriate OE-quality parts matched to the engine and agreed scope. The condition of the block, crankshaft, head and reusable internals informs the decision; rebuilding does not mean every surrounding component is automatically new.",
+      "Bearings, rings, timing and sealing work are specified as appropriate. A turbocharger, injector, fuel pump or other ancillary has its own condition and inclusion decision. Where significant additional damage changes the repair, the scope is explained before extra work proceeds.",
+      "The purpose is an engine repair based on compatibility, condition and the diagnosed cause, not a cosmetic refresh or an unsupported promise of better-than-factory performance."
+    ],
+    "images": {
+      "main": {
+        "src": "/test-images/engine.webp",
+        "alt": "Engine rebuild parts laid out on the bench: pistons, connecting rods, bearing shells and timing chain",
+        "position": "30% 50%"
+      },
+      "detail": {
+        "src": "/test-images/engine.webp",
+        "alt": "Dial gauge measuring a machined cylinder block",
+        "position": "85% 40%"
+      }
+    }
+  },
+  "repairOrRebuild": {
+    "heading": [
+      { "text": "Repair or Rebuild Your Engine:\n" },
+      { "text": "Which Option Makes Sense?", "highlight": true }
+    ],
+    "intro": "A contained repair may be sufficient when the engine's internals remain sound. A recoverable core with confirmed wear or damage may justify a rebuild. The rest of the vehicle and your plans for it also matter.",
+    "details": [
+      "Major block, crankshaft or head damage, unavailable parts or extensive connected-system repairs can change the economics. We discuss the evidence and scope so you can consider the work rather than assuming every fault needs a whole-engine overhaul.",
+      "A cheaper advertised engine unit is not the same service as diagnosing, repairing and refitting your vehicle's engine. If you are searching for a replacement engine, start by telling us what happened to the original unit. This homepage offers an assessment and rebuilding service, not a catalogue of new or used engines for purchase."
+    ],
+    "fullText": [
+      "A contained repair may be sufficient when the engine's internals remain sound. A recoverable core with confirmed internal wear or damage may justify a rebuild. Major block, crankshaft or head damage, unavailable parts or extensive connected-system repairs can change the economics.",
+      "The rest of the vehicle and your plans for it matter too. We discuss the evidence and scope so you can consider the work rather than assuming every fault needs a whole-engine overhaul. A cheaper advertised engine unit is not the same service as diagnosing, repairing and refitting your vehicle's engine.",
+      "If you are searching for a replacement engine, start by telling us what happened to the original unit. This homepage offers an assessment and rebuilding service, not a catalogue of new or used engines for purchase."
+    ],
+    "options": [
+      {
+        "icon": "wrench",
+        "title": "Repair",
+        "text": "A focused fix for a specific fault when the internals are sound."
+      },
+      {
+        "icon": "engine",
+        "title": "Rebuild",
+        "text": "A fuller overhaul when internal wear or damage makes it the better option.",
+        "highlight": true
+      }
+    ]
+  }
+}

@@ -1,0 +1,65 @@
+{
+  "logo": {
+    "src": "/test-images/web-logo.webp",
+    "alt": "Boby's Engine Work",
+    "width": 977,
+    "height": 453,
+    "href": "/"
+  },
+  "nav": [
+    { "label": "Home", "href": "/" },
+    {
+      "label": "Mercedes",
+      "href": "#brands",
+      "children": [
+        { "label": "A-Class", "href": "#brands" },
+        { "label": "C-Class", "href": "#brands" },
+        { "label": "E-Class", "href": "#brands" },
+        { "label": "SUVs", "href": "#brands" },
+        { "label": "AMG", "href": "#brands" },
+        { "label": "Vans", "href": "#brands" }
+      ]
+    },
+    {
+      "label": "BMW",
+      "href": "#brands",
+      "children": [
+        { "label": "1 Series to 8 Series", "href": "#brands" },
+        { "label": "X Models", "href": "#brands" },
+        { "label": "Z Series", "href": "#brands" },
+        { "label": "M Cars", "href": "#brands" }
+      ]
+    },
+    { "label": "Audi", "href": "#brands" },
+    { "label": "Land Rover", "href": "#brands" },
+    { "label": "Porsche", "href": "#brands" },
+    {
+      "label": "Services",
+      "href": "#services",
+      "children": [
+        { "label": "Engine Rebuilds & Reconditioning", "href": "#services" },
+        { "label": "Diagnostics & Fault Finding", "href": "#services" },
+        { "label": "Timing Chain & Belt Repairs", "href": "#services" },
+        { "label": "Cylinder Head, Crank & Block", "href": "#services" },
+        { "label": "Cooling & Lubrication Repairs", "href": "#services" },
+        { "label": "Clutch & Flywheel Work", "href": "#services" },
+        { "label": "Performance Engine Projects", "href": "#services" }
+      ]
+    },
+    { "label": "Our Work", "href": "#workshop" },
+    { "label": "Reviews", "href": "#reviews" }
+  ],
+  "phone": {
+    "display": "020 8159 0792",
+    "href": "tel:02081590792",
+    "ariaLabel": "Call Boby's Engine Work"
+  },
+  "cta": {
+    "label": "Get a Quote",
+    "href": "#engine-quote"
+  },
+  "menuLabels": {
+    "open": "Open menu",
+    "close": "Close menu"
+  }
+}

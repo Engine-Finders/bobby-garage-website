@@ -1,0 +1,122 @@
+{
+  "faqs": {
+    "id": "faqs",
+    "eyebrow": "FAQ",
+    "heading": [
+      { "text": "Engine Rebuild, Repair and Reconditioning " },
+      { "text": "FAQs", "highlight": true }
+    ],
+    "intro": "Straight answers to the most common questions about our engine rebuild and repair service.",
+    "items": [
+      {
+        "icon": "coins",
+        "question": "How much does an engine rebuild cost?",
+        "answer": "The price depends on the model, engine, installation and damage. The application examples above are starting guides for a suitable core, not one rate for every vehicle. The written quote identifies the work and any separately agreed items."
+      },
+      {
+        "icon": "link",
+        "question": "Does a timing-chain problem always need a full rebuild?",
+        "answer": "No. A contained timing-drive fault may have a smaller repair scope. If timing has been lost, inspection must establish any valve, piston or head damage before a limited repair can be recommended."
+      },
+      {
+        "icon": "cog",
+        "question": "Are engine rebuilding and reconditioning the same service?",
+        "answer": "These terms can describe overlapping overhaul work. What matters is the written specification: the inspection, machining, components, assembly and fitting included for your engine. The label alone does not establish the scope or quality."
+      },
+      {
+        "icon": "turbo",
+        "question": "Are turbochargers and injectors included in a rebuild?",
+        "answer": "Not automatically. They are assessed and itemised where relevant. An engine-core rebuild does not mean every connected component is replaced or covered by its warranty; refer to the written scope and conditions."
+      },
+      {
+        "icon": "car",
+        "question": "Can I get help without knowing my engine code?",
+        "answer": "Yes. Start with the registration, model/year and symptoms, and add the VIN or engine number if available. A lookup helps identify the vehicle, but the fitted engine still needs confirmation, particularly after earlier replacement work."
+      },
+      {
+        "icon": "engine",
+        "question": "Do you sell new or used engines?",
+        "answer": "This site focuses on Boby's engine assessment, repair and rebuilding service. It is not a supply-only engine shop. Describe what happened to your existing engine so the suitable repair route can be discussed."
+      },
+      {
+        "icon": "calendar",
+        "question": "How long does an engine rebuild take?",
+        "answer": "We discuss a schedule after assessing the likely work. Internal findings, machining and the availability of correct parts affect completion. A universal turnaround promised before the damage is known would not describe every rebuild."
+      },
+      {
+        "icon": "zap",
+        "question": "Can you collect a vehicle that no longer runs?",
+        "answer": "Optional mainland UK collection can be discussed and quoted separately, subject to availability. Provide the location, running/rolling status and access information so suitable arrangements can be considered before moving it."
+      },
+      {
+        "icon": "layers",
+        "question": "Do you rebuild hybrid or electric vehicle engines?",
+        "answer": "Relevant hybrid enquiries concern the combustion engine, with high-voltage and electrical work identified separately. Electric-only drive motors and batteries are outside this engine rebuild homepage. The model and fitted powertrain must be established first."
+      }
+    ]
+  },
+  "contact": {
+    "id": "engine-quote",
+    "eyebrow": "Get in Touch",
+    "heading": [
+      { "text": "Request an Engine\nRebuild Assessment\n" },
+      { "text": "from Boby", "highlight": true }
+    ],
+    "intro": "Tell us your registration, model/year, mileage, symptoms, location and whether the vehicle runs. Add any engine details or existing report, and your preferred contact method. The next step is to establish the relevant engine and assessment scope, not sell you an engine before diagnosis.",
+    "details": [
+      {
+        "icon": "mapPin",
+        "label": "Workshop",
+        "value": "Unit D1, Windsor Road, Ramsden Heath, Billericay CM11 1QE"
+      },
+      {
+        "icon": "clock",
+        "label": "Hours",
+        "value": "Monday–Friday 9am–6pm; Saturday 11am–2pm (excluding English bank holidays)"
+      },
+      {
+        "icon": "mail",
+        "label": "Email",
+        "value": "info@bobyenginework.co.uk",
+        "href": "mailto:info@bobyenginework.co.uk"
+      }
+    ],
+    "image": { "src": "/test-images/hero-section.webp", "alt": "" },
+    "form": {
+      "title": [
+        { "text": "Engine Assessment " },
+        { "text": "Enquiry", "highlight": true }
+      ],
+      "subtitle": "Provide a few details and our team will get back to you with the next steps.",
+      "email": "info@bobyenginework.co.uk",
+      "storageKey": "engineEnquiryRegistration",
+      "fields": {
+        "registration": {
+          "label": "Registration (if available)",
+          "placeholder": "AB12 CDE"
+        },
+        "modelYear": {
+          "label": "Model / Year",
+          "placeholder": "e.g. BMW 320d 2016"
+        },
+        "mileage": {
+          "label": "Mileage (approx.)",
+          "placeholder": "e.g. 75,000"
+        },
+        "runs": {
+          "label": "Does the vehicle run?",
+          "options": ["Select", "Yes", "No", "Not sure"]
+        },
+        "symptoms": {
+          "label": "Symptoms / What happened?",
+          "placeholder": "e.g. noise, smoke, overheating, timing issue, etc."
+        }
+      },
+      "submitLabel": "Request My Engine Assessment by Email",
+      "errors": {
+        "identity": "Please enter a registration or model/year.",
+        "symptoms": "Please describe the symptoms or what happened."
+      }
+    }
+  }
+}

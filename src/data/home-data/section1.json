@@ -1,0 +1,38 @@
+{
+  "id": "hero",
+  "eyebrow": "Engine Specialists",
+  "heading": {
+    "main": "Engine Rebuild & Reconditioning",
+    "highlight": "Specialists"
+  },
+  "description": "Boby Engine Work diagnoses, repairs and rebuilds petrol and diesel engines for German, British and selected other vehicles. Tell us your registration and symptoms for an assessment of the engine you have, with a written scope before rebuilding begins.",
+  "stats": [
+    { "icon": "calendar", "value": "10+", "label": "Years' Experience" },
+    { "icon": "users", "value": "1,000+", "label": "Clients", "sub": "Across the Business" },
+    { "icon": "shieldCheck", "value": "12-Month", "label": "Rebuild Warranty", "sub": "(Subject to Terms)" }
+  ],
+  "location": "Billericay workshop. Optional mainland UK collection, quoted separately.",
+  "form": {
+    "title": "Start Your Engine Enquiry",
+    "subtitle": "Enter your registration to start your engine enquiry with Boby's workshop.",
+    "countryCode": "UK",
+    "inputLabel": "Vehicle registration",
+    "placeholder": "Enter your registration",
+    "buttonText": "Request My Engine Assessment",
+    "targetId": "engine-quote",
+    "storageKey": "engineEnquiryRegistration",
+    "errors": {
+      "empty": "Please enter your vehicle registration.",
+      "invalid": "That doesn't look like a UK registration. Please check and try again."
+    },
+    "fallback": {
+      "title": "No registration available?",
+      "text": "Send your model, year and engine details instead.",
+      "href": "#engine-quote"
+    }
+  },
+  "image": {
+    "src": "/test-images/hero-section.webp",
+    "alt": "Boby working on an engine in his workshop"
+  }
+}
