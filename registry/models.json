@@ -1,0 +1,10 @@
+[
+  {
+    "slug": "bmw-3-series",
+    "name": "BMW 3 Series",
+    "brand": "bmw",
+    "href": "/bmw-3-series",
+    "dataFile": "bmw-3-series.json",
+    "status": "live"
+  }
+]
