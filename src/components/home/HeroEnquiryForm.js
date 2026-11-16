@@ -27,20 +27,28 @@ export default function HeroEnquiryForm({ form }) {
   };
 
   return (
-    <div className="relative w-full max-w-[460px] overflow-hidden rounded-[20px] border border-white/15 bg-linear-to-br from-white/[0.14] via-white/[0.07] to-white/[0.04] p-5 shadow-[0_24px_60px_rgba(0,0,0,0.45)] backdrop-blur-xl sm:p-7 lg:p-6 xl:p-7">
-      <div className="pointer-events-none absolute -right-20 -top-20 h-48 w-48 rounded-full bg-brand/15 blur-3xl" aria-hidden="true" />
+    <div className="relative w-full max-w-[460px] overflow-hidden rounded-[22px] border border-white/32 bg-white/[0.2] p-5 shadow-[0_24px_60px_rgba(0,0,0,0.38),inset_0_1px_0_rgba(255,255,255,0.35)] backdrop-blur-[26px] sm:p-7 lg:p-6 xl:p-7">
+      <div
+        className="pointer-events-none absolute inset-0 bg-primary-dark/12"
+        aria-hidden="true"
+      />
+      <div
+        className="pointer-events-none absolute inset-0 bg-linear-to-br from-white/26 via-white/10 to-white/[0.04]"
+        aria-hidden="true"
+      />
+      <div className="pointer-events-none absolute -right-16 -top-16 h-44 w-44 rounded-full bg-white/18 blur-3xl" aria-hidden="true" />
 
-      <div className="relative flex items-start gap-4">
-        <div className="flex h-14 w-14 shrink-0 items-center justify-center rounded-xl border border-gold/40 bg-linear-to-br from-gold/30 to-brand/15 text-[#f3a54a] shadow-[inset_0_1px_0_rgba(255,255,255,0.15)] sm:h-[60px] sm:w-[60px]">
+      <div className="relative z-10 flex items-start gap-4">
+        <div className="flex h-14 w-14 shrink-0 items-center justify-center rounded-xl border border-gold/50 bg-linear-to-br from-gold/35 to-brand/20 text-[#f3a54a] shadow-[inset_0_1px_0_rgba(255,255,255,0.35)] sm:h-[60px] sm:w-[60px]">
           <Icon name="engine" className="h-8 w-8" strokeWidth={1.7} />
         </div>
         <div>
           <h2 className="text-[19px] font-bold leading-tight text-white sm:text-[22px]">{form.title}</h2>
-          <p className="mt-1.5 text-[14px] leading-snug text-white/75 sm:text-[15px]">{form.subtitle}</p>
+          <p className="mt-1.5 text-[14px] leading-snug text-white/80 sm:text-[15px]">{form.subtitle}</p>
         </div>
       </div>
 
-      <form onSubmit={handleSubmit} noValidate className="relative mt-6 space-y-4">
+      <form onSubmit={handleSubmit} noValidate className="relative z-10 mt-6 space-y-4">
         <div>
           <label htmlFor="hero-registration" className="sr-only">
             {form.inputLabel}
@@ -92,7 +100,7 @@ export default function HeroEnquiryForm({ form }) {
         </button>
       </form>
 
-      <div className="relative mt-6 border-t border-white/12 pt-5">
+      <div className="relative z-10 mt-6 border-t border-white/25 pt-5">
         <a href={form.fallback.href} className="group flex items-start gap-3.5 text-white/85 transition-colors hover:text-white">
           <Icon name="pencil" className="mt-0.5 h-5 w-5 shrink-0 text-white/70 group-hover:text-brand" />
           <span className="text-[14px] leading-snug sm:text-[15px]">

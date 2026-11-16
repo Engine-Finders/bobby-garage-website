@@ -15,7 +15,7 @@ export default function Section2() {
         introClassName="max-w-[880px]"
       />
 
-      <ul className="mt-10 grid grid-cols-1 gap-6 md:mt-12 md:grid-cols-2 lg:grid-cols-3">
+      <ul className="mt-8 grid grid-cols-1 gap-4 sm:mt-10 sm:gap-5 md:mt-12 md:grid-cols-2 md:gap-6 lg:grid-cols-3">
         {data.brands.map((brand) => (
           <li key={brand.id} className="flex">
             <BrandCard brand={brand} />

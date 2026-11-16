@@ -5,7 +5,13 @@ const tones = {
   dark: "text-white",
 };
 
-export default function Eyebrow({ children, tone = "light", align = "left", className = "" }) {
+export default function Eyebrow({
+  children,
+  tone = "light",
+  align = "left",
+  className = "",
+  slashClassName = "h-3.5 md:h-4",
+}) {
   if (!children) return null;
   return (
     <p
@@ -13,7 +19,7 @@ export default function Eyebrow({ children, tone = "light", align = "left", clas
         align === "center" ? "justify-center" : ""
       } ${tones[tone]} ${className}`}
     >
-      <Slashes className="h-3.5 md:h-4" />
+      <Slashes className={slashClassName} />
       {children}
     </p>
   );

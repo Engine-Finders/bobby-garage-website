@@ -10,7 +10,7 @@ export default function Section10() {
   const { parts, repairOrRebuild } = data;
 
   return (
-    <SectionShell id={data.id} tone="light" padding="py-16 md:py-20 lg:py-24">
+    <SectionShell id={data.id} tone="light" padding="py-8 md:py-10 lg:py-12">
       <div className="grid grid-cols-1 items-center gap-10 lg:grid-cols-12 lg:gap-12">
         <div className="lg:col-span-5">
           <SectionHeading

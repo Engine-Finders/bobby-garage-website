@@ -1,0 +1,55 @@
+{
+  "meta": {
+    "title": "Mercedes OM651 Engine Rebuild From £4,000 | Boby Engine Work",
+    "description": "Mercedes OM651 2.1 diesel engine rebuilds from £4,000. Timing-chain noise, knocking and engine damage assessed by Boby. Explore parts, fitting and warranty.",
+    "canonical": "https://bobyenginework.co.uk/engines/mercedes-om651/"
+  },
+  "section1": {
+    "id": "hero",
+    "breadcrumb": [
+      { "label": "Home", "href": "/" },
+      { "label": "Mercedes", "href": "/#brands" },
+      { "label": "OM651 Engine" }
+    ],
+    "eyebrow": "MERCEDES SPECIALISTS",
+    "heading": {
+      "line1": "Mercedes OM651",
+      "line2": [
+        { "text": "Engine " },
+        { "text": "Rebuild & Repair", "highlight": true }
+      ]
+    },
+    "paragraphs": [
+      "Timing-chain noise, knocking or engine damage? Boby Engine Work assesses and rebuilds Mercedes OM651 diesel engines, with the repair based on what inspection finds. Our service is rebuilding your engine, with removal and refitting, rather than selling an engine unit."
+    ],
+    "priceNote": {
+      "icon": "engine",
+      "text": [
+        { "text": "OM651 2.1 diesel " },
+        { "text": "rebuilds from £4,000", "highlight": true },
+        { "text": " – for the relevant vehicle and a serviceable engine core; final scope confirmed after assessment." }
+      ]
+    },
+    "stats": [
+      { "icon": "calendar", "value": "10+", "label": "Years' Experience" },
+      { "icon": "users", "value": "1,000+", "label": "Clients" },
+      {
+        "icon": "shieldCheck",
+        "value": "12-Month",
+        "label": "Rebuild Warranty",
+        "sub": "(Subject to Terms)"
+      }
+    ],
+    "cta": {
+      "label": "Request an OM651 Assessment",
+      "href": "#engine-quote",
+      "icon": "mail"
+    },
+    "image": {
+      "src": "/test-images/hero-om651-mobile.jpg",
+      "desktop": "/test-images/hero-om651.jpg",
+      "mobile": "/test-images/hero-om651-mobile.jpg",
+      "alt": "Mercedes OM651 diesel engine on a workshop stand"
+    }
+  }
+}

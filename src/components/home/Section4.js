@@ -21,7 +21,7 @@ export default function Section4() {
         backdrop={
           <QuoteGlyph className="pointer-events-none absolute -z-10 right-[6%] top-10 h-32 w-auto text-[#e7e4e0] sm:h-44 md:right-[22%] md:top-6 md:h-56 lg:right-[30%]" />
         }
-        padding="py-14 md:py-20 lg:py-24"
+        padding="py-7 md:py-10 lg:py-12"
       >
         <SectionHeading
           eyebrow={reviews.eyebrow}
@@ -50,7 +50,7 @@ export default function Section4() {
         id={workshop.id}
         tone="light"
         accents={[{ position: "bottom-left", count: 2, length: "h-40 md:h-64", className: "left-[-2%] md:left-[1%]" }]}
-        padding="py-14 md:py-20 lg:py-24"
+        padding="py-7 md:py-10 lg:py-12"
       >
         <div className="grid grid-cols-1 items-center gap-10 lg:grid-cols-12 lg:gap-12">
           <div className="lg:col-span-5">

@@ -12,7 +12,7 @@ export default function Section6() {
       tone="light"
       bgImages={data.bgImages}
       backdrop={<BottomCurve />}
-      padding="py-16 md:py-20 lg:py-24"
+      padding="py-8 md:py-10 lg:py-12"
     >
       <SectionHeading
         align="center"

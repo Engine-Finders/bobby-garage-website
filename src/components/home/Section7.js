@@ -33,7 +33,7 @@ export default function Section7() {
       tone="light"
       backdrop={<Backdrop image={data.backdropImage} />}
       accents={[{ position: "top-right", count: 2, length: "h-72 md:h-[420px]", className: "right-[8%] md:right-[26%]" }]}
-      padding="pt-16 pb-16 md:pt-20 md:pb-20 lg:pt-24 lg:pb-24"
+      padding="pt-8 pb-8 md:pt-10 md:pb-10 lg:pt-12 lg:pb-12"
     >
       <SectionHeading
         tone="dark"

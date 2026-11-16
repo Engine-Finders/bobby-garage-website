@@ -33,7 +33,7 @@ export default function Section8() {
           className: "right-[6%] lg:right-[38%]!",
         },
       ]}
-      padding="py-14 md:py-20 lg:py-24"
+      padding="py-7 md:py-10 lg:py-12"
     >
       {warningLight && (
         <WarningLight

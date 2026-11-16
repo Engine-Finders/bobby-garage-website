@@ -1,0 +1,30 @@
+{
+  "permissions": {
+    "allow": [
+      "powershell",
+      "Shell(dir /b public\\test-images 2>nul)",
+      "Shell(dir:*)",
+      "Shell(findstr:*)",
+      "Shell(npm:*)",
+      "Shell(agent-browser:*)",
+      "Shell(if:*)",
+      "Shell(=C:\\Users\\HPCOMP~1\\AppData\\Local\\Temp\\commandcode\\H--New-folder--3--bobby-garage\\acb9d5d4-454c-422d-af40-aec674d66559\\scratchpad:*)",
+      "Shell(C:\\Program Files (x86)\\Microsoft\\Edge\\Application\\msedge.exe:*)",
+      "Shell(Test-Path:*)",
+      "Shell({:*)",
+      "Shell(Get-Item:*)",
+      "Shell(.Length:*)",
+      "Shell(node --version)",
+      "Shell(node \"C:\\Users\\HPCOMP~1\\AppData\\Local\\Temp\\commandcode\\H--New-folder--3--bobby-garage\\acb9d5d4-454c-422d-af40-aec674d66559\\scratchpad\\shot.js\" \"C:\\Users\\HPCOMP~1\\AppData\\Local\\Temp\\commandcode\\H--New-folder--3--bobby-garage\\acb9d5d4-454c-422d-af40-aec674d66559\\scratchpad\\hero-cdp.png\" \"http://localhost:3000/dev-preview/engine/1\" 1536 785)",
+      "Shell(node \"C:\\Users\\HPCOMP~1\\AppData\\Local\\Temp\\commandcode\\H--New-folder--3--bobby-garage\\acb9d5d4-454c-422d-af40-aec674d66559\\scratchpad\\shot.js\" \"C:\\Users\\HPCOMP~1\\AppData\\Local\\Temp\\commandcode\\H--New-folder--3--bobby-garage\\acb9d5d4-454c-422d-af40-aec674d66559\\scratchpad\\cards.png\" \"http://localhost:3000/dev-preview/2\" 1536 1000)",
+      "Shell(node \"C:\\Users\\HPCOMP~1\\AppData\\Local\\Temp\\commandcode\\H--New-folder--3--bobby-garage\\acb9d5d4-454c-422d-af40-aec674d66559\\scratchpad\\shot.js\" \"C:\\Users\\HPCOMP~1\\AppData\\Local\\Temp\\commandcode\\H--New-folder--3--bobby-garage\\acb9d5d4-454c-422d-af40-aec674d66559\\scratchpad\\cards2.png\" \"http://localhost:3000/dev-preview/2\" 1536 1000)",
+      "Shell(node \"C:\\Users\\HPCOMP~1\\AppData\\Local\\Temp\\commandcode\\H--New-folder--3--bobby-garage\\acb9d5d4-454c-422d-af40-aec674d66559\\scratchpad\\shot.js\" \"C:\\Users\\HPCOMP~1\\AppData\\Local\\Temp\\commandcode\\H--New-folder--3--bobby-garage\\acb9d5d4-454c-422d-af40-aec674d66559\\scratchpad\\cards3.png\" \"http://localhost:3000/dev-preview/2?x=1\" 1536 1000)",
+      "Shell(node \"C:\\Users\\HPCOMP~1\\AppData\\Local\\Temp\\commandcode\\H--New-folder--3--bobby-garage\\acb9d5d4-454c-422d-af40-aec674d66559\\scratchpad\\shot.js\" \"C:\\Users\\HPCOMP~1\\AppData\\Local\\Temp\\commandcode\\H--New-folder--3--bobby-garage\\acb9d5d4-454c-422d-af40-aec674d66559\\scratchpad\\cards4.png\" \"http://localhost:3000/dev-preview/2?x=2\" 1536 1000)",
+      "Shell(node \"C:\\Users\\HPCOMP~1\\AppData\\Local\\Temp\\commandcode\\H--New-folder--3--bobby-garage\\acb9d5d4-454c-422d-af40-aec674d66559\\scratchpad\\shot.js\" \"C:\\Users\\HPCOMP~1\\AppData\\Local\\Temp\\commandcode\\H--New-folder--3--bobby-garage\\acb9d5d4-454c-422d-af40-aec674d66559\\scratchpad\\cards5.png\" \"http://localhost:3000/dev-preview/2?x=3\" 1536 780)",
+      "Shell(node \"C:\\Users\\HPCOMP~1\\AppData\\Local\\Temp\\commandcode\\H--New-folder--3--bobby-garage\\acb9d5d4-454c-422d-af40-aec674d66559\\scratchpad\\shot.js\" \"C:\\Users\\HPCOMP~1\\AppData\\Local\\Temp\\commandcode\\H--New-folder--3--bobby-garage\\acb9d5d4-454c-422d-af40-aec674d66559\\scratchpad\\cards6.png\" \"http://localhost:3000/dev-preview/2?x=4\" 1536 780)",
+      "Shell(node \"C:\\Users\\HPCOMP~1\\AppData\\Local\\Temp\\commandcode\\H--New-folder--3--bobby-garage\\acb9d5d4-454c-422d-af40-aec674d66559\\scratchpad\\shot.js\" \"C:\\Users\\HPCOMP~1\\AppData\\Local\\Temp\\commandcode\\H--New-folder--3--bobby-garage\\acb9d5d4-454c-422d-af40-aec674d66559\\scratchpad\\cards7.png\" \"http://localhost:3000/dev-preview/2?x=5\" 1536 780)"
+    ],
+    "deny": [],
+    "defaultMode": "default"
+  }
+}

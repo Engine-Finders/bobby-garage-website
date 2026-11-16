@@ -11,7 +11,7 @@ export default function Section9() {
       tone="light"
       bgImages={[{ src: data.background.src, position: "top-right", opacity: 0.55 }]}
       accents={[{ position: "top-right", count: 2, length: "h-64 md:h-80" }]}
-      padding="py-16 md:py-20 lg:py-24"
+      padding="py-8 md:py-10 lg:py-12"
     >
       <SectionHeading
         eyebrow={data.eyebrow}

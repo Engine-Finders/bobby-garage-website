@@ -23,7 +23,7 @@ export default function Section3() {
       tone="light"
       bgImages={[data.bgImage]}
       backdrop={<SideStripes />}
-      padding="py-14 md:py-20 lg:py-24"
+      padding="py-7 md:py-10 lg:py-12"
     >
       <SectionHeading
         eyebrow={data.eyebrow}

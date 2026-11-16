@@ -13,7 +13,7 @@ export default function Section12() {
 
   return (
     <>
-      <SectionShell id={faqs.id} tone="light" padding="py-16 md:py-20 lg:py-24">
+      <SectionShell id={faqs.id} tone="light" padding="py-8 md:py-10 lg:py-12">
         <SectionHeading
           eyebrow={faqs.eyebrow}
           heading={faqs.heading}
@@ -30,7 +30,7 @@ export default function Section12() {
       </SectionShell>
 
       <section id={contact.id} className="relative isolate overflow-hidden bg-primary-dark text-white">
-        <div className="container-site relative grid grid-cols-1 gap-10 py-16 lg:grid-cols-12 lg:items-center lg:gap-8 lg:py-20">
+        <div className="container-site relative grid grid-cols-1 gap-10 py-8 lg:grid-cols-12 lg:items-center lg:gap-8 lg:py-10">
           <div className="relative z-10 lg:col-span-4">
             <Eyebrow tone="dark">{contact.eyebrow}</Eyebrow>
             <h2 className="mt-3 text-[30px] font-extrabold leading-[1.1] tracking-[-0.02em] md:text-[36px] lg:whitespace-pre-line lg:text-[40px]">

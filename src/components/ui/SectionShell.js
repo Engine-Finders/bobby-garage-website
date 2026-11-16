@@ -33,7 +33,7 @@ export default function SectionShell({
   backdrop = null,
   className = "",
   containerClassName = "",
-  padding = "py-16 md:py-20 lg:py-24",
+  padding = "py-8 md:py-10 lg:py-12",
   children,
 }) {
   return (
