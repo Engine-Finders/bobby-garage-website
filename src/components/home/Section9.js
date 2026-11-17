@@ -21,7 +21,7 @@ export default function Section9() {
         introClassName="max-w-[760px]"
       />
 
-      <ul className="mt-10 grid grid-cols-1 gap-5 sm:grid-cols-2 lg:mt-12 lg:grid-cols-3 lg:gap-6">
+      <ul className="mt-8 grid grid-cols-1 gap-3 sm:mt-10 sm:grid-cols-2 sm:gap-5 lg:mt-12 lg:grid-cols-3 lg:gap-6">
         {data.stages.map((stage) => (
           <li key={stage.number}>
             <ProcessCard stage={stage} />
@@ -29,7 +29,7 @@ export default function Section9() {
         ))}
       </ul>
 
-      <div className="mt-10 md:mt-12">
+      <div className="mt-8 md:mt-12">
         <ProcessBar icon={data.closingBar.icon} title={data.closingBar.title} text={data.closingBar.text} />
       </div>
     </SectionShell>

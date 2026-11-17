@@ -1,7 +1,7 @@
 import Image from "next/image";
 import Card from "../../ui/Card";
 
-export default function EngineCard({ row, image }) {
+export default function EngineCard({ row }) {
   return (
     <Card as="li" variant="glass" hover className="group relative overflow-hidden p-5 xl:p-4 2xl:p-5">
       <div
@@ -9,7 +9,7 @@ export default function EngineCard({ row, image }) {
         aria-hidden="true"
       >
         <Image
-          src={image.src}
+          src={row.image.src}
           alt=""
           fill
           sizes="(max-width: 640px) 45vw, (max-width: 1280px) 25vw, 12vw"
@@ -18,8 +18,8 @@ export default function EngineCard({ row, image }) {
       </div>
 
       <div className="relative">
-        <div className="relative h-10 w-10 md:h-11 md:w-11">
-          <Image src={row.logo.src} alt={row.logo.alt} fill sizes="48px" className="object-contain" />
+        <div className="relative h-12 w-12 md:h-14 md:w-14">
+          <Image src={row.logo.src} alt={row.logo.alt} fill sizes="56px" className="object-contain" />
         </div>
 
         <h3 className="mt-5 text-[22px] font-extrabold leading-tight tracking-[-0.01em] text-ink xl:text-[20px] 2xl:text-[22px]">

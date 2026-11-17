@@ -1,55 +1,84 @@
+import Image from "next/image";
 import data from "../../data/home-data/section10.json";
 import SectionShell from "../ui/SectionShell";
 import SectionHeading from "../ui/SectionHeading";
 import HighlightText from "../ui/HighlightText";
 import Icon from "../ui/Icon";
 import PartsGallery from "./section10/PartsGallery";
+import PartsCheckCard from "./section10/PartsCheckCard";
 import OptionCard from "./section10/OptionCard";
 
 export default function Section10() {
   const { parts, repairOrRebuild } = data;
 
   return (
-    <SectionShell id={data.id} tone="light" padding="py-8 md:py-10 lg:py-12">
-      <div className="grid grid-cols-1 items-center gap-10 lg:grid-cols-12 lg:gap-12">
-        <div className="lg:col-span-5">
-          <SectionHeading
-            eyebrow={parts.eyebrow}
-            heading={parts.heading}
-            intro={parts.intro}
-            headingClassName="lg:whitespace-pre-line"
-            introClassName="max-w-[520px]"
-          />
+    <SectionShell id={data.id} tone="light" padding="py-8 md:py-10 lg:py-12" className="overflow-hidden">
+      <div className="grid grid-cols-1 items-center gap-8 lg:grid-cols-12 lg:gap-12">
+        <div className="relative lg:col-span-5">
+          {/* Mobile diagonal parts image (top-right), matching reference */}
+          <div
+            className="pointer-events-none absolute -right-6 -top-4 z-0 h-40 w-[58%] overflow-hidden opacity-90 sm:h-48 lg:hidden"
+            style={{ clipPath: "polygon(28% 0, 100% 0, 100% 100%, 0 100%)" }}
+            aria-hidden="true"
+          >
+            <Image
+              src={parts.images.main.src}
+              alt=""
+              fill
+              sizes="60vw"
+              className="object-cover"
+              style={{ objectPosition: parts.images.main.position }}
+            />
+            <span className="absolute inset-y-0 left-[14%] w-[5px] -skew-x-[18deg] bg-brand" />
+          </div>
 
-          <ul className="mt-7 divide-y divide-warm-border border-y border-warm-border">
-            {parts.checklist.map((item) => (
-              <li key={item} className="flex items-start gap-3.5 py-3.5 text-[15px] leading-snug text-ink md:text-base">
-                <Icon name="checkCircle" className="mt-0.5 h-5 w-5 shrink-0 text-brand" strokeWidth={1.8} />
-                <span>{item}</span>
-              </li>
-            ))}
-          </ul>
+          <div className="relative z-10">
+            <SectionHeading
+              eyebrow={parts.eyebrow}
+              heading={parts.heading}
+              intro={parts.intro}
+              headingClassName="max-w-[18ch] [text-shadow:0_1px_2px_rgba(255,255,255,0.95),0_0_18px_rgba(255,255,255,0.85),0_0_32px_rgba(255,255,255,0.55)] lg:max-w-none lg:whitespace-pre-line lg:[text-shadow:none]"
+              introClassName="max-w-[520px]"
+            />
 
-          <div className="mt-5 space-y-3 text-[14px] leading-relaxed text-ink/70 md:text-[15px]">
-            {parts.details.map((p) => (
-              <p key={p}>{p}</p>
-            ))}
+            {/* Mobile checklist cards */}
+            <ul className="mt-6 grid grid-cols-1 gap-2.5 lg:hidden">
+              {parts.checklist.map((item) => (
+                <PartsCheckCard key={item.text} item={item} />
+              ))}
+            </ul>
+
+            {/* Desktop / tablet checklist list */}
+            <ul className="mt-7 hidden divide-y divide-warm-border border-y border-warm-border lg:block">
+              {parts.checklist.map((item) => (
+                <li key={item.text} className="flex items-start gap-3.5 py-3.5 text-[15px] leading-snug text-ink md:text-base">
+                  <Icon name="checkCircle" className="mt-0.5 h-5 w-5 shrink-0 text-brand" strokeWidth={1.8} />
+                  <span>{item.text}</span>
+                </li>
+              ))}
+            </ul>
+
+            <div className="mt-4 space-y-2.5 text-[13.5px] leading-relaxed text-ink/70 md:mt-5 md:space-y-3 md:text-[15px]">
+              {parts.details.map((p) => (
+                <p key={p}>{p}</p>
+              ))}
+            </div>
           </div>
         </div>
 
-        <div className="lg:col-span-7">
+        <div className="hidden lg:col-span-7 lg:block">
           <PartsGallery images={parts.images} />
         </div>
       </div>
 
-      <div className="mt-12 rounded-[28px] border border-black/[0.06] bg-white/85 p-6 shadow-[0_18px_44px_rgba(13,15,18,0.10)] backdrop-blur-sm md:mt-16 md:p-8 lg:p-10">
-        <div className="grid grid-cols-1 gap-8 lg:grid-cols-12 lg:items-center lg:gap-10">
+      <div className="mt-10 rounded-[28px] border border-black/[0.06] bg-white/85 p-5 shadow-[0_18px_44px_rgba(13,15,18,0.10)] backdrop-blur-sm md:mt-16 md:p-8 lg:p-10">
+        <div className="grid grid-cols-1 gap-6 lg:grid-cols-12 lg:items-center lg:gap-10">
           <div className="lg:col-span-6">
-            <h3 className="text-[26px] font-extrabold leading-[1.15] tracking-[-0.02em] text-ink md:text-[34px] lg:text-[38px] lg:whitespace-pre-line">
+            <h3 className="text-[24px] font-extrabold leading-[1.15] tracking-[-0.02em] text-ink md:text-[34px] lg:text-[38px] lg:whitespace-pre-line">
               <HighlightText content={repairOrRebuild.heading} />
             </h3>
-            <p className="mt-4 text-[15px] leading-relaxed text-ink/75 md:text-base">{repairOrRebuild.intro}</p>
-            <div className="mt-3 space-y-3 text-[14px] leading-relaxed text-ink/65 md:text-[15px]">
+            <p className="mt-3 text-[14px] leading-relaxed text-ink/75 md:mt-4 md:text-base">{repairOrRebuild.intro}</p>
+            <div className="mt-2.5 space-y-2.5 text-[13.5px] leading-relaxed text-ink/65 md:mt-3 md:space-y-3 md:text-[15px]">
               {repairOrRebuild.details.map((p) => (
                 <p key={p}>{p}</p>
               ))}
@@ -58,7 +87,7 @@ export default function Section10() {
 
           <div className="hidden h-full w-px bg-warm-border lg:col-span-1 lg:mx-auto lg:block" aria-hidden="true" />
 
-          <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 lg:col-span-5">
+          <div className="grid grid-cols-2 gap-2.5 sm:gap-4 lg:col-span-5">
             {repairOrRebuild.options.map((option) => (
               <OptionCard key={option.title} option={option} />
             ))}

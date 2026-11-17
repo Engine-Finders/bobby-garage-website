@@ -19,22 +19,15 @@ export default function BrandCard({ brand }) {
           className="absolute inset-0 -translate-x-1 bg-linear-to-b from-brand to-[#f58a52] sm:-translate-x-1.5"
           style={{ clipPath: edgeClip }}
         />
-        <div
-          className="absolute inset-0 overflow-hidden bg-[linear-gradient(135deg,#a7b0bb_0%,#5b6673_55%,#2b323a_100%)]"
-          style={{ clipPath: edgeClip }}
-        >
+        <div className="absolute inset-0 overflow-hidden bg-[#d8dde3]" style={{ clipPath: edgeClip }}>
           <Image
             src={brand.image.src}
             alt={brand.image.alt}
             fill
             sizes="(max-width: 640px) 140px, 200px"
-            className="origin-[20%_58%] scale-[1.55] object-cover object-[20%_58%] mix-blend-multiply contrast-110 transition-transform duration-500 group-hover:scale-[1.62]"
+            className="object-cover object-[30%_55%] transition-transform duration-500 group-hover:scale-[1.05]"
           />
-          <div className="absolute inset-0 bg-linear-to-t from-primary-dark/25 via-transparent to-transparent" aria-hidden="true" />
-          <div
-            className="absolute inset-0 bg-[radial-gradient(ellipse_at_0%_100%,rgba(232,93,38,0.28),transparent_60%)]"
-            aria-hidden="true"
-          />
+          <div className="absolute inset-0 bg-linear-to-t from-primary-dark/20 via-transparent to-transparent" aria-hidden="true" />
         </div>
       </div>
 
@@ -44,11 +37,11 @@ export default function BrandCard({ brand }) {
           <Image
             src={brand.logo.src}
             alt={brand.logo.alt}
-            width={44}
-            height={44}
-            className="h-8 w-8 shrink-0 object-contain sm:h-11 sm:w-11"
+            width={56}
+            height={56}
+            className="h-10 w-10 shrink-0 object-contain sm:h-12 sm:w-12 md:h-14 md:w-14"
           />
-          <span className="h-7 w-px shrink-0 bg-ink/15 sm:h-10" aria-hidden="true" />
+          <span className="h-8 w-px shrink-0 bg-ink/15 sm:h-11" aria-hidden="true" />
           <h3 className="text-[13.5px] font-bold leading-tight tracking-[-0.01em] text-ink sm:text-[16.5px] md:text-[17px]">
             {brand.title}
           </h3>

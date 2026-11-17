@@ -17,7 +17,7 @@
       { "icon": "clipboardCheck", "text": "Confirm Vehicle Condition, Location and Access" },
       { "icon": "wrench", "text": "Removal/Refitting Based on Actual Installation and Quote" }
     ],
-    "image": { "src": "/test-images/hero-section.webp", "alt": "" }
+    "image": { "src": "/home-2.webp", "alt": "" }
   },
   "warranty": {
     "eyebrow": "Warranty & Service",

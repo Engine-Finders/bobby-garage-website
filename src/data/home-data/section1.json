@@ -32,7 +32,7 @@
     }
   },
   "image": {
-    "src": "/test-images/hero-section.webp",
+    "src": "/home-hero.webp",
     "alt": "Boby working on an engine in his workshop"
   }
 }

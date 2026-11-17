@@ -17,6 +17,45 @@ function SymptomIcon({ name, tone, className = "" }) {
   return <Icon name={name} className={`h-9 w-9 shrink-0 md:h-10 md:w-10 ${toneClass[tone] || "text-ink"} ${className}`} strokeWidth={1.6} />;
 }
 
+function NoticeList({ rows, compact = false }) {
+  return (
+    <Card variant="glass" className={`overflow-hidden ${compact ? "mt-3" : "mt-4"}`}>
+      {rows.map((row, i) => (
+        <div
+          key={row.notice}
+          className={`flex items-center gap-3.5 px-4 ${compact ? "min-h-[64px] py-3" : "min-h-[76px] gap-4 px-5 xl:gap-5 xl:px-6"} ${
+            i < rows.length - 1 ? "border-b border-ink/10" : ""
+          }`}
+        >
+          <SymptomIcon name={row.icon} tone={row.iconTone} className={compact ? "h-8! w-8!" : ""} />
+          <p className={`flex-1 font-medium leading-snug text-ink ${compact ? "text-[14.5px]" : "text-[16px] xl:text-[17px]"}`}>
+            {row.notice}
+          </p>
+          <Icon name="chevronRight" className={`shrink-0 text-brand ${compact ? "h-4 w-4" : "h-5 w-5"}`} strokeWidth={2.4} />
+        </div>
+      ))}
+    </Card>
+  );
+}
+
+function EstablishList({ rows, compact = false, checkTone = "brand" }) {
+  return (
+    <Card variant="glass" className={`overflow-hidden ${compact ? "mt-3" : "mt-4"}`}>
+      {rows.map((row, i) => (
+        <div
+          key={row.establish}
+          className={`flex items-center gap-3.5 px-4 ${compact ? "min-h-[64px] py-3" : "min-h-[76px] gap-4 px-5 xl:gap-5 xl:px-7"} ${
+            i < rows.length - 1 ? "border-b border-ink/10" : ""
+          }`}
+        >
+          <CheckBadge tone={checkTone} className={compact ? "h-7! w-7!" : ""} />
+          <p className={`leading-snug text-ink/90 ${compact ? "text-[14px]" : "text-[16px] xl:text-[17px]"}`}>{row.establish}</p>
+        </div>
+      ))}
+    </Card>
+  );
+}
+
 export default function Section8() {
   const { rows, columns, warning, warningLight, backgrounds } = data;
 
@@ -39,7 +78,7 @@ export default function Section8() {
         <WarningLight
           icon={warningLight.icon}
           label={warningLight.label}
-          className="top-0 right-[10%] hidden lg:flex xl:right-[16%]"
+          className="top-2 right-[4%] hidden sm:flex sm:h-[72px] sm:w-[92px] lg:top-0 lg:right-[10%] lg:flex lg:h-[104px] lg:w-[132px] xl:right-[16%]"
         />
       )}
 
@@ -52,63 +91,31 @@ export default function Section8() {
         className="max-w-[760px]"
       />
 
-      {/* Desktop: two aligned columns */}
-      <div className="mt-10 hidden lg:grid lg:grid-cols-[2fr_3fr] lg:gap-x-8 xl:gap-x-10">
+      {/* Mobile / tablet: stacked lists like the reference */}
+      <div className="mt-9 space-y-6 md:mt-10 lg:hidden">
         <div>
           <HeadingStrip icon={columns.notice.icon} title={columns.notice.title} />
-          <Card variant="glass" className="mt-4 grid auto-rows-[76px] overflow-hidden">
-            {rows.map((row, i) => (
-              <div
-                key={row.notice}
-                className={`flex items-center gap-4 px-5 xl:gap-5 xl:px-6 ${i < rows.length - 1 ? "border-b border-ink/10" : ""}`}
-              >
-                <SymptomIcon name={row.icon} tone={row.iconTone} />
-                <p className="flex-1 text-[16px] font-medium leading-snug text-ink xl:text-[17px]">{row.notice}</p>
-                <Icon name="chevronRight" className="h-5 w-5 shrink-0 text-brand" strokeWidth={2.4} />
-              </div>
-            ))}
-          </Card>
+          <NoticeList rows={rows} compact />
         </div>
 
         <div>
           <HeadingStrip icon={columns.establish.icon} title={columns.establish.title} />
-          <Card variant="glass" className="mt-4 grid auto-rows-[76px] overflow-hidden">
-            {rows.map((row, i) => (
-              <div
-                key={row.establish}
-                className={`flex items-center gap-4 px-5 xl:gap-5 xl:px-7 ${i < rows.length - 1 ? "border-b border-ink/10" : ""}`}
-              >
-                <CheckBadge />
-                <p className="text-[16px] leading-snug text-ink/90 xl:text-[17px]">{row.establish}</p>
-              </div>
-            ))}
-          </Card>
+          <EstablishList rows={rows} compact checkTone="dark" />
         </div>
       </div>
 
-      {/* Mobile / tablet: one paired card per symptom */}
-      <ul className="mt-9 grid grid-cols-1 gap-4 md:mt-10 md:grid-cols-2 md:gap-5 lg:hidden">
-        {rows.map((row) => (
-          <li key={row.notice}>
-            <Card variant="glass" className="h-full overflow-hidden">
-              <div className="flex items-start gap-4 p-4 md:p-5">
-                <SymptomIcon name={row.icon} tone={row.iconTone} className="mt-0.5" />
-                <div className="min-w-0 flex-1">
-                  <p className="text-[11px] font-bold uppercase tracking-[0.08em] text-brand">{columns.notice.title}</p>
-                  <p className="mt-1 text-[17px] font-semibold leading-snug text-ink">{row.notice}</p>
-                </div>
-              </div>
-              <div className="border-t border-ink/10 bg-white/60 p-4 md:p-5">
-                <p className="text-[11px] font-bold uppercase tracking-[0.08em] text-text-grey">{columns.establish.title}</p>
-                <div className="mt-2 flex items-start gap-3">
-                  <CheckBadge className="mt-px h-7! w-7! md:h-7! md:w-7!" />
-                  <p className="text-[15px] leading-relaxed text-ink/85">{row.establish}</p>
-                </div>
-              </div>
-            </Card>
-          </li>
-        ))}
-      </ul>
+      {/* Desktop: two aligned columns */}
+      <div className="mt-10 hidden lg:grid lg:grid-cols-[2fr_3fr] lg:gap-x-8 xl:gap-x-10">
+        <div>
+          <HeadingStrip icon={columns.notice.icon} title={columns.notice.title} />
+          <NoticeList rows={rows} />
+        </div>
+
+        <div>
+          <HeadingStrip icon={columns.establish.icon} title={columns.establish.title} />
+          <EstablishList rows={rows} />
+        </div>
+      </div>
 
       <NoteBar icon={warning.icon} text={warning.text} className="mt-8 md:mt-10" />
     </SectionShell>

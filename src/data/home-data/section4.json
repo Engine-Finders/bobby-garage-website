@@ -13,7 +13,7 @@
       }
     ],
     "intro": "Choosing an engine workshop is a significant decision. Customer feedback can help you understand the assessment, communication and repair experience behind the service.",
-    "backgroundImage": "/test-images/engine.webp",
+    "backgroundImage": "/engine-images/engine-4.webp",
     "verifiedLabel": "Verified Customer",
     "sourceLabel": "View on Original Source",
     "skeletonWidths": [
@@ -74,18 +74,18 @@
     },
     "images": {
       "portrait": {
-        "src": "/test-images/hero-section.webp",
+        "src": "/s-5-6-7/owner.webp",
         "alt": "Portrait of Boby, lead mechanic and workshop owner",
         "caption": "Boby",
         "subCaption": "Lead Mechanic & Workshop Owner"
       },
       "workshop": {
-        "src": "/test-images/car-image.webp",
+        "src": "/s-5-6-7/workshop.webp",
         "alt": "Wide view of the engine rebuild workshop",
         "caption": "Our Workshop"
       },
       "inspection": {
-        "src": "/test-images/engine.webp",
+        "src": "/s-5-6-7/isnpection.webp",
         "alt": "Engine component inspection in the workshop",
         "caption": "Component Inspection"
       }

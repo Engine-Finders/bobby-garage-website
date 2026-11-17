@@ -4,7 +4,8 @@ import SectionShell from "../ui/SectionShell";
 import SectionHeading from "../ui/SectionHeading";
 import Button from "../ui/Button";
 import ReviewCard from "./section4/ReviewCard";
-import CaptionChip from "./section4/CaptionChip";
+import ReviewsSlider from "./section4/ReviewsSlider";
+// import CaptionChip from "./section4/CaptionChip";
 import QuoteGlyph from "./section4/QuoteGlyph";
 
 export default function Section4() {
@@ -31,7 +32,15 @@ export default function Section4() {
           introClassName="max-w-[620px]"
         />
 
-        <ul className="mt-10 grid grid-cols-1 gap-5 md:mt-12 md:grid-cols-3 md:gap-5 lg:gap-6">
+        <ReviewsSlider
+          items={reviews.items}
+          enabled={reviews.enabled}
+          skeletonWidths={reviews.skeletonWidths}
+          verifiedLabel={reviews.verifiedLabel}
+          sourceLabel={reviews.sourceLabel}
+        />
+
+        <ul className="mt-10 hidden grid-cols-1 gap-5 md:mt-12 md:grid md:grid-cols-3 md:gap-5 lg:gap-6">
           {reviews.items.map((review, i) => (
             <li key={i}>
               <ReviewCard
@@ -52,8 +61,8 @@ export default function Section4() {
         accents={[{ position: "bottom-left", count: 2, length: "h-40 md:h-64", className: "left-[-2%] md:left-[1%]" }]}
         padding="py-7 md:py-10 lg:py-12"
       >
-        <div className="grid grid-cols-1 items-center gap-10 lg:grid-cols-12 lg:gap-12">
-          <div className="lg:col-span-5">
+        <div className="grid grid-cols-1 items-center gap-10 lg:grid-cols-12 lg:gap-10 xl:gap-12">
+          <div className="lg:col-span-4">
             <SectionHeading
               eyebrow={workshop.eyebrow}
               heading={workshop.heading}
@@ -72,31 +81,31 @@ export default function Section4() {
             </div>
           </div>
 
-          <div className="mx-auto grid w-full max-w-2xl grid-cols-2 gap-3 sm:gap-4 lg:col-span-7 lg:aspect-[1.12/1] lg:max-w-none lg:grid-rows-2">
-            <figure className="relative col-span-2 aspect-[4/5] overflow-hidden rounded-2xl bg-soft-grey shadow-[0_12px_28px_rgba(13,15,18,0.10)] sm:aspect-[4/3] lg:col-span-1 lg:row-span-2 lg:aspect-auto">
+          <div className="mx-auto grid w-full max-w-2xl grid-cols-2 gap-3 sm:gap-4 lg:col-span-8 lg:aspect-[1.35/1] lg:max-w-none lg:grid-cols-[0.9fr_1.25fr] lg:grid-rows-2 lg:gap-4">
+            <figure className="relative col-span-2 aspect-[3/4] overflow-hidden rounded-2xl bg-soft-grey shadow-[0_12px_28px_rgba(13,15,18,0.10)] sm:aspect-[4/3] lg:col-span-1 lg:row-span-2 lg:aspect-auto">
               <Image
                 src={portrait.src}
                 alt={portrait.alt}
                 fill
                 sizes="(max-width: 1024px) 100vw, 28vw"
-                className="object-cover object-[35%_center]"
+                className="object-contain object-bottom sm:object-cover sm:object-[35%_center] lg:object-cover lg:object-[35%_center]"
               />
-              <CaptionChip title={portrait.caption} subtitle={portrait.subCaption} />
+              {/* <CaptionChip title={portrait.caption} subtitle={portrait.subCaption} /> */}
             </figure>
 
             {[shop, inspection].map((img) => (
               <figure
                 key={img.src}
-                className="relative aspect-square overflow-hidden rounded-2xl bg-soft-grey shadow-[0_12px_28px_rgba(13,15,18,0.10)] lg:aspect-auto"
+                className="relative aspect-[4/3] overflow-hidden rounded-2xl bg-soft-grey shadow-[0_12px_28px_rgba(13,15,18,0.10)] sm:aspect-square lg:aspect-auto"
               >
                 <Image
                   src={img.src}
                   alt={img.alt}
                   fill
-                  sizes="(max-width: 1024px) 50vw, 24vw"
-                  className="object-cover"
+                  sizes="(max-width: 1024px) 50vw, 36vw"
+                  className="object-contain object-bottom sm:object-cover sm:object-center lg:object-cover lg:object-center"
                 />
-                <CaptionChip title={img.caption} />
+                {/* <CaptionChip title={img.caption} /> */}
               </figure>
             ))}
           </div>

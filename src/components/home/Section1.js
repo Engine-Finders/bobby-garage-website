@@ -16,12 +16,12 @@ export default function Section1() {
           sizes="100vw"
           loading="eager"
           fetchPriority="high"
-          className="object-cover object-center"
+          className="object-cover object-[72%_42%]"
         />
         <div className="absolute inset-0" aria-hidden="true">
-          <div className="absolute inset-0 bg-linear-to-r from-primary-dark from-10% via-primary-dark/80 via-50% to-primary-dark/50" />
-          <div className="absolute inset-0 bg-linear-to-t from-primary-dark via-transparent via-40% to-primary-dark/50" />
-          <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_90%_15%,rgba(232,93,38,0.22),transparent_45%)]" />
+          <div className="absolute inset-0 bg-linear-to-r from-primary-dark from-8% via-primary-dark/75 via-46% to-primary-dark/25" />
+          <div className="absolute inset-0 bg-linear-to-t from-primary-dark/90 via-transparent via-45% to-primary-dark/35" />
+          <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_90%_15%,rgba(232,93,38,0.18),transparent_45%)]" />
           <div
             className="pointer-events-none absolute -left-[4%] bottom-[10%] h-[3px] w-[42%] rotate-[12deg] bg-linear-to-r from-transparent via-brand to-transparent opacity-90"
             aria-hidden="true"
@@ -33,7 +33,7 @@ export default function Section1() {
         </div>
       </div>
 
-      <div className="container-site relative z-10 grid grid-cols-1 gap-6 pb-6 pt-5 sm:gap-7 sm:pt-7 md:gap-8 lg:min-h-[560px] lg:grid-cols-12 lg:items-center lg:gap-8 lg:py-10 xl:min-h-[600px]">
+      <div className="container-site relative z-10 grid grid-cols-1 gap-6 pb-6 pt-5 sm:gap-7 sm:pt-7 md:gap-8 lg:min-h-[500px] lg:grid-cols-12 lg:items-center lg:gap-8 lg:py-10 xl:min-h-[540px]">
         <div className="lg:col-span-7">
           {/* Mobile: image only behind heading + description */}
           <div className="relative -mx-4 overflow-hidden px-4 sm:-mx-6 sm:px-6 lg:mx-0 lg:overflow-visible lg:px-0">
@@ -45,10 +45,10 @@ export default function Section1() {
                 sizes="100vw"
                 loading="eager"
                 fetchPriority="high"
-                className="object-cover object-[78%_center]"
+                className="object-cover object-[78%_40%]"
               />
-              <div className="absolute inset-0 bg-linear-to-r from-primary-dark from-[6%] via-primary-dark/90 via-[52%] to-primary-dark/30" />
-              <div className="absolute inset-0 bg-linear-to-b from-primary-dark/70 via-transparent to-primary-dark/85" />
+              <div className="absolute inset-0 bg-linear-to-r from-primary-dark from-[6%] via-primary-dark/88 via-[50%] to-primary-dark/25" />
+              <div className="absolute inset-0 bg-linear-to-b from-primary-dark/60 via-transparent to-primary-dark/80" />
             </div>
 
             <div className="relative z-10 py-5 sm:py-6 lg:py-0">

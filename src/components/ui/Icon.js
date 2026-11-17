@@ -1,3 +1,5 @@
+import { getBrandIconSrc } from "@/lib/brandIcons";
+
 const paths = {
   arrowRight: (
     <>
@@ -94,6 +96,10 @@ const paths = {
     <path d="M13 2 3 14h9l-1 8 10-12h-9l1-8Z" />
   ),
   chevronRight: <path d="m9 6 6 6-6 6" />,
+  chevronLeft: <path d="m15 18-6-6 6-6" />,
+  star: (
+    <path d="M12 2.5 14.9 8.4l6.5.9-4.7 4.6 1.1 6.5L12 17.3 6.2 20.4l1.1-6.5L2.6 9.3l6.5-.9L12 2.5Z" />
+  ),
   info: (
     <>
       <circle cx="12" cy="12" r="10" />
@@ -313,6 +319,27 @@ const paths = {
 };
 
 export default function Icon({ name, className = "h-5 w-5", strokeWidth = 1.8 }) {
+  const maskSrc = getBrandIconSrc(name);
+
+  if (maskSrc) {
+    return (
+      <span
+        className={`inline-block shrink-0 bg-current ${className}`}
+        style={{
+          WebkitMaskImage: `url("${maskSrc}")`,
+          maskImage: `url("${maskSrc}")`,
+          WebkitMaskSize: "contain",
+          maskSize: "contain",
+          WebkitMaskRepeat: "no-repeat",
+          maskRepeat: "no-repeat",
+          WebkitMaskPosition: "center",
+          maskPosition: "center",
+        }}
+        aria-hidden="true"
+      />
+    );
+  }
+
   return (
     <svg
       viewBox="0 0 24 24"

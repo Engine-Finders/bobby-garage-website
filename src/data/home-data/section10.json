@@ -8,9 +8,18 @@
     ],
     "intro": "A proper rebuild specification identifies the actual components and work. We use OEM or appropriate OE-quality parts matched to the engine and agreed scope.",
     "checklist": [
-      "Bearings, rings, timing and sealing work as appropriate.",
-      "Ancillaries (turbo, injector, fuel pump) are assessed separately.",
-      "Any additional damage and extra work is explained in advance."
+      {
+        "text": "Bearings, rings, timing and sealing work as appropriate.",
+        "icon": "piston"
+      },
+      {
+        "text": "Ancillaries (turbo, injector, fuel pump) are assessed separately.",
+        "icon": "turbo"
+      },
+      {
+        "text": "Any additional damage and extra work is explained in advance.",
+        "icon": "wrench"
+      }
     ],
     "details": [
       "The condition of the block, crankshaft, head and reusable internals informs the decision; rebuilding does not mean every surrounding component is automatically new.",
@@ -23,13 +32,13 @@
     ],
     "images": {
       "main": {
-        "src": "/test-images/engine.webp",
+        "src": "/Repair-images/Engine Rebuilds.webp",
         "alt": "Engine rebuild parts laid out on the bench: pistons, connecting rods, bearing shells and timing chain",
         "position": "30% 50%"
       },
       "detail": {
-        "src": "/test-images/engine.webp",
-        "alt": "Dial gauge measuring a machined cylinder block",
+        "src": "/Repair-images/A. BMW S54 Cylinder Head Inspection.webp",
+        "alt": "BMW S54 cylinder head inspection",
         "position": "85% 40%"
       }
     }
@@ -51,7 +60,7 @@
     ],
     "options": [
       {
-        "icon": "wrench",
+        "icon": "repair",
         "title": "Repair",
         "text": "A focused fix for a specific fault when the internals are sound."
       },

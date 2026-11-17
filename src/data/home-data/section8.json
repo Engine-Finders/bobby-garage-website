@@ -9,8 +9,8 @@
   ],
   "intro": "A symptom tells us where to start, not what must be replaced. Tell us when it appeared and whether it followed a warning, overheating, recent work or an earlier breakdown.",
   "backgrounds": [
-    { "src": "/test-images/engine.webp", "position": "top-right", "opacity": 0.95 },
-    { "src": "/test-images/engine.webp", "position": "bottom-right", "opacity": 0.14 }
+    { "src": "/engine-images/engine-3.webp", "position": "top-right", "opacity": 0.95 },
+    { "src": "/engine-images/bmw-engine-3.webp", "position": "bottom-right", "opacity": 0.14 }
   ],
   "warningLight": {
     "icon": "engine",

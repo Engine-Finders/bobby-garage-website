@@ -50,7 +50,7 @@ export default function Section7() {
 
       <ul className="mt-6 grid grid-cols-1 gap-4 sm:grid-cols-2 sm:gap-5 xl:grid-cols-5 xl:gap-4 2xl:gap-5">
         {data.rows.map((row) => (
-          <EngineCard key={row.enquiry} row={row} image={data.cardImage} />
+          <EngineCard key={row.enquiry} row={row} />
         ))}
       </ul>
 
