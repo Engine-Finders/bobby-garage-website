@@ -74,13 +74,13 @@ export default function Section1() {
           </div>
 
           <ul
-            className="mt-6 grid max-w-[600px] grid-cols-3 gap-2 motion-safe:animate-fade-up sm:mt-7 sm:gap-3"
+            className="mt-6 grid max-w-[600px] grid-cols-3 divide-x divide-white/25 motion-safe:animate-fade-up sm:mt-7 sm:gap-3 sm:divide-x-0"
             style={{ animationDelay: "240ms" }}
           >
             {data.stats.map((stat) => (
               <li
                 key={stat.value}
-                className="flex flex-col items-center gap-1.5 rounded-xl border border-white/12 bg-[#0d0f12]/45 px-1.5 py-2.5 text-center shadow-[inset_0_1px_0_rgba(255,255,255,0.08)] backdrop-blur-md transition-transform hover:-translate-y-0.5 sm:flex-row sm:items-center sm:gap-2.5 sm:px-3 sm:py-3 sm:text-left xl:gap-3 xl:px-4"
+                className="flex flex-col items-center gap-1.5 px-2 py-1 text-center sm:flex-row sm:items-center sm:gap-2.5 sm:rounded-xl sm:border sm:border-white/12 sm:bg-[#0d0f12]/45 sm:px-3 sm:py-3 sm:text-left sm:shadow-[inset_0_1px_0_rgba(255,255,255,0.08)] sm:backdrop-blur-md sm:transition-transform sm:hover:-translate-y-0.5 xl:gap-3 xl:px-4"
               >
                 <Icon
                   name={stat.icon}
