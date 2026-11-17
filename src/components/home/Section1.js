@@ -80,7 +80,7 @@ export default function Section1() {
             {data.stats.map((stat) => (
               <li
                 key={stat.value}
-                className="flex flex-col items-center gap-1.5 rounded-xl border border-white/28 bg-white/[0.17] px-1.5 py-2.5 text-center shadow-[inset_0_1px_0_rgba(255,255,255,0.22)] backdrop-blur-[22px] transition-transform hover:-translate-y-0.5 sm:flex-row sm:items-center sm:gap-2.5 sm:px-3 sm:py-3 sm:text-left xl:gap-3 xl:px-4"
+                className="flex flex-col items-center gap-1.5 rounded-xl border border-white/12 bg-[#0d0f12]/45 px-1.5 py-2.5 text-center shadow-[inset_0_1px_0_rgba(255,255,255,0.08)] backdrop-blur-md transition-transform hover:-translate-y-0.5 sm:flex-row sm:items-center sm:gap-2.5 sm:px-3 sm:py-3 sm:text-left xl:gap-3 xl:px-4"
               >
                 <Icon
                   name={stat.icon}
@@ -103,7 +103,7 @@ export default function Section1() {
           </ul>
 
           <p
-            className="mt-5 flex items-start gap-2.5 text-sm text-white/85 motion-safe:animate-fade-up sm:mt-6 sm:text-[15px]"
+            className="mt-5 hidden items-start gap-2.5 text-sm text-white/85 motion-safe:animate-fade-up sm:mt-6 sm:flex sm:text-[15px]"
             style={{ animationDelay: "320ms" }}
           >
             <Icon name="mapPin" className="mt-0.5 h-[18px] w-[18px] shrink-0 text-brand" strokeWidth={2} />
@@ -115,7 +115,13 @@ export default function Section1() {
           className="relative z-10 motion-safe:animate-fade-up lg:col-span-5 lg:flex lg:justify-end"
           style={{ animationDelay: "200ms" }}
         >
-          <HeroEnquiryForm form={data.form} />
+          <div className="w-full lg:w-auto">
+            <HeroEnquiryForm form={data.form} />
+            <p className="mt-4 flex items-start gap-2.5 text-sm text-white/85 sm:hidden">
+              <Icon name="mapPin" className="mt-0.5 h-[18px] w-[18px] shrink-0 text-brand" strokeWidth={2} />
+              {data.location}
+            </p>
+          </div>
         </div>
       </div>
     </section>
