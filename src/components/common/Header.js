@@ -53,24 +53,28 @@ export default function Header() {
         <nav aria-label="Main" className="hidden h-full xl:block">
           <ul className="flex h-full items-center gap-6 2xl:gap-8">
             {data.nav.map((item) => {
-              const active = item.href === pathname;
-              const hasChildren = Boolean(item.children?.length);
+              const isDropdown = Array.isArray(item.children);
+              const active =
+                item.href === pathname ||
+                (item.href !== "/" && pathname.startsWith(item.href));
               const isOpen = openMenu === item.label;
 
               return (
                 <li
                   key={item.label}
                   className="relative flex h-full items-center"
-                  onMouseEnter={() => hasChildren && setOpenMenu(item.label)}
-                  onMouseLeave={() => hasChildren && setOpenMenu(null)}
+                  onMouseEnter={() => isDropdown && setOpenMenu(item.label)}
+                  onMouseLeave={() => isDropdown && setOpenMenu(null)}
                 >
-                  {hasChildren ? (
+                  {isDropdown ? (
                     <button
                       type="button"
                       aria-expanded={isOpen}
                       aria-haspopup="true"
                       onClick={() => setOpenMenu(isOpen ? null : item.label)}
-                      className="flex h-full items-center gap-1 text-[15px] font-medium text-white/90 transition-colors hover:text-white focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-brand"
+                      className={`flex h-full items-center gap-1 text-[15px] font-medium transition-colors hover:text-white focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-brand ${
+                        active ? "text-white" : "text-white/90"
+                      }`}
                     >
                       {item.label}
                       <Icon
@@ -78,6 +82,9 @@ export default function Header() {
                         className={`h-3.5 w-3.5 transition-transform duration-200 ${isOpen ? "rotate-180" : ""}`}
                         strokeWidth={2.2}
                       />
+                      {active && (
+                        <span className="absolute inset-x-0 bottom-4 h-[2px] rounded-full bg-brand" />
+                      )}
                     </button>
                   ) : (
                     <Link
@@ -94,24 +101,28 @@ export default function Header() {
                     </Link>
                   )}
 
-                  {hasChildren && (
+                  {isDropdown && (
                     <div
                       className={`absolute left-1/2 top-full w-64 -translate-x-1/2 pt-1 transition-all duration-200 ${
                         isOpen ? "visible translate-y-0 opacity-100" : "invisible -translate-y-1 opacity-0"
                       }`}
                     >
                       <ul className="overflow-hidden rounded-xl border border-white/10 bg-charcoal py-2 shadow-[0_18px_40px_rgba(0,0,0,0.45)]">
-                        {item.children.map((child) => (
-                          <li key={child.label}>
-                            <Link
-                              href={child.href}
-                              onClick={closeAll}
-                              className="block px-4 py-2.5 text-sm text-white/80 transition-colors hover:bg-white/5 hover:text-brand focus-visible:bg-white/5 focus-visible:text-brand focus-visible:outline-none"
-                            >
-                              {child.label}
-                            </Link>
-                          </li>
-                        ))}
+                        {item.children.length === 0 ? (
+                          <li className="px-4 py-2.5 text-sm text-white/45">Coming soon</li>
+                        ) : (
+                          item.children.map((child) => (
+                            <li key={child.label}>
+                              <Link
+                                href={child.href}
+                                onClick={closeAll}
+                                className="block px-4 py-2.5 text-sm text-white/80 transition-colors hover:bg-white/5 hover:text-brand focus-visible:bg-white/5 focus-visible:text-brand focus-visible:outline-none"
+                              >
+                                {child.label}
+                              </Link>
+                            </li>
+                          ))
+                        )}
                       </ul>
                     </div>
                   )}
@@ -162,19 +173,23 @@ export default function Header() {
         <nav aria-label="Mobile" className="container-site py-4">
           <ul className="divide-y divide-white/5">
             {data.nav.map((item) => {
-              const hasChildren = Boolean(item.children?.length);
+              const isDropdown = Array.isArray(item.children);
               const groupOpen = openMobileGroup === item.label;
-              const active = item.href === pathname;
+              const active =
+                item.href === pathname ||
+                (item.href !== "/" && pathname.startsWith(item.href));
 
               return (
                 <li key={item.label}>
-                  {hasChildren ? (
+                  {isDropdown ? (
                     <>
                       <button
                         type="button"
                         aria-expanded={groupOpen}
                         onClick={() => setOpenMobileGroup(groupOpen ? null : item.label)}
-                        className="flex w-full items-center justify-between py-3.5 text-base font-semibold text-white"
+                        className={`flex w-full items-center justify-between py-3.5 text-base font-semibold ${
+                          active ? "text-brand" : "text-white"
+                        }`}
                       >
                         {item.label}
                         <Icon
@@ -185,17 +200,21 @@ export default function Header() {
                       </button>
                       {groupOpen && (
                         <ul className="mb-3 space-y-1 border-l-2 border-brand/60 pl-4">
-                          {item.children.map((child) => (
-                            <li key={child.label}>
-                              <Link
-                                href={child.href}
-                                onClick={closeAll}
-                                className="block py-2 text-[15px] text-white/75 hover:text-brand"
-                              >
-                                {child.label}
-                              </Link>
-                            </li>
-                          ))}
+                          {item.children.length === 0 ? (
+                            <li className="py-2 text-[15px] text-white/45">Coming soon</li>
+                          ) : (
+                            item.children.map((child) => (
+                              <li key={child.label}>
+                                <Link
+                                  href={child.href}
+                                  onClick={closeAll}
+                                  className="block py-2 text-[15px] text-white/75 hover:text-brand"
+                                >
+                                  {child.label}
+                                </Link>
+                              </li>
+                            ))
+                          )}
                         </ul>
                       )}
                     </>

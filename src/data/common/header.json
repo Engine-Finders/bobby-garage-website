@@ -9,45 +9,24 @@
   "nav": [
     { "label": "Home", "href": "/" },
     {
-      "label": "Mercedes",
-      "href": "#brands",
+      "label": "Brands",
+      "href": "/brands",
       "children": [
-        { "label": "A-Class", "href": "#brands" },
-        { "label": "C-Class", "href": "#brands" },
-        { "label": "E-Class", "href": "#brands" },
-        { "label": "SUVs", "href": "#brands" },
-        { "label": "AMG", "href": "#brands" },
-        { "label": "Vans", "href": "#brands" }
+        { "label": "BMW", "href": "/bmw-engines" }
       ]
     },
     {
-      "label": "BMW",
-      "href": "#brands",
+      "label": "Models",
+      "href": "/models",
       "children": [
-        { "label": "1 Series to 8 Series", "href": "#brands" },
-        { "label": "X Models", "href": "#brands" },
-        { "label": "Z Series", "href": "#brands" },
-        { "label": "M Cars", "href": "#brands" }
+        { "label": "BMW 3 Series", "href": "/bmw-3-series" }
       ]
     },
-    { "label": "Audi", "href": "#brands" },
-    { "label": "Land Rover", "href": "#brands" },
-    { "label": "Porsche", "href": "#brands" },
     {
-      "label": "Services",
-      "href": "#services",
-      "children": [
-        { "label": "Engine Rebuilds & Reconditioning", "href": "#services" },
-        { "label": "Diagnostics & Fault Finding", "href": "#services" },
-        { "label": "Timing Chain & Belt Repairs", "href": "#services" },
-        { "label": "Cylinder Head, Crank & Block", "href": "#services" },
-        { "label": "Cooling & Lubrication Repairs", "href": "#services" },
-        { "label": "Clutch & Flywheel Work", "href": "#services" },
-        { "label": "Performance Engine Projects", "href": "#services" }
-      ]
-    },
-    { "label": "Our Work", "href": "#workshop" },
-    { "label": "Reviews", "href": "#reviews" }
+      "label": "Engines",
+      "href": "/engines",
+      "children": []
+    }
   ],
   "phone": {
     "display": "020 8159 0792",

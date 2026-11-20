@@ -1,0 +1,42 @@
+import Link from "next/link";
+import { getBrandRegistry } from "@/lib/brands";
+
+export const metadata = {
+  title: "Brands | Boby Engine Work",
+  description: "Browse BMW and other brand engine rebuild and repair guides from Boby Engine Work.",
+};
+
+export default function BrandsPage() {
+  const brands = getBrandRegistry().filter((b) => b.status === "live");
+
+  return (
+    <main className="flex-1 bg-[#f6f2ed] text-ink">
+      <div className="container-site py-10 md:py-14 lg:py-16">
+        <p className="text-[12px] font-bold uppercase tracking-[0.14em] text-brand">Directory</p>
+        <h1 className="mt-2 text-[32px] font-extrabold leading-tight tracking-[-0.02em] sm:text-[40px] lg:text-[48px]">
+          Brands
+        </h1>
+        <span className="mt-3 block h-[3px] w-14 rounded-full bg-brand" aria-hidden="true" />
+        <p className="mt-4 max-w-[560px] text-[15px] leading-relaxed text-ink/75">
+          Choose a brand to see models, common engines and rebuild guides.
+        </p>
+
+        <ul className="mt-8 grid grid-cols-1 gap-3 sm:grid-cols-2 lg:grid-cols-3">
+          {brands.map((brand) => (
+            <li key={brand.slug}>
+              <Link
+                href={brand.href}
+                className="flex items-center justify-between rounded-2xl border border-[#e4ddd4] bg-white px-5 py-4 text-[16px] font-bold text-ink shadow-[0_8px_20px_rgba(13,15,18,0.06)] transition-colors hover:border-brand/40 hover:text-brand"
+              >
+                {brand.name}
+                <span aria-hidden="true" className="text-brand">
+                  →
+                </span>
+              </Link>
+            </li>
+          ))}
+        </ul>
+      </div>
+    </main>
+  );
+}
