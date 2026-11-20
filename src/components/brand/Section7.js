@@ -1,6 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import SectionHeading from "../ui/SectionHeading";
+import SoftFadeHeading from "../ui/SoftFadeHeading";
 import Eyebrow from "../ui/Eyebrow";
 import HighlightText from "../ui/HighlightText";
 import Icon from "../ui/Icon";
@@ -11,16 +12,19 @@ export default function Section7({ data }) {
 
   return (
     <>
-      {/* Contact */}
+      {/* Contact — soft-fade heading on mobile */}
       <section id={contact.id} className="relative isolate overflow-hidden bg-[#f6f2ed] text-ink">
+        <SoftFadeHeading imageSrc={contact.image.src} imageAlt={contact.image.alt || ""}>
+          <SectionHeading eyebrow={contact.eyebrow} heading={contact.heading} size="brand" />
+        </SoftFadeHeading>
+
         <div
           className="absolute inset-y-0 right-0 hidden w-[40%] lg:block"
           style={{ clipPath: "polygon(16% 0, 100% 0, 100% 100%, 0 100%)" }}
           aria-hidden="true"
         >
-          {/* SVG diagonal border — perfectly matches the clip path line */}
           <svg
-            className="absolute inset-0 z-10 h-full w-full pointer-events-none"
+            className="pointer-events-none absolute inset-0 z-10 h-full w-full"
             preserveAspectRatio="none"
             viewBox="0 0 100 100"
             aria-hidden="true"
@@ -38,28 +42,30 @@ export default function Section7({ data }) {
           <Image src={contact.image.src} alt="" fill sizes="40vw" className="object-cover object-center" />
         </div>
 
-        <div className="container-site relative z-10 py-10 md:py-12 lg:min-h-[480px] lg:py-14">
+        <div className="container-site relative z-10 py-5 md:py-6 lg:min-h-[400px] lg:py-9">
           <div className="lg:max-w-[58%]">
-            <SectionHeading eyebrow={contact.eyebrow} heading={contact.heading} />
+            <div className="hidden lg:block">
+              <SectionHeading eyebrow={contact.eyebrow} heading={contact.heading} size="brand" />
+            </div>
 
-            <div className="mt-7 grid grid-cols-1 gap-6 md:grid-cols-12 md:items-start md:gap-0">
-              <ul className="space-y-3.5 md:col-span-5">
+            <div className="mt-1 grid grid-cols-1 gap-5 md:mt-7 md:grid-cols-12 md:items-start md:gap-0">
+              <ul className="space-y-3 md:col-span-5 md:space-y-3.5">
                 {contact.details.map((detail) => (
-                  <li key={detail.label} className="flex items-start gap-3.5">
-                    <span className="flex h-12 w-12 shrink-0 items-center justify-center rounded-xl border border-[#e8dfd4] bg-[#efe6db] text-brand">
+                  <li key={detail.label} className="flex items-start gap-3 sm:gap-3.5">
+                    <span className="flex h-10 w-10 shrink-0 items-center justify-center rounded-xl border border-[#e8dfd4] bg-[#efe6db] text-brand sm:h-12 sm:w-12">
                       <Icon name={detail.icon} className="h-5 w-5" strokeWidth={1.8} />
                     </span>
                     <div className="min-w-0 pt-0.5">
-                      <p className="text-[13px] font-bold text-ink md:text-[14px]">{detail.label}</p>
+                      <p className="text-[12.5px] font-bold text-ink sm:text-[13px] md:text-[14px]">{detail.label}</p>
                       {detail.href ? (
                         <a
                           href={detail.href}
-                          className="mt-0.5 block text-[14px] leading-snug text-ink/75 hover:text-brand md:text-[15px]"
+                          className="mt-0.5 block text-[13.5px] leading-snug text-ink/75 hover:text-brand sm:text-[14px] md:text-[15px]"
                         >
                           {detail.value}
                         </a>
                       ) : (
-                        <p className="mt-0.5 text-[14px] leading-snug text-ink/75 md:text-[15px]">{detail.value}</p>
+                        <p className="mt-0.5 text-[13.5px] leading-snug text-ink/75 sm:text-[14px] md:text-[15px]">{detail.value}</p>
                       )}
                     </div>
                   </li>
@@ -67,7 +73,7 @@ export default function Section7({ data }) {
               </ul>
 
               <div className="md:col-span-7 md:border-l-[3px] md:border-brand md:pl-7">
-                <div className="space-y-3 text-[14.5px] leading-relaxed text-ink/75 md:text-[15.5px]">
+                <div className="space-y-2.5 text-[14px] leading-relaxed text-ink/75 sm:space-y-3 sm:text-[14.5px] md:text-[15.5px]">
                   {contact.sidebar.map((p, i) => (
                     <p key={i}>{p}</p>
                   ))}
@@ -75,20 +81,15 @@ export default function Section7({ data }) {
               </div>
             </div>
           </div>
-
-          <div className="relative -mx-4 mt-8 aspect-[16/10] overflow-hidden sm:aspect-[16/9] md:-mx-6 lg:hidden">
-            <Image src={contact.image.src} alt={contact.image.alt} fill sizes="100vw" className="object-cover" />
-            <div className="absolute inset-y-0 left-0 w-[4px] bg-brand" aria-hidden="true" />
-          </div>
         </div>
       </section>
 
       {/* FAQs */}
-      <section id={faqs.id} className="bg-primary-dark py-10 text-white md:py-12 lg:py-14">
+      <section id={faqs.id} className="bg-primary-dark py-7 text-white md:py-8 lg:py-9">
         <div className="container-site">
-          <SectionHeading eyebrow={faqs.eyebrow} heading={faqs.heading} tone="dark" />
+          <SectionHeading eyebrow={faqs.eyebrow} heading={faqs.heading} tone="dark" size="brand" />
 
-          <div className="mt-7 grid grid-cols-1 gap-3 md:grid-cols-2 md:gap-3.5">
+          <div className="mt-5 grid grid-cols-1 gap-3 md:grid-cols-2 md:gap-3.5">
             {faqs.items.map((item) => (
               <BrandFaqCard key={item.question} item={item} />
             ))}
@@ -97,7 +98,7 @@ export default function Section7({ data }) {
       </section>
 
       {/* CTA */}
-      <section id={cta.id} className="relative overflow-hidden bg-[#f1ede7] py-10 md:py-12 lg:py-14">
+      <section id={cta.id} className="relative overflow-hidden bg-[#f1ede7] py-7 md:py-8 lg:py-9">
         <div
           className="pointer-events-none absolute inset-0 opacity-[0.08]"
           style={{
@@ -106,10 +107,10 @@ export default function Section7({ data }) {
           }}
           aria-hidden="true"
         />
-        <div className="container-site relative z-10 grid grid-cols-1 items-center gap-8 lg:grid-cols-12 lg:gap-8">
+        <div className="container-site relative z-10 grid grid-cols-1 items-center gap-6 lg:grid-cols-12 lg:gap-8">
           <div className="lg:col-span-6">
             <Eyebrow tone="light">{cta.eyebrow}</Eyebrow>
-            <h2 className="mt-3 text-[28px] font-extrabold leading-tight tracking-[-0.02em] text-ink md:text-[34px] lg:text-[38px]">
+            <h2 className="mt-3 text-[32px] font-extrabold leading-tight tracking-[-0.02em] text-ink sm:text-[40px] md:text-[48px]">
               <HighlightText content={cta.heading} />
             </h2>
             <span className="mt-4 block h-[3px] w-14 rounded-full bg-brand" aria-hidden="true" />

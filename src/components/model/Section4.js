@@ -1,37 +1,40 @@
 import Image from "next/image";
 import Link from "next/link";
 import SectionHeading from "../ui/SectionHeading";
+import SoftFadeHeading from "../ui/SoftFadeHeading";
 import HighlightText from "../ui/HighlightText";
 import Icon from "../ui/Icon";
-
-function DiagonalRibbon({ text, className = "" }) {
-  return (
-    <div
-      className={`pointer-events-none absolute -right-8 top-8 z-20 hidden w-[220%] origin-top-right rotate-[-28deg] bg-brand py-2.5 text-center shadow-[0_8px_20px_rgba(232,93,38,0.35)] lg:block ${className}`}
-      aria-hidden="true"
-    >
-      <p className="text-[11px] font-extrabold uppercase tracking-[0.14em] text-white">{text}</p>
-    </div>
-  );
-}
 
 export default function Section4({ data }) {
   return (
     <section id={data.id} className="bg-[#f6f2ed] text-ink">
-      {/* Pricing + image */}
-      <div className="container-site py-6 md:py-7 lg:py-8">
-        <div className="grid grid-cols-1 gap-5 lg:grid-cols-12 lg:items-start lg:gap-6">
-          <div className="lg:col-span-7">
-            <SectionHeading
-              eyebrow={data.eyebrow}
-              heading={data.heading}
-              intro={data.intro}
-              headingClassName="max-w-[560px]"
-              introClassName="max-w-[560px]"
-            />
+      {/* Mobile: soft-fade image behind heading */}
+      <SoftFadeHeading imageSrc={data.image.src} imageAlt={data.image.alt || ""}>
+        <SectionHeading
+          eyebrow={data.eyebrow}
+          heading={data.heading}
+          headingClassName="max-w-[560px]"
+        />
+      </SoftFadeHeading>
+      <div className="container-site pt-3 lg:hidden">
+        <p className="max-w-[560px] text-[14px] leading-snug text-ink/75">{data.intro}</p>
+      </div>
 
-            <div className="mt-4 overflow-hidden rounded-2xl border border-[#e0d8ce] md:mt-5">
-              {/* Desktop table */}
+      {/* Pricing + image */}
+      <div className="container-site pb-6 pt-4 md:pb-7 lg:py-8">
+        <div className="grid grid-cols-1 gap-5 lg:grid-cols-12 lg:items-stretch lg:gap-0">
+          <div className="lg:col-span-7 lg:pr-6">
+            <div className="hidden lg:block">
+              <SectionHeading
+                eyebrow={data.eyebrow}
+                heading={data.heading}
+                intro={data.intro}
+                headingClassName="max-w-[560px]"
+                introClassName="max-w-[560px]"
+              />
+            </div>
+
+            <div className="overflow-hidden rounded-2xl border border-[#e0d8ce] lg:mt-5">
               <div className="hidden md:block">
                 <table className="w-full border-collapse text-left text-[14px]">
                   <thead>
@@ -76,7 +79,6 @@ export default function Section4({ data }) {
                 </table>
               </div>
 
-              {/* Mobile */}
               <ul className="divide-y divide-black/[0.06] md:hidden">
                 {data.rows.map((row, i) => (
                   <li key={row.engine} className={`px-4 py-4 ${i % 2 === 0 ? "bg-white" : "bg-[#f1ebe3]"}`}>
@@ -93,28 +95,59 @@ export default function Section4({ data }) {
             </div>
           </div>
 
+          {/* Image panel — desktop only (mobile uses soft-fade heading); badges always */}
           <div className="relative lg:col-span-5">
-            <div className="relative overflow-hidden rounded-2xl bg-[#ebe6df] lg:min-h-[420px]">
-              <div className="relative aspect-[4/5] lg:absolute lg:inset-0 lg:aspect-auto">
-                <Image
-                  src={data.image.src}
-                  alt={data.image.alt}
-                  fill
-                  sizes="(max-width: 1024px) 100vw, 40vw"
-                  className="object-cover object-center"
-                />
-                <div className="absolute inset-0 bg-linear-to-t from-primary-dark/80 via-primary-dark/20 to-transparent" />
+            <div className="relative overflow-hidden rounded-2xl bg-primary-dark lg:min-h-full lg:rounded-l-none lg:rounded-r-2xl lg:bg-[#ebe6df]">
+              <div className="relative hidden aspect-[4/5] lg:absolute lg:inset-0 lg:block lg:aspect-auto">
+                {/* Dual-diagonal clip (point mid-left; arms into image) */}
+                <div
+                  className="absolute inset-0 overflow-hidden lg:[clip-path:polygon(18%_0,100%_0,100%_100%,18%_100%,0_50%)]"
+                >
+                  <Image
+                    src={data.image.src}
+                    alt={data.image.alt}
+                    fill
+                    sizes="42vw"
+                    quality={100}
+                    unoptimized
+                    className="object-cover object-center"
+                  />
+                  <div className="absolute inset-0 bg-linear-to-t from-primary-dark/85 via-primary-dark/25 to-transparent" />
+                </div>
+
+                {/* Orange dual-diagonal seam (desktop) */}
+                <svg
+                  className="pointer-events-none absolute inset-0 z-[1] h-full w-full text-brand"
+                  viewBox="0 0 100 100"
+                  preserveAspectRatio="none"
+                  fill="none"
+                  aria-hidden="true"
+                >
+                  <path
+                    d="M 18 0 L 0 50 L 18 100"
+                    stroke="currentColor"
+                    strokeWidth="2.2"
+                    strokeLinejoin="round"
+                    strokeLinecap="round"
+                    vectorEffect="non-scaling-stroke"
+                  />
+                </svg>
               </div>
 
-              <DiagonalRibbon text={data.ribbon} />
-
-              <div className="relative z-10 m-4 rounded-xl border border-white/10 bg-primary-dark/85 p-4 backdrop-blur-md md:m-5 md:p-5 lg:absolute lg:inset-x-5 lg:bottom-5 lg:m-0">
-                <p className="text-[14px] font-bold text-white md:text-[15px]">{data.included.title}</p>
-                <ul className="mt-3 space-y-2.5">
+              {/* Included badges — horizontal row, icon above label */}
+              <div className="relative z-10 m-0 rounded-2xl border border-white/10 bg-primary-dark p-3 sm:p-4 lg:absolute lg:inset-x-4 lg:bottom-4 lg:rounded-xl lg:bg-primary-dark/88 lg:backdrop-blur-md">
+                <p className="text-center text-[13px] font-bold text-white sm:text-[14px] md:text-[15px]">
+                  {data.included.title}
+                </p>
+                <ul className="mt-3 grid grid-cols-2 gap-3 sm:grid-cols-4 sm:gap-2.5">
                   {data.included.items.map((item) => (
-                    <li key={item.label} className="flex items-center gap-3 text-[13px] text-white/85 md:text-[13.5px]">
-                      <Icon name={item.icon} className="h-5 w-5 shrink-0 text-brand" strokeWidth={1.7} />
-                      <span>{item.label}</span>
+                    <li key={item.label} className="flex flex-col items-center text-center">
+                      <span className="flex h-9 w-9 items-center justify-center rounded-lg border border-brand/40 bg-brand/10 text-brand sm:h-10 sm:w-10">
+                        <Icon name={item.icon} className="h-5 w-5" strokeWidth={1.7} />
+                      </span>
+                      <span className="mt-2 text-[11px] leading-snug text-white/85 sm:text-[11.5px] md:text-[12px]">
+                        {item.label}
+                      </span>
                     </li>
                   ))}
                 </ul>
@@ -157,7 +190,7 @@ export default function Section4({ data }) {
         </div>
       </div>
 
-      {/* Other factors — full-width short box, text left / image right flush */}
+      {/* Other factors */}
       <div className="container-site pb-6 md:pb-7 lg:pb-8">
         <div className="relative isolate overflow-hidden rounded-2xl border border-[#e4ddd4] bg-[#f9f7f2] shadow-[0_10px_28px_rgba(13,15,18,0.08)]">
           <div className="grid grid-cols-1 lg:grid-cols-2">
@@ -174,7 +207,6 @@ export default function Section4({ data }) {
             </div>
 
             <div className="relative min-h-[180px] overflow-hidden lg:min-h-[200px]">
-              {/* Same diagonal + orange edge as section 2 header */}
               <div
                 className="absolute inset-0 overflow-hidden"
                 style={{ clipPath: "polygon(15% 0, 100% 0, 100% 100%, 0 100%)" }}

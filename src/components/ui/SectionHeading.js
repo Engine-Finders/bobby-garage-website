@@ -4,6 +4,8 @@ import HighlightText from "./HighlightText";
 const sizes = {
   lg: "text-[30px] sm:text-[36px] md:text-[40px] lg:text-[46px] xl:text-[48px]",
   md: "text-[26px] sm:text-[30px] md:text-[34px] lg:text-[38px]",
+  /** Brand page: lock H2 at 48px from md up */
+  brand: "text-[32px] sm:text-[40px] md:text-[48px]",
 };
 
 /**

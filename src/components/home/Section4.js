@@ -5,8 +5,8 @@ import SectionHeading from "../ui/SectionHeading";
 import Button from "../ui/Button";
 import ReviewCard from "./section4/ReviewCard";
 import ReviewsSlider from "./section4/ReviewsSlider";
+import ReviewsDiagonalHeader from "./section4/ReviewsDiagonalHeader";
 // import CaptionChip from "./section4/CaptionChip";
-import QuoteGlyph from "./section4/QuoteGlyph";
 
 export default function Section4() {
   const { reviews, workshop } = data;
@@ -14,46 +14,39 @@ export default function Section4() {
 
   return (
     <>
-      <SectionShell
-        id={reviews.id}
-        tone="light"
-        bgImages={[{ src: reviews.backgroundImage, position: "top-right", opacity: 0.4 }]}
-        accents={[{ position: "top-right", count: 2, length: "h-48 md:h-72", className: "right-[10%] md:right-[12%]" }]}
-        backdrop={
-          <QuoteGlyph className="pointer-events-none absolute -z-10 right-[6%] top-10 h-32 w-auto text-[#e7e4e0] sm:h-44 md:right-[22%] md:top-6 md:h-56 lg:right-[30%]" />
-        }
-        padding="py-7 md:py-10 lg:py-12"
-      >
-        <SectionHeading
+      <section id={reviews.id} className="relative">
+        <ReviewsDiagonalHeader
           eyebrow={reviews.eyebrow}
           heading={reviews.heading}
           intro={reviews.intro}
-          headingClassName="max-w-[760px] lg:whitespace-pre-line lg:text-[42px] xl:text-[46px]"
-          introClassName="max-w-[620px]"
+          imageSrc={reviews.backgroundImage}
+          imageAlt=""
         />
 
-        <ReviewsSlider
-          items={reviews.items}
-          enabled={reviews.enabled}
-          skeletonWidths={reviews.skeletonWidths}
-          verifiedLabel={reviews.verifiedLabel}
-          sourceLabel={reviews.sourceLabel}
-        />
+        <SectionShell tone="light" padding="pt-3 pb-5 md:pt-4 md:pb-7 lg:pt-5 lg:pb-8">
+          <ReviewsSlider
+            items={reviews.items}
+            enabled={reviews.enabled}
+            skeletonWidths={reviews.skeletonWidths}
+            verifiedLabel={reviews.verifiedLabel}
+            sourceLabel={reviews.sourceLabel}
+          />
 
-        <ul className="mt-10 hidden grid-cols-1 gap-5 md:mt-12 md:grid md:grid-cols-3 md:gap-5 lg:gap-6">
-          {reviews.items.map((review, i) => (
-            <li key={i}>
-              <ReviewCard
-                review={review}
-                enabled={reviews.enabled}
-                skeleton={reviews.skeletonWidths[i % reviews.skeletonWidths.length]}
-                verifiedLabel={reviews.verifiedLabel}
-                sourceLabel={reviews.sourceLabel}
-              />
-            </li>
-          ))}
-        </ul>
-      </SectionShell>
+          <ul className="mt-0 hidden grid-cols-1 gap-5 md:grid md:grid-cols-3 md:gap-5 lg:gap-6">
+            {reviews.items.map((review, i) => (
+              <li key={i}>
+                <ReviewCard
+                  review={review}
+                  enabled={reviews.enabled}
+                  skeleton={reviews.skeletonWidths[i % reviews.skeletonWidths.length]}
+                  verifiedLabel={reviews.verifiedLabel}
+                  sourceLabel={reviews.sourceLabel}
+                />
+              </li>
+            ))}
+          </ul>
+        </SectionShell>
+      </section>
 
       <SectionShell
         id={workshop.id}
@@ -114,4 +107,3 @@ export default function Section4() {
     </>
   );
 }
-

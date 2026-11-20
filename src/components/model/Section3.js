@@ -9,72 +9,93 @@ export default function Section3({ data }) {
       <div className="container-site relative z-10 py-6 md:py-7 lg:py-8">
         <SectionHeading eyebrow={data.eyebrow} heading={data.heading} headingClassName="max-w-[720px]" />
 
-        <div className="mt-4 grid grid-cols-1 items-stretch gap-4 lg:mt-5 lg:grid-cols-12 lg:gap-5">
-          {/* Table */}
-          <div className="overflow-hidden rounded-2xl border border-[#e0d8ce] lg:col-span-9">
-            {/* Desktop */}
-            <div className="hidden md:block">
-              <table className="w-full border-collapse text-left text-[14px]">
-                <thead>
-                  <tr>
-                    <th className="bg-[#2a241f] px-4 py-3.5 text-[12.5px] font-semibold tracking-wide text-white md:px-5 md:text-[13px]">
-                      {data.columns.generation}
-                    </th>
-                    <th className="bg-[#2a241f] px-4 py-3.5 text-[12.5px] font-semibold tracking-wide text-white md:px-5 md:text-[13px]">
-                      {data.columns.engines}
-                    </th>
-                    <th className="bg-brand px-4 py-3.5 text-[12.5px] font-semibold tracking-wide text-white md:px-5 md:text-[13px]">
-                      {data.columns.price}
-                    </th>
+        {/* Combined table + diagonal-cut image (ref style) */}
+        <div className="relative mt-4 overflow-hidden rounded-2xl border border-[#e0d8ce] lg:mt-5">
+          {/* Table — reserves right space on desktop for the diagonal image */}
+          <div className="overflow-x-auto lg:pr-[34%]">
+            <table className="w-full min-w-[560px] border-collapse text-left text-[13px] sm:text-[14px]">
+              <thead>
+                <tr>
+                  <th className="bg-[#2a241f] px-3 py-3 text-[11.5px] font-semibold tracking-wide text-white sm:px-4 sm:py-3.5 sm:text-[12.5px] md:px-5 md:text-[13px]">
+                    {data.columns.generation}
+                  </th>
+                  <th className="bg-[#2a241f] px-3 py-3 text-[11.5px] font-semibold tracking-wide text-white sm:px-4 sm:py-3.5 sm:text-[12.5px] md:px-5 md:text-[13px]">
+                    {data.columns.engines}
+                  </th>
+                  <th className="bg-brand px-3 py-3 text-[11.5px] font-semibold tracking-wide text-white sm:px-4 sm:py-3.5 sm:text-[12.5px] md:px-5 md:text-[13px]">
+                    {data.columns.price}
+                  </th>
+                </tr>
+              </thead>
+              <tbody>
+                {data.rows.map((row, i) => (
+                  <tr key={row.generation} className={i % 2 === 0 ? "bg-[#f1ebe3]" : "bg-[#e7e0d6]"}>
+                    <td className="border-t border-black/[0.05] px-3 py-2.5 font-semibold text-ink sm:px-4 sm:py-3.5 md:px-5 md:text-[14.5px]">
+                      {row.generation}
+                    </td>
+                    <td className="border-t border-black/[0.05] px-3 py-2.5 text-[12.5px] leading-snug text-ink/75 sm:px-4 sm:py-3.5 sm:text-[13.5px] md:px-5">
+                      {row.engines}
+                    </td>
+                    <td className="border-t border-black/[0.05] px-3 py-2.5 text-[12.5px] font-semibold leading-snug text-ink/85 sm:px-4 sm:py-3.5 sm:text-[13.5px] md:px-5">
+                      {row.price}
+                    </td>
                   </tr>
-                </thead>
-                <tbody>
-                  {data.rows.map((row, i) => (
-                    <tr key={row.generation} className={i % 2 === 0 ? "bg-[#f1ebe3]" : "bg-[#e7e0d6]"}>
-                      <td className="border-t border-black/[0.05] px-4 py-3.5 font-semibold text-ink md:px-5 md:text-[14.5px]">
-                        {row.generation}
-                      </td>
-                      <td className="border-t border-black/[0.05] px-4 py-3.5 text-[13.5px] leading-snug text-ink/75 md:px-5">
-                        {row.engines}
-                      </td>
-                      <td className="border-t border-black/[0.05] px-4 py-3.5 text-[13.5px] font-semibold leading-snug text-ink/85 md:px-5">
-                        {row.price}
-                      </td>
-                    </tr>
-                  ))}
-                </tbody>
-              </table>
-            </div>
-
-            {/* Mobile cards */}
-            <ul className="divide-y divide-black/[0.06] md:hidden">
-              <li className="bg-brand px-4 py-3 text-[12.5px] font-semibold text-white">{data.columns.price}</li>
-              {data.rows.map((row, i) => (
-                <li key={row.generation} className={`px-4 py-4 ${i % 2 === 0 ? "bg-[#f1ebe3]" : "bg-[#e7e0d6]"}`}>
-                  <p className="text-[14px] font-bold text-ink">{row.generation}</p>
-                  <p className="mt-1.5 text-[13px] leading-snug text-ink/70">
-                    <span className="font-semibold text-ink/85">{data.columns.engines}: </span>
-                    {row.engines}
-                  </p>
-                  <p className="mt-2 text-[13px] font-semibold text-brand">{row.price}</p>
-                </li>
-              ))}
-            </ul>
+                ))}
+              </tbody>
+            </table>
           </div>
 
-          {/* Engine image — no dark panel */}
-          <div className="relative min-h-[220px] overflow-hidden rounded-2xl lg:col-span-3 lg:min-h-full">
+          {/* Desktop: dual diagonal cut from middle (up + down into image, like ref) */}
+          <div className="pointer-events-none absolute inset-y-0 right-0 hidden w-[38%] lg:block" aria-hidden="true">
+            <div
+              className="absolute inset-0 overflow-hidden"
+              style={{
+                /* Point sits mid-left into the table; arms go up/down into the image */
+                clipPath: "polygon(26% 0, 100% 0, 100% 100%, 26% 100%, 4% 50%)",
+              }}
+            >
+              <Image
+                src={data.image.src}
+                alt=""
+                fill
+                sizes="38vw"
+                quality={100}
+                unoptimized
+                className="object-cover object-center"
+              />
+            </div>
+            <svg
+              className="absolute inset-0 z-[1] h-full w-full text-gold"
+              viewBox="0 0 100 100"
+              preserveAspectRatio="none"
+              fill="none"
+            >
+              <path
+                d="M 26 0 L 4 50 L 26 100"
+                stroke="currentColor"
+                strokeWidth="1.7"
+                strokeLinejoin="round"
+                strokeLinecap="round"
+                vectorEffect="non-scaling-stroke"
+              />
+            </svg>
+          </div>
+
+          {/* Mobile: image below table */}
+          <div className="relative aspect-[16/10] overflow-hidden border-t border-[#e0d8ce] lg:hidden">
             <Image
               src={data.image.src}
               alt={data.image.alt}
               fill
-              sizes="(max-width: 1024px) 100vw, 25vw"
-              className="object-contain object-center"
+              sizes="100vw"
+              quality={100}
+              unoptimized
+              className="object-cover object-center"
             />
+            <div className="absolute inset-y-0 left-0 w-[4px] bg-gold" aria-hidden="true" />
           </div>
         </div>
 
-        {/* Note */}
         <div className="mt-4 flex items-start gap-3 rounded-2xl border border-[#e4ddd4] bg-[#ece7e0] px-4 py-3.5 md:mt-5 md:items-center md:px-5 md:py-4">
           <span className="flex h-10 w-10 shrink-0 items-center justify-center rounded-full bg-primary-dark text-gold">
             <Icon name="info" className="h-5 w-5" strokeWidth={2} />

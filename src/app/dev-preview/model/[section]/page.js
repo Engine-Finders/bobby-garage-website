@@ -6,6 +6,10 @@ import Section4 from "@/components/model/Section4";
 import Section5 from "@/components/model/Section5";
 import Section6 from "@/components/model/Section6";
 import Section7 from "@/components/model/Section7";
+import Section8 from "@/components/model/Section8";
+import Section9 from "@/components/model/Section9";
+import Section10 from "@/components/model/Section10";
+import Section11 from "@/components/model/Section11";
 import { getModelData } from "@/lib/models";
 
 const sections = {
@@ -16,6 +20,10 @@ const sections = {
   5: { Component: Section5, key: "section5" },
   6: { Component: Section6, key: "section6" },
   7: { Component: Section7, key: "section7" },
+  8: { Component: Section8, key: "section8" },
+  9: { Component: Section9, key: "section9" },
+  10: { Component: Section10, key: "section10" },
+  11: { Component: Section11, key: "section11" },
 };
 
 export function generateStaticParams() {

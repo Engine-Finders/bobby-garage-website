@@ -65,7 +65,7 @@ export default function ReviewsSlider({
 
   return (
     <div
-      className="mt-10 md:hidden"
+      className="mt-0 md:hidden"
       onMouseEnter={() => setPaused(true)}
       onMouseLeave={() => setPaused(false)}
     >

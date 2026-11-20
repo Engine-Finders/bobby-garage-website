@@ -1,12 +1,11 @@
 import data from "../../data/home-data/section8.json";
 import SectionShell from "../ui/SectionShell";
-import SectionHeading from "../ui/SectionHeading";
+import DiagonalSectionHeader from "../ui/DiagonalSectionHeader";
 import HeadingStrip from "../ui/HeadingStrip";
 import Card from "../ui/Card";
 import Icon from "../ui/Icon";
 import NoteBar from "../ui/NoteBar";
 import CheckBadge from "./section8/CheckBadge";
-import WarningLight from "./section8/WarningLight";
 
 const toneClass = {
   ink: "text-ink",
@@ -57,67 +56,45 @@ function EstablishList({ rows, compact = false, checkTone = "brand" }) {
 }
 
 export default function Section8() {
-  const { rows, columns, warning, warningLight, backgrounds } = data;
+  const { rows, columns, warning } = data;
 
   return (
-    <SectionShell
-      id={data.id}
-      tone="light"
-      bgImages={backgrounds}
-      accents={[
-        {
-          position: "top-right",
-          count: 2,
-          length: "h-72 md:h-[26rem]",
-          className: "right-[6%] lg:right-[38%]!",
-        },
-      ]}
-      padding="py-7 md:py-10 lg:py-12"
-    >
-      {warningLight && (
-        <WarningLight
-          icon={warningLight.icon}
-          label={warningLight.label}
-          className="top-2 right-[4%] hidden sm:flex sm:h-[72px] sm:w-[92px] lg:top-0 lg:right-[10%] lg:flex lg:h-[104px] lg:w-[132px] xl:right-[16%]"
-        />
-      )}
-
-      <SectionHeading
+    <section id={data.id} className="relative">
+      <DiagonalSectionHeader
         eyebrow={data.eyebrow}
         heading={data.heading}
         intro={data.intro}
+        imageSrc={data.headerImage}
         headingClassName="sm:whitespace-pre-line"
-        introClassName="max-w-[640px]"
-        className="max-w-[760px]"
       />
 
-      {/* Mobile / tablet: stacked lists like the reference */}
-      <div className="mt-9 space-y-6 md:mt-10 lg:hidden">
-        <div>
-          <HeadingStrip icon={columns.notice.icon} title={columns.notice.title} />
-          <NoticeList rows={rows} compact />
+      <SectionShell tone="light" padding="pt-3 pb-6 md:pt-4 md:pb-8 lg:pt-5 lg:pb-9">
+        <div className="space-y-5 lg:hidden">
+          <div>
+            <HeadingStrip icon={columns.notice.icon} title={columns.notice.title} />
+            <NoticeList rows={rows} compact />
+          </div>
+
+          <div>
+            <HeadingStrip icon={columns.establish.icon} title={columns.establish.title} />
+            <EstablishList rows={rows} compact checkTone="dark" />
+          </div>
         </div>
 
-        <div>
-          <HeadingStrip icon={columns.establish.icon} title={columns.establish.title} />
-          <EstablishList rows={rows} compact checkTone="dark" />
-        </div>
-      </div>
+        <div className="hidden lg:grid lg:grid-cols-[2fr_3fr] lg:gap-x-8 xl:gap-x-10">
+          <div>
+            <HeadingStrip icon={columns.notice.icon} title={columns.notice.title} />
+            <NoticeList rows={rows} />
+          </div>
 
-      {/* Desktop: two aligned columns */}
-      <div className="mt-10 hidden lg:grid lg:grid-cols-[2fr_3fr] lg:gap-x-8 xl:gap-x-10">
-        <div>
-          <HeadingStrip icon={columns.notice.icon} title={columns.notice.title} />
-          <NoticeList rows={rows} />
+          <div>
+            <HeadingStrip icon={columns.establish.icon} title={columns.establish.title} />
+            <EstablishList rows={rows} />
+          </div>
         </div>
 
-        <div>
-          <HeadingStrip icon={columns.establish.icon} title={columns.establish.title} />
-          <EstablishList rows={rows} />
-        </div>
-      </div>
-
-      <NoteBar icon={warning.icon} text={warning.text} className="mt-8 md:mt-10" />
-    </SectionShell>
+        <NoteBar icon={warning.icon} text={warning.text} className="mt-6 md:mt-8" />
+      </SectionShell>
+    </section>
   );
 }

@@ -1,5 +1,7 @@
 import Image from "next/image";
+import SectionShell from "../ui/SectionShell";
 import SectionHeading from "../ui/SectionHeading";
+import DiagonalSectionHeader from "../ui/DiagonalSectionHeader";
 import Icon from "../ui/Icon";
 
 export default function Section6({ data }) {
@@ -7,62 +9,54 @@ export default function Section6({ data }) {
 
   return (
     <>
-      {/* Parts — light + diagonal photo */}
-      <section id={data.id} className="relative isolate overflow-hidden bg-[#f6f2ed] text-ink">
-        <div
-          className="absolute inset-y-0 right-0 hidden w-[42%] lg:block"
-          style={{ clipPath: "polygon(16% 0, 100% 0, 100% 100%, 0 100%)" }}
-          aria-hidden="true"
-        >
-          <Image src={parts.image.src} alt="" fill sizes="42vw" className="object-cover object-center" />
-          <div className="absolute inset-y-0 left-[14%] w-[5px] -skew-x-[14deg] bg-brand" aria-hidden="true" />
-        </div>
+      {/* Parts — diagonal header only; cards full width */}
+      <section id={data.id} className="relative">
+        <DiagonalSectionHeader
+          eyebrow={parts.eyebrow}
+          heading={parts.heading}
+          intro={parts.intro}
+          imageSrc={parts.headerImage}
+          size="brand"
+        />
 
-        <div className="container-site relative z-10 py-10 md:py-12 lg:py-14">
-          <div className="max-w-[620px]">
-            <SectionHeading eyebrow={parts.eyebrow} heading={parts.heading} intro={parts.intro} />
-          </div>
-
-          <div className="relative mt-6 aspect-[16/10] overflow-hidden rounded-2xl lg:hidden">
-            <Image src={parts.image.src} alt={parts.image.alt} fill sizes="100vw" className="object-cover" />
-            <div className="absolute inset-y-0 left-0 w-[4px] bg-brand" aria-hidden="true" />
-          </div>
-
-          <ul className="mt-8 grid grid-cols-1 gap-3 sm:grid-cols-2 lg:mt-10 lg:max-w-[58%] lg:grid-cols-5 lg:gap-2.5 xl:gap-3">
+        <SectionShell tone="light" padding="pt-2.5 pb-5 md:pt-3 md:pb-6 lg:pt-4 lg:pb-7">
+          <ul className="grid grid-cols-2 gap-2 sm:gap-3 lg:grid-cols-5 lg:gap-3">
             {parts.features.map((feature) => (
               <li
                 key={feature.title}
-                className="flex flex-col items-center rounded-2xl border border-[#e8e2d9] bg-[#efeae3] px-3 py-5 text-center"
+                className="flex flex-col items-center rounded-xl border border-[#e8e2d9] bg-[#efeae3] px-2.5 py-4 text-center sm:rounded-2xl sm:px-3 sm:py-5 max-lg:[&:last-child:nth-child(odd)]:col-span-2 max-lg:[&:last-child:nth-child(odd)]:w-[calc(50%-0.25rem)] max-lg:[&:last-child:nth-child(odd)]:justify-self-center"
               >
-                <span className="flex h-11 w-11 items-center justify-center rounded-xl bg-[#fff3ea] text-brand">
-                  <Icon name={feature.icon} className="h-6 w-6" strokeWidth={1.55} />
+                <span className="flex h-10 w-10 items-center justify-center rounded-xl bg-[#fff3ea] text-brand sm:h-11 sm:w-11">
+                  <Icon name={feature.icon} className="h-5 w-5 sm:h-6 sm:w-6" strokeWidth={1.55} />
                 </span>
-                <p className="mt-3 text-[13px] font-bold leading-snug text-ink md:text-[13.5px]">{feature.title}</p>
+                <p className="mt-2.5 text-[12px] font-bold leading-snug text-ink sm:mt-3 sm:text-[13px] md:text-[13.5px]">
+                  {feature.title}
+                </p>
               </li>
             ))}
           </ul>
-        </div>
+        </SectionShell>
       </section>
 
-      {/* Gallery */}
-      <section id={gallery.id} className="bg-primary-dark py-10 text-white md:py-12 lg:py-14">
+      {/* Gallery — compact cards on mobile */}
+      <section id={gallery.id} className="bg-primary-dark py-7 text-white md:py-8 lg:py-9">
         <div className="container-site">
-          <SectionHeading eyebrow={gallery.eyebrow} heading={gallery.heading} tone="dark" />
+          <SectionHeading eyebrow={gallery.eyebrow} heading={gallery.heading} tone="dark" size="brand" />
 
-          <ul className="mt-7 grid grid-cols-1 gap-3 sm:grid-cols-2 lg:grid-cols-4 lg:gap-3">
+          <ul className="mt-4 grid grid-cols-2 gap-2 sm:mt-5 sm:grid-cols-2 sm:gap-3 lg:grid-cols-4 lg:gap-3">
             {gallery.items.map((item) => (
               <li key={item.caption}>
-                <article className="overflow-hidden rounded-[14px] border border-white/10 bg-[#e9e5df]">
-                  <div className="relative aspect-[4/3]">
+                <article className="overflow-hidden rounded-lg border border-white/10 bg-[#e9e5df] sm:rounded-[14px]">
+                  <div className="relative aspect-[5/3] sm:aspect-[4/3]">
                     <Image
                       src={item.image.src}
                       alt={item.image.alt}
                       fill
-                      sizes="(max-width: 640px) 100vw, 25vw"
+                      sizes="(max-width: 640px) 50vw, 25vw"
                       className="object-cover"
                     />
                   </div>
-                  <p className="px-3 py-3.5 text-center text-[12.5px] font-semibold leading-snug text-ink/85 md:text-[13.5px]">
+                  <p className="px-2 py-2 text-center text-[11px] font-semibold leading-snug text-ink/85 sm:px-3 sm:py-3.5 sm:text-[12.5px] md:text-[13.5px]">
                     {item.caption}
                   </p>
                 </article>
@@ -74,9 +68,9 @@ export default function Section6({ data }) {
 
       {/* Warranty — heading above; car image fully below H2 on the left */}
       <section className="relative isolate overflow-hidden bg-[#f6f2ed] text-ink">
-        <div className="container-site relative z-10 grid grid-cols-1 gap-10 py-10 md:py-12 lg:grid-cols-12 lg:items-start lg:gap-14 lg:py-14">
+        <div className="container-site relative z-10 grid grid-cols-1 gap-8 py-7 md:py-8 lg:grid-cols-12 lg:items-start lg:gap-12 lg:py-9">
           <div className="lg:col-span-5">
-            <SectionHeading eyebrow={warranty.eyebrow} heading={warranty.heading} headingClassName="max-w-[440px]" />
+            <SectionHeading eyebrow={warranty.eyebrow} heading={warranty.heading} size="brand" headingClassName="max-w-[440px]" />
 
             <div className="relative mt-1 -ml-4 w-[calc(100%+1rem)] overflow-hidden sm:-ml-6 sm:w-[calc(100%+1.5rem)] md:mt-1 lg:ml-0 lg:w-full lg:max-w-[420px]">
               <div className="relative aspect-[5/4] w-full">

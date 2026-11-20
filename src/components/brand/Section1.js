@@ -49,21 +49,21 @@ export default function Section1({ data }) {
         </svg>
       </div>
 
-      <div className="container-site relative z-10 grid grid-cols-1 gap-8 pb-8 pt-12 md:gap-10 lg:min-h-[640px] lg:grid-cols-12 lg:items-center lg:pb-10 lg:pt-16 xl:min-h-[700px] xl:pt-20">
+      <div className="container-site relative z-10 grid grid-cols-1 gap-6 pb-6 pt-10 md:gap-8 lg:min-h-[560px] lg:grid-cols-12 lg:items-center lg:pb-8 lg:pt-12 xl:min-h-[600px] xl:pt-14">
         <div className="lg:col-span-7">
           <Eyebrow tone="dark">{data.eyebrow}</Eyebrow>
 
-          <h1 className="mt-4 max-w-[720px] text-[34px] font-extrabold leading-[1.08] tracking-[-0.02em] sm:text-[42px] md:text-[46px] lg:text-[50px] xl:text-[56px]">
+          <h1 className="mt-3 max-w-[720px] text-[34px] font-extrabold leading-[1.08] tracking-[-0.02em] sm:text-[42px] md:text-[46px] lg:text-[50px] xl:text-[56px]">
             <HighlightText content={data.heading} />
           </h1>
 
-          <div className="mt-5 max-w-[640px] space-y-4 text-[15px] leading-relaxed text-white/85 md:text-base lg:text-[17px]">
+          <div className="mt-4 max-w-[640px] space-y-2.5 text-[15px] leading-snug text-white/85 md:text-base lg:text-[17px] lg:leading-[1.45]">
             {data.paragraphs.map((p, i) => {
               const text = typeof p === "string" ? p : p.text;
               const isQuote = typeof p === "object" && p.quote;
 
               return isQuote ? (
-                <p key={i} className="border-l-[3px] border-brand pl-4 text-white/90 md:pl-5">
+                <p key={i} className="border-l-[3px] border-brand pl-4 leading-snug text-white/90 md:pl-5">
                   {text}
                 </p>
               ) : (
@@ -72,7 +72,7 @@ export default function Section1({ data }) {
             })}
           </div>
 
-          <div className="mt-8">
+          <div className="mt-6">
             <Button href={data.cta.href} size="lg" className="w-full max-w-md gap-3 sm:w-auto">
               <Icon name={data.cta.icon || "mail"} className="h-5 w-5" strokeWidth={2} />
               {data.cta.label}
@@ -94,12 +94,12 @@ export default function Section1({ data }) {
         </div>
       </div>
 
-      <div className="container-site relative z-10 pb-12 md:pb-14 lg:pb-16">
+      <div className="container-site relative z-10 pb-8 md:pb-9 lg:pb-10">
         <ul className="grid grid-cols-1 overflow-hidden rounded-2xl border border-white/10 border-t-brand/70 bg-linear-to-b from-charcoal/95 to-primary-dark/95 shadow-[0_16px_40px_rgba(0,0,0,0.45)] backdrop-blur-md sm:grid-cols-2 lg:grid-cols-4">
           {data.trustBar.map((item, i) => (
             <li
               key={`${item.value}-${i}`}
-              className="flex items-center gap-3.5 border-b border-white/10 px-5 py-5 last:border-b-0 sm:border-b-0 sm:border-r sm:border-white/10 sm:last:border-r-0 sm:odd:border-b sm:[&:nth-child(2)]:border-b lg:border-b-0 lg:[&:nth-child(2)]:border-b-0"
+              className="flex items-center gap-3.5 border-b border-white/10 px-5 py-4 last:border-b-0 sm:border-b-0 sm:border-r sm:border-white/10 sm:last:border-r-0 sm:odd:border-b sm:[&:nth-child(2)]:border-b lg:border-b-0 lg:[&:nth-child(2)]:border-b-0"
             >
               {item.logoSrc ? (
                 <span className="relative flex h-11 w-11 shrink-0 items-center justify-center overflow-hidden rounded-full bg-white">

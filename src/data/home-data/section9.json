@@ -6,6 +6,7 @@
     { "text": "Inspection to Handover", "highlight": true }
   ],
   "intro": "A structured, 9-stage process to ensure your engine is rebuilt with the right parts, to the correct specification, and tested before it gets back on the road.",
+  "headerImage": "/headers/Why-chose-sec.webp",
   "background": {
     "src": "/engine-images/cadillac-engine-1.webp",
     "alt": ""

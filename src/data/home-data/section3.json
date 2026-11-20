@@ -6,6 +6,7 @@
     { "text": "Fitted Rebuild Guide Prices", "highlight": true }
   ],
   "intro": "The examples below apply to the named model and engine. They are starting guides for the relevant rebuild on a suitable core, not one price for every engine or a quotation for a minor repair. We identify the vehicle and damage before agreeing the written scope.",
+  "headerImage": "/headers/Why-chose-sec.webp",
   "bgImage": {
     "src": "/engine-images/engine-3.webp",
     "position": "top-right",

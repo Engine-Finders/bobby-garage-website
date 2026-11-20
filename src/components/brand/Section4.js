@@ -1,5 +1,6 @@
 import Image from "next/image";
 import SectionHeading from "../ui/SectionHeading";
+import SoftFadeHeading from "../ui/SoftFadeHeading";
 import HighlightText from "../ui/HighlightText";
 import Icon from "../ui/Icon";
 
@@ -8,54 +9,77 @@ export default function Section4({ data }) {
 
   return (
     <>
-      {/* Capabilities — dark + diagonal image */}
+      {/* Capabilities — soft-fade heading on mobile; diagonal image on desktop */}
       <section id={data.id} className="relative isolate overflow-hidden bg-primary-dark text-white">
-        <div
-          className="absolute inset-y-0 right-0 hidden w-[46%] lg:block"
-          style={{ clipPath: "polygon(16% 0, 100% 0, 100% 100%, 0 100%)" }}
-          aria-hidden="true"
-        >
-          <Image src={capabilities.bgImage.src} alt="" fill sizes="46vw" className="object-cover object-center" />
-          <div className="absolute inset-0 bg-linear-to-r from-primary-dark/50 via-transparent to-transparent" />
-          <div className="absolute inset-y-0 left-[14%] w-[5px] -skew-x-[14deg] bg-brand" aria-hidden="true" />
+        <SoftFadeHeading imageSrc={capabilities.bgImage.src} imageAlt={capabilities.bgImage.alt || ""} tone="dark">
+          <SectionHeading eyebrow={capabilities.eyebrow} heading={capabilities.heading} tone="dark" size="brand" />
+        </SoftFadeHeading>
+
+        <div className="absolute inset-y-0 right-0 hidden w-[50%] lg:block" aria-hidden="true">
+          <div
+            className="absolute inset-0"
+            style={{ clipPath: "polygon(22% 0, 100% 0, 100% 100%, 0 100%)" }}
+          >
+            <Image
+              src={capabilities.bgImage.src}
+              alt=""
+              fill
+              sizes="50vw"
+              quality={100}
+              unoptimized
+              className="object-cover object-center"
+            />
+            <div className="absolute inset-0 bg-linear-to-r from-primary-dark/45 via-transparent to-transparent" />
+          </div>
+          <svg
+            className="pointer-events-none absolute inset-0 z-[1] h-full w-full text-brand"
+            viewBox="0 0 100 100"
+            preserveAspectRatio="none"
+            fill="none"
+            aria-hidden="true"
+          >
+            <path d="M 22 0 L 0 100" stroke="currentColor" strokeWidth="1.8" vectorEffect="non-scaling-stroke" />
+          </svg>
         </div>
 
-        <div className="container-site relative z-10 grid grid-cols-1 gap-8 py-10 md:py-12 lg:min-h-[520px] lg:grid-cols-12 lg:items-center lg:py-14">
+        <div className="container-site relative z-10 py-5 md:py-6 lg:grid lg:min-h-[420px] lg:grid-cols-12 lg:items-center lg:py-9">
           <div className="lg:col-span-7 xl:col-span-6">
-            <SectionHeading eyebrow={capabilities.eyebrow} heading={capabilities.heading} tone="dark" />
+            <div className="hidden lg:block">
+              <SectionHeading eyebrow={capabilities.eyebrow} heading={capabilities.heading} tone="dark" size="brand" />
+            </div>
 
-            <ul className="mt-6 space-y-2.5 md:mt-7">
+            <ul className="mt-1 space-y-2.5 lg:mt-6 md:mt-7">
               {capabilities.items.map((item) => (
                 <li
                   key={item.title}
-                  className="flex gap-4 rounded-xl border border-white/12 bg-white/[0.04] px-4 py-3.5 md:px-5 md:py-4"
+                  className="rounded-xl border border-white/12 bg-white/[0.04] px-3 py-3 sm:px-4 sm:py-3.5 md:px-5 md:py-4"
                 >
-                  <span className="flex h-12 w-12 shrink-0 items-center justify-center rounded-lg border border-brand/35 bg-brand/10 text-brand">
-                    <Icon name={item.icon} className="h-6 w-6" strokeWidth={1.6} />
-                  </span>
-                  <div className="min-w-0">
-                    <h3 className="text-[16px] font-bold leading-snug text-white md:text-[17px]">{item.title}</h3>
-                    <p className="mt-1.5 text-[13.5px] leading-relaxed text-white/70 md:text-[14.5px]">{item.text}</p>
+                  <div className="flex items-start gap-3 sm:gap-4">
+                    <span className="flex h-10 w-10 shrink-0 items-center justify-center rounded-lg border border-brand/35 bg-brand/10 text-brand sm:h-12 sm:w-12">
+                      <Icon name={item.icon} className="h-5 w-5 sm:h-6 sm:w-6" strokeWidth={1.6} />
+                    </span>
+                    <h3 className="min-w-0 pt-1.5 text-[14.5px] font-bold leading-snug text-white sm:pt-2 sm:text-[16px] md:text-[17px]">
+                      {item.title}
+                    </h3>
                   </div>
+                  <p className="mt-2 text-[13px] leading-relaxed text-white/70 sm:mt-2.5 sm:text-[13.5px] md:text-[14.5px]">
+                    {item.text}
+                  </p>
                 </li>
               ))}
             </ul>
-          </div>
-
-          <div className="relative -mx-4 aspect-[16/10] overflow-hidden sm:aspect-[16/9] md:-mx-6 lg:hidden">
-            <Image src={capabilities.bgImage.src} alt={capabilities.bgImage.alt || ""} fill sizes="100vw" className="object-cover" />
-            <div className="absolute inset-y-0 left-0 w-[4px] bg-brand" aria-hidden="true" />
           </div>
         </div>
       </section>
 
       {/* Failures */}
-      <section className="bg-[#f6f2ed] py-10 text-ink md:py-12 lg:py-14">
+      <section className="bg-[#f6f2ed] py-7 text-ink md:py-8 lg:py-9">
         <div className="container-site">
           <SectionHeading
             eyebrow={failures.eyebrow}
             heading={failures.heading}
             intro={failures.intro}
+            size="brand"
             introClassName="max-w-[720px]"
           />
 
@@ -96,11 +120,10 @@ export default function Section4({ data }) {
             ))}
           </div>
 
-          <div className="mt-6 flex items-start gap-4 rounded-2xl border border-[#e4ddd4] bg-[#ece7e0] px-4 py-4 md:mt-7 md:px-6 md:py-5">
-            <span className="flex h-10 w-10 shrink-0 items-center justify-center rounded-full bg-primary-dark text-brand">
+          <div className="mt-6 overflow-hidden rounded-2xl border border-[#e4ddd4] bg-[#ece7e0] px-4 py-4 md:mt-7 md:px-6 md:py-5">
+            <span className="float-left mr-3 flex h-10 w-10 items-center justify-center rounded-full bg-primary-dark text-brand md:mr-4">
               <Icon name="info" className="h-5 w-5" strokeWidth={2} />
             </span>
-            <span className="hidden h-10 w-px shrink-0 bg-ink/20 md:block" aria-hidden="true" />
             <p className="text-[14px] leading-relaxed text-ink/80 md:text-[15px]">
               <HighlightText content={failures.callout} highlightClassName="font-bold text-ink" />
             </p>

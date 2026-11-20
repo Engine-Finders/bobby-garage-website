@@ -7,6 +7,7 @@
     { "text": "Repair Services", "highlight": true }
   ],
   "intro": "The right engine job starts with the cause and condition, not an automatic order for a whole engine. We discuss the relevant services below as part of an assessed, written scope.",
+  "headerImage": "/headers/timing-setup.webp",
   "bgImage": {
     "src": "/engine-images/engine-4.webp",
     "position": "top-right",

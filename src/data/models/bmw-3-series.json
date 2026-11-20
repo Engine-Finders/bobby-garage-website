@@ -5,7 +5,12 @@
   },
   "section1": {
     "id": "hero",
-    "eyebrowTags": ["BMW SPECIALISTS", "ENGINE REBUILD", "DIAGNOSTICS", "REPAIRS"],
+    "eyebrowTags": [
+      "BMW SPECIALISTS",
+      "ENGINE REBUILD",
+      "DIAGNOSTICS",
+      "REPAIRS"
+    ],
     "heading": {
       "main": "BMW 3 Series",
       "highlight": "Engine Rebuild & Repair"
@@ -25,35 +30,54 @@
       "icon": "phone"
     },
     "image": {
-      "src": "/test-images/hero-section.webp",
+      "src": "/bmw/1-Series.webp",
       "alt": "BMW 3 Series with the bonnet open in Boby's workshop"
     },
     "trustBar": [
-      { "icon": "calendar", "value": "10+", "label": "Years of Experience" },
-      { "icon": "users", "value": "1,000+", "label": "Satisfied Clients" },
+      {
+        "icon": "calendar",
+        "value": "10+",
+        "label": "Years of Experience"
+      },
+      {
+        "icon": "users",
+        "value": "1,000+",
+        "label": "Satisfied Clients"
+      },
       {
         "logoSrc": "/test-images/cars-logos.png",
         "value": "All 3 Series Generations",
         "label": "",
         "sub": "E36 – E46 – E90 – F30 – G20/G21"
       },
-      { "icon": "shieldCheck", "value": "BMW & German", "label": "Vehicle Specialists" }
+      {
+        "icon": "shieldCheck",
+        "value": "BMW & German",
+        "label": "Vehicle Specialists"
+      }
     ]
   },
   "section2": {
     "id": "generations",
     "eyebrow": "BMW 3 SERIES — GENERATIONS & ENGINES",
     "heading": [
-      { "text": "Which BMW 3 Series Generation " },
-      { "text": "and Engine", "highlight": true },
-      { "text": " Do You Have?" }
+      {
+        "text": "Which BMW 3 Series Generation "
+      },
+      {
+        "text": "and Engine",
+        "highlight": true
+      },
+      {
+        "text": " Do You Have?"
+      }
     ],
     "paragraphs": [
       "A 320d badge does not identify the engine. Depending on year and market, the same badge can sit above different diesel four-cylinders — and petrol badges are no clearer.",
       "Generation and body style are the useful first filter. Once we know whether you have an E46, E90, F30 or G20 — and what symptoms you are seeing — we can identify the likely engine family and quote to what is actually fitted."
     ],
     "image": {
-      "src": "/test-images/hero-section.webp",
+      "src": "/bmw/bmw.webp",
       "alt": "BMW 3 Series in the workshop"
     },
     "generations": [
@@ -64,7 +88,10 @@
         "text": "The 1990s and early-2000s 3 Series range covers saloon, Touring, coupé, convertible and Compact body styles. Engine identity still has to be confirmed — badges and markets do not map one-to-one.",
         "enginesLabel": "Key Engines",
         "engines": "M40/M42/M43/M44/M50/M52, N42/N46, M47, M57",
-        "image": { "src": "/test-images/car-image.webp", "alt": "Older BMW 3 Series generation" }
+        "image": {
+          "src": "/test-images/car-image.webp",
+          "alt": "Older BMW 3 Series generation"
+        }
       },
       {
         "tone": "dark",
@@ -73,7 +100,10 @@
         "text": "Mid-2000s to early-2010s 3 Series cars span naturally aspirated and turbo petrols plus common-rail diesels. Special versions such as the 320si and E9x M3 need their own engine confirmation before quoting.",
         "enginesLabel": "Key Engines",
         "engines": "N43, N45, N46, N52, N53, N54, N55, M47, N47, M57, N57",
-        "image": { "src": "/test-images/car-image.webp", "alt": "E9x BMW 3 Series generation" }
+        "image": {
+          "src": "/test-images/car-image.webp",
+          "alt": "E9x BMW 3 Series generation"
+        }
       },
       {
         "tone": "light",
@@ -82,7 +112,10 @@
         "text": "The 2010s F-generation family includes saloon, Touring and Gran Turismo applications, with turbo petrols, later diesels, ActiveHybrid 3 and 330e plug-in hybrid systems depending on year.",
         "enginesLabel": "Key Engines",
         "engines": "N13, N20, N55, B38, B48, B58, N47, B47, N57",
-        "image": { "src": "/test-images/car-image.webp", "alt": "F30 BMW 3 Series generation" }
+        "image": {
+          "src": "/test-images/car-image.webp",
+          "alt": "F30 BMW 3 Series generation"
+        }
       },
       {
         "tone": "dark",
@@ -91,7 +124,10 @@
         "text": "Current 320i/330i, 318d/320d/330d and M340i/M340d applications sit in this generation, including mild-hybrid and PHEV systems where fitted. Exact derivative and hybrid layout still need confirming.",
         "enginesLabel": "Key Engines",
         "engines": "B48, B58, B47, B57 (+ hybrid systems)",
-        "image": { "src": "/test-images/car-image.webp", "alt": "G20 BMW 3 Series generation" }
+        "image": {
+          "src": "/test-images/car-image.webp",
+          "alt": "G20 BMW 3 Series generation"
+        }
       }
     ]
   },
@@ -99,11 +135,16 @@
     "id": "engine-coverage",
     "eyebrow": "ENGINE COVERAGE",
     "heading": [
-      { "text": "BMW 3 Series Engine Coverage " },
-      { "text": "at a Glance", "highlight": true }
+      {
+        "text": "BMW 3 Series Engine Coverage "
+      },
+      {
+        "text": "at a Glance",
+        "highlight": true
+      }
     ],
     "image": {
-      "src": "/test-images/engine.webp",
+      "src": "/headers/Why-chose-sec.webp",
       "alt": "BMW engine on a workshop stand"
     },
     "columns": {
@@ -154,9 +195,16 @@
     "id": "rebuild-guides",
     "eyebrow": "BMW 3 SERIES — REBUILD GUIDES",
     "heading": [
-      { "text": "BMW 3 Series " },
-      { "text": "Engine Rebuild", "highlight": true },
-      { "text": " Costs" }
+      {
+        "text": "BMW 3 Series "
+      },
+      {
+        "text": "Engine Rebuild",
+        "highlight": true
+      },
+      {
+        "text": " Costs"
+      }
     ],
     "intro": "These are guide prices for a suitable core and a defined rebuild scope — not a fixed quote for every 3 Series or every fault.",
     "columns": {
@@ -192,17 +240,29 @@
       }
     ],
     "image": {
-      "src": "/test-images/engine.webp",
+      "src": "/headers/m-power-build.webp",
       "alt": "BMW engine prepared for rebuild assessment"
     },
     "ribbon": "GENUINE BMW ENGINE SPECIALISTS",
     "included": {
       "title": "What's included in the guide?",
       "items": [
-        { "icon": "wrench", "label": "Engine removal and refitting labour" },
-        { "icon": "droplet", "label": "Standard fluids and consumables" },
-        { "icon": "clipboardCheck", "label": "VAT included" },
-        { "icon": "cog", "label": "Written quote after assessment" }
+        {
+          "icon": "wrench",
+          "label": "Engine removal and refitting labour"
+        },
+        {
+          "icon": "droplet",
+          "label": "Standard fluids and consumables"
+        },
+        {
+          "icon": "clipboardCheck",
+          "label": "VAT included"
+        },
+        {
+          "icon": "cog",
+          "label": "Written quote after assessment"
+        }
       ]
     },
     "notes": [
@@ -225,15 +285,20 @@
     },
     "factors": {
       "heading": [
-        { "text": "Other Factors That " },
-        { "text": "Affect The Quotation", "highlight": true }
+        {
+          "text": "Other Factors That "
+        },
+        {
+          "text": "Affect The Quotation",
+          "highlight": true
+        }
       ],
       "paragraphs": [
         "External leaks or injector problems can stay smaller repairs. A cracked block or a contaminated crankshaft changes the scope. The quotation identifies the work that applies to your engine — not a generic package.",
         "Mention any previous engine replacement, tuning, overheating, or low-oil-pressure warnings when you enquire so we can assess the right route first."
       ],
       "image": {
-        "src": "/test-images/hero-section.webp",
+        "src": "/bmw/bmw.webp",
         "alt": "BMW 3 Series in the workshop"
       }
     }
@@ -242,13 +307,20 @@
     "id": "faults",
     "eyebrow": "BMW 3 SERIES — FAULTS WE SEE",
     "heading": [
-      { "text": "Engine Faults We Investigate " },
-      { "text": "by Engine", "highlight": true },
-      { "text": " and Symptom" }
+      {
+        "text": "Engine Faults We Investigate "
+      },
+      {
+        "text": "by Engine",
+        "highlight": true
+      },
+      {
+        "text": " and Symptom"
+      }
     ],
     "intro": "Symptoms point to a fault family. The engine code, generation and inspection decide whether the job is a limited repair or a full rebuild.",
     "image": {
-      "src": "/test-images/hero-section.webp",
+      "src": "/headers/timing-setup.webp",
       "alt": "BMW 3 Series front grille and headlight"
     },
     "cards": [
@@ -256,7 +328,10 @@
         "number": "1",
         "title": "N47 or Other Timing-System Failure",
         "text": "Rattle on cold start, timing-chain noise or a diesel that has jumped timing. We confirm which chain layout is fitted and whether damage stayed contained or reached the valves and pistons.",
-        "image": { "src": "/test-images/engine.webp", "alt": "Timing system inspection" },
+        "image": {
+          "src": "/Repair-images/bmw-n47-timing-chain-rattle.webp",
+          "alt": "Timing system inspection"
+        },
         "aside": {
           "icon": "link",
           "label": "Our Approach",
@@ -267,7 +342,10 @@
         "number": "2",
         "title": "Oil Pressure, Knock or Bearing Wear",
         "text": "Low oil-pressure warnings, deep knock or metal in the sump point to lubrication and bearing damage. Stop the engine and tell us when the warning first appeared.",
-        "image": { "src": "/test-images/engine.webp", "alt": "Engine lubrication and bearings" },
+        "image": {
+          "src": "/Repair-images/common-engine-problems-coolant-in-oil-porous-block.webp",
+          "alt": "Engine lubrication and bearings"
+        },
         "aside": {
           "icon": "droplet",
           "label": "Key Point",
@@ -278,7 +356,10 @@
         "number": "3",
         "title": "Overheating, Smoke or Compression Loss",
         "text": "Overheat events, white or blue smoke, misfire and low compression need a staged check of cooling, head integrity and cylinder condition before major work is authorised.",
-        "image": { "src": "/test-images/engine.webp", "alt": "Engine diagnostics and testing" },
+        "image": {
+          "src": "/Repair-images/common-engine-problems-turbo-whistle-plus-blue-smoke.webp",
+          "alt": "Engine diagnostics and testing"
+        },
         "aside": {
           "icon": "thermometer",
           "label": "Important Note",
@@ -295,33 +376,290 @@
         "icon": "mail"
       },
       "image": {
-        "src": "/test-images/car-image.webp",
+        "src": "/bmw/bmw.webp",
         "alt": "BMW 3 Series in the workshop"
       }
     },
     "footerBar": [
-      { "icon": "checkCircle", "label": "Engine Diagnostics" },
-      { "icon": "checkCircle", "label": "Fault Assessment" },
-      { "icon": "checkCircle", "label": "Written Scope" },
-      { "icon": "checkCircle", "label": "Rebuild or Repair Route" }
+      {
+        "icon": "checkCircle",
+        "label": "Engine Diagnostics"
+      },
+      {
+        "icon": "checkCircle",
+        "label": "Fault Assessment"
+      },
+      {
+        "icon": "checkCircle",
+        "label": "Written Scope"
+      },
+      {
+        "icon": "checkCircle",
+        "label": "Rebuild or Repair Route"
+      }
     ]
   },
   "section6": {
-    "id": "gallery-warranty",
-    "eyebrow": "WORKSHOP",
+    "id": "rebuild-options",
+    "eyebrow": "BMW 3 SERIES / ENGINE RESULTS & DIAGNOSIS",
     "heading": [
-      { "text": "Gallery & " },
-      { "text": "Warranty", "highlight": true }
+      {
+        "text": "Rebuild, Recondition or Replace Your "
+      },
+      {
+        "text": "3 Series Engine?",
+        "highlight": true
+      }
     ],
-    "intro": "Placeholder — model section 6 content to follow."
+    "intro": "Whether your 320d has stopped after a timing fault or your petrol 3 Series is losing compression, the first decision is the same: establish what has failed before choosing a repair route.",
+    "image": {
+      "src": "/headers/D. Timing Setup Precision Timing Assembly.webp",
+      "alt": "BMW 3 Series headlight and grille detail"
+    },
+    "options": [
+      {
+        "icon": "cog",
+        "title": "Rebuild",
+        "text": "Restore the fitted engine with measured parts, correct clearances and a written scope."
+      },
+      {
+        "icon": "layers",
+        "title": "Recondition",
+        "text": "A controlled strip, clean and rebuild route where the core remains suitable for reuse."
+      },
+      {
+        "icon": "replace",
+        "title": "Replace",
+        "text": "Discussed when rebuild is not appropriate or economic — still assessed from the same vehicle details."
+      }
+    ]
   },
   "section7": {
-    "id": "contact-faqs-cta",
-    "eyebrow": "NEXT STEP",
+    "id": "rebuild-process",
     "heading": [
-      { "text": "Request a 3 Series " },
-      { "text": "Assessment", "highlight": true }
+      {
+        "text": "What Happens During Your "
+      },
+      {
+        "text": "BMW 3 Series Rebuild?",
+        "highlight": true
+      }
     ],
-    "intro": "Placeholder — model section 7 content to follow."
+    "intro": "Once the route is agreed, work follows a controlled strip, measurement, parts and assembly sequence — with testing before the car leaves the workshop.",
+    "steps": [
+      {
+        "number": "01",
+        "title": "Strip-Down",
+        "image": {
+          "src": "/Repair-images/Engine Rebuilds.webp",
+          "alt": "Engine strip-down"
+        }
+      },
+      {
+        "number": "02",
+        "title": "Inspection & Measurement",
+        "image": {
+          "src": "/Repair-images/A. BMW S54 Cylinder Head Inspection.webp",
+          "alt": "Cylinder measurement"
+        }
+      },
+      {
+        "number": "03",
+        "title": "Parts & Assembly",
+        "image": {
+          "src": "/Repair-images/bmw-n47-timing-chain-rattle.webp",
+          "alt": "Timing and assembly"
+        }
+      },
+      {
+        "number": "04",
+        "title": "Testing & Handover",
+        "image": {
+          "src": "/Repair-images/limp-mode-egr-faults.webp",
+          "alt": "Diagnostics and testing"
+        }
+      }
+    ]
+  },
+  "section8": {
+    "id": "why-warranty",
+    "why": {
+      "heading": [
+        {
+          "text": "Why Bring Your "
+        },
+        {
+          "text": "3 Series Engine",
+          "highlight": true
+        },
+        {
+          "text": " to "
+        },
+        {
+          "text": "Boby",
+          "highlight": true
+        },
+        {
+          "text": "?"
+        }
+      ],
+      "intro": "We specialise in BMW engine work with assessment-first quoting, OEM or OE-quality parts where specified, and a clear written scope before major work proceeds.",
+      "image": {
+        "src": "/headers/C. M-Power Build Performance Engine Rebuild.webp",
+        "alt": "Technician working on a BMW engine"
+      },
+      "badges": [
+        {
+          "icon": "cog",
+          "label": "OEM / OE-Quality Components"
+        },
+        {
+          "icon": "clipboardCheck",
+          "label": "Clear, Written Scope of Work"
+        },
+        {
+          "icon": "shieldCheck",
+          "label": "Transparent Assessment & Takeover Support"
+        }
+      ]
+    },
+    "warranty": {
+      "heading": [
+        {
+          "text": "Warranty, Completion Time and Getting "
+        },
+        {
+          "text": "the Vehicle to Us",
+          "highlight": true
+        }
+      ],
+      "items": [
+        {
+          "icon": "shieldCheck",
+          "title": "12-Month Warranty",
+          "text": "Cover terms are confirmed in writing with the agreed rebuild scope and parts list."
+        },
+        {
+          "icon": "clock",
+          "title": "Running-In Service",
+          "text": "Guidance on fluids, load and early checks so the rebuilt engine settles correctly."
+        },
+        {
+          "icon": "calendar",
+          "title": "Completion Time",
+          "text": "Timing depends on inspection findings, parts lead times and the exact engine family."
+        },
+        {
+          "icon": "towTruck",
+          "title": "Getting the Car to Us",
+          "text": "Local drop-off by arrangement, or recovery discussed when the vehicle will not run safely."
+        }
+      ]
+    },
+    "warning": {
+      "icon": "alertTriangle",
+      "text": "Please do not drive a BMW with an oil-pressure warning, deep knock or overheating. Stop the engine and arrange assessment — continued running often turns a repair into a full rebuild."
+    }
+  },
+  "section9": {
+    "id": "faqs",
+    "eyebrow": "BMW 3 SERIES / ENGINE REBUILD & REPAIR",
+    "heading": [
+      {
+        "text": "BMW 3 Series Engine "
+      },
+      {
+        "text": "Repair Questions",
+        "highlight": true
+      }
+    ],
+    "items": [
+      {
+        "question": "How much does a BMW 320d engine rebuild cost?",
+        "answer": "Guide figures start from around £2,000 for suitable N47 cores and from around £3,500 for later B47 diesel applications after inspection. Exact price depends on damage, parts and the installation — not the badge alone."
+      },
+      {
+        "question": "Can you rebuild an E46 or E90 engine?",
+        "answer": "Yes. E46 and E90/E9x 3 Series engines are assessed regularly. We confirm the exact engine code and failure mode before quoting a rebuild or limited repair route."
+      },
+      {
+        "question": "Is every 330i fitted with the same engine?",
+        "answer": "No. Petrol badges can sit above different N-series or B-series engines depending on year and market. Registration and engine identity still need confirming before a written quote."
+      },
+      {
+        "question": "Does a 330e enquiry include the hybrid battery?",
+        "answer": "A 330e enquiry starts with the combustion engine and hybrid interfaces identified. High-voltage battery work is assessed separately and is not assumed in a standard engine rebuild guide."
+      },
+      {
+        "question": "My 320d has a rattle on cold start. Can I keep driving it?",
+        "answer": "Cold-start rattle can be timing-related. Continued driving risks a jumped chain and internal damage. Stop if the noise worsens, and arrange assessment with a short recording if possible."
+      },
+      {
+        "question": "My 320d chain has snapped. Is the engine finished?",
+        "answer": "Not always. Some engines are rebuildable after timing failure; others are uneconomic once valves and pistons are damaged. Strip-down and measurement decide the route — not the first symptom alone."
+      }
+    ]
+  },
+  "section10": {
+    "id": "visit",
+    "heading": [
+      {
+        "text": "Visit or Contact "
+      },
+      {
+        "text": "Boby Engine Work",
+        "highlight": true
+      }
+    ],
+    "image": {
+      "src": "/s-5-6-7/workshop.webp",
+      "alt": "Boby's Engine Work workshop exterior"
+    },
+    "details": [
+      {
+        "icon": "mapPin",
+        "label": "Address",
+        "value": "Unit D1, Windsor Road, Ramsden Heath, Billericay, CM11 1QE"
+      },
+      {
+        "icon": "clock",
+        "label": "Hours",
+        "value": "Mon–Fri: 9am – 6pm | Sat: 11am – 2pm (Excluding English bank holidays)"
+      }
+    ],
+    "email": {
+      "address": "info@bobyenginework.co.uk",
+      "href": "mailto:info@bobyenginework.co.uk"
+    },
+    "checklist": [
+      "Your registration, model and mileage.",
+      "What happened before the fault and whether the engine still runs.",
+      "Any oil-pressure warning, overheating, timing noise or previous engine replacement.",
+      "Existing diagnostic reports, inspection photographs or repair invoices.",
+      "Vehicle location and whether it rolls and can be loaded.",
+      "Your contact number and preferred way to be contacted."
+    ]
+  },
+  "section11": {
+    "id": "engine-quote",
+    "heading": [
+      {
+        "text": "Get a BMW 3 Series Engine "
+      },
+      {
+        "text": "Rebuild Quote",
+        "highlight": true
+      }
+    ],
+    "intro": "Whether you have an older E46, an E90 diesel, an F30 petrol or a later G20 Touring, the starting point is the same: identify the fitted engine and establish the damage. We will explain the assessment route and the repair or rebuild options for that particular car.",
+    "button": {
+      "label": "Request a BMW 3 Series Engine Assessment by Email",
+      "href": "mailto:info@bobyenginework.co.uk",
+      "icon": "mail"
+    },
+    "image": {
+      "src": "/headers/m-power-build.webp",
+      "alt": ""
+    }
   }
 }

@@ -13,7 +13,7 @@ export default function Section1({ data }) {
         aria-hidden="true"
       />
 
-      <div className="container-site grid grid-cols-1 gap-8 pb-10 pt-10 sm:pt-14 md:gap-10 lg:static lg:min-h-[620px] lg:grid-cols-12 lg:items-center lg:gap-8 lg:pb-12 lg:pt-16 xl:min-h-[680px] xl:pt-20">
+      <div className="container-site grid grid-cols-1 gap-6 pb-5 pt-8 sm:pt-10 md:gap-8 lg:static lg:min-h-[540px] lg:grid-cols-12 lg:items-center lg:gap-8 lg:pb-6 lg:pt-11 xl:min-h-[580px] xl:pt-12">
         <div className="lg:col-span-7 xl:col-span-6">
           <p className="flex flex-wrap items-center gap-x-2.5 gap-y-1.5 text-[11.5px] font-bold uppercase tracking-[0.06em] text-white/80 motion-safe:animate-fade-up sm:text-[12.5px] md:text-[13.5px]">
             <Slashes className="h-3.5 md:h-4" />
@@ -30,7 +30,7 @@ export default function Section1({ data }) {
           </p>
 
           <h1
-            className="mt-4 max-w-[680px] text-[34px] font-extrabold leading-[1.08] tracking-[-0.02em] motion-safe:animate-fade-up sm:text-[42px] md:text-[46px] lg:text-[50px] xl:text-[56px]"
+            className="mt-3 max-w-[680px] text-[34px] font-extrabold leading-[1.08] tracking-[-0.02em] motion-safe:animate-fade-up sm:text-[42px] md:text-[46px] lg:text-[50px] xl:text-[56px]"
             style={{ animationDelay: "80ms" }}
           >
             <span className="block">{data.heading.main}</span>
@@ -38,7 +38,7 @@ export default function Section1({ data }) {
           </h1>
 
           <div
-            className="mt-5 max-w-[580px] space-y-4 text-base leading-relaxed text-white/85 motion-safe:animate-fade-up md:text-[17px]"
+            className="mt-4 max-w-[580px] space-y-2 text-[15px] leading-snug text-white/85 motion-safe:animate-fade-up md:space-y-3 md:text-[17px] md:leading-relaxed"
             style={{ animationDelay: "160ms" }}
           >
             {data.paragraphs.map((p, i) => (
@@ -47,7 +47,7 @@ export default function Section1({ data }) {
           </div>
 
           {/* Mobile: in-flow image. Desktop: full-bleed section background. */}
-          <div className="relative -mx-4 mt-6 aspect-[16/10] overflow-hidden [mask-image:linear-gradient(to_bottom,transparent,black_18%,black_82%,transparent)] sm:aspect-[16/9] md:-mx-6 lg:absolute lg:inset-0 lg:-z-10 lg:mx-0 lg:mt-0 lg:aspect-auto lg:[mask-image:none]">
+          <div className="relative -mx-4 mt-5 aspect-[16/10] overflow-hidden [mask-image:linear-gradient(to_bottom,transparent,black_18%,black_82%,transparent)] sm:aspect-[16/9] md:-mx-6 lg:absolute lg:inset-0 lg:-z-10 lg:mx-0 lg:mt-0 lg:aspect-auto lg:[mask-image:none]">
             <Image
               src={data.image.src}
               alt={data.image.alt}
@@ -68,7 +68,7 @@ export default function Section1({ data }) {
           </div>
 
           <div
-            className="mt-8 flex flex-col gap-3 motion-safe:animate-fade-up sm:flex-row sm:flex-wrap sm:items-center"
+            className="mt-5 flex flex-col gap-3 motion-safe:animate-fade-up sm:flex-row sm:flex-wrap sm:items-center"
             style={{ animationDelay: "240ms" }}
           >
             <Button href={data.primaryCta.href} size="lg" className="w-full gap-3 sm:w-auto">
@@ -89,12 +89,12 @@ export default function Section1({ data }) {
         </div>
       </div>
 
-      <div className="container-site relative z-10 pb-12 md:pb-14 lg:pb-16">
+      <div className="container-site relative z-10 pb-8 md:pb-9 lg:pb-10">
         <ul className="grid grid-cols-1 overflow-hidden rounded-2xl border border-white/10 border-t-brand/70 bg-linear-to-b from-charcoal/95 to-primary-dark/95 shadow-[0_16px_40px_rgba(0,0,0,0.45)] backdrop-blur-md sm:grid-cols-2 lg:grid-cols-4">
           {data.trustBar.map((item, i) => (
             <li
               key={`${item.value}-${i}`}
-              className="flex items-center gap-3.5 border-b border-white/10 px-5 py-5 last:border-b-0 sm:border-b-0 sm:border-r sm:border-white/10 sm:last:border-r-0 sm:odd:border-b sm:[&:nth-child(2)]:border-b lg:border-b-0 lg:[&:nth-child(2)]:border-b-0"
+              className="flex items-center gap-3.5 border-b border-white/10 px-5 py-4 last:border-b-0 sm:border-b-0 sm:border-r sm:border-white/10 sm:last:border-r-0 sm:odd:border-b sm:[&:nth-child(2)]:border-b lg:border-b-0 lg:[&:nth-child(2)]:border-b-0"
             >
               {item.logoSrc ? (
                 <span className="relative flex h-11 w-11 shrink-0 items-center justify-center overflow-hidden rounded-full bg-white">
