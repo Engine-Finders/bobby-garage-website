@@ -25,7 +25,9 @@
     {
       "label": "Engines",
       "href": "/engines",
-      "children": []
+      "children": [
+        { "label": "Mercedes OM651", "href": "/engines/mercedes-om651" }
+      ]
     }
   ],
   "phone": {
