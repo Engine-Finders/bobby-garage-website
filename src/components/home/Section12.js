@@ -34,19 +34,36 @@ export default function Section12() {
         <div className="container-site relative py-7 lg:hidden">
           <div
             className="pointer-events-none absolute -right-4 top-0 z-0 h-52 w-[58%] overflow-hidden opacity-95"
-            style={{ clipPath: "polygon(24% 0, 100% 0, 100% 100%, 0 100%)" }}
             aria-hidden="true"
           >
-            <Image
-              src={contact.image.src}
-              alt=""
-              fill
-              sizes="60vw"
-              quality={100}
-              unoptimized
-              className="object-cover object-center"
-            />
-            <span className="absolute inset-y-0 left-[12%] w-[5px] -skew-x-[18deg] bg-brand" />
+            <div
+              className="absolute inset-0 overflow-hidden"
+              style={{ clipPath: "polygon(24% 0, 100% 0, 100% 100%, 0 100%)" }}
+            >
+              <Image
+                src={contact.image.src}
+                alt=""
+                fill
+                sizes="60vw"
+                quality={100}
+                unoptimized
+                className="object-cover object-center"
+              />
+            </div>
+            <svg
+              className="absolute inset-0 z-[1] h-full w-full text-brand"
+              viewBox="0 0 100 100"
+              preserveAspectRatio="none"
+              fill="none"
+            >
+              <path
+                d="M 24 0 L 0 100"
+                stroke="currentColor"
+                strokeWidth="2.4"
+                strokeLinecap="round"
+                vectorEffect="non-scaling-stroke"
+              />
+            </svg>
           </div>
 
           <div className="relative z-10">
@@ -121,11 +138,8 @@ export default function Section12() {
           </div>
 
           <div className="absolute inset-y-0 right-[28%] left-[38%]">
-            <div
-              className="absolute inset-0 z-[1] bg-primary-dark [clip-path:polygon(0_0,12%_0,0_100%)]"
-              aria-hidden="true"
-            />
-            <div className="absolute inset-0 [clip-path:polygon(12%_0,100%_0,100%_100%,0_100%)]">
+            {/* Image only to the right of the orange seam; left stays solid section bg */}
+            <div className="absolute inset-0 [clip-path:polygon(14%_0,100%_0,100%_100%,0_100%)]">
               <Image
                 src={contact.image.src}
                 alt={contact.image.alt || "Boby Engine Work workshop"}
@@ -137,10 +151,21 @@ export default function Section12() {
               />
               <div className="absolute inset-0 bg-primary-dark/35" aria-hidden="true" />
             </div>
-            <span
-              className="pointer-events-none absolute inset-y-0 left-[6%] z-[2] w-[8px] -skew-x-[16deg] bg-brand"
+            <svg
+              className="pointer-events-none absolute inset-0 z-[2] h-full w-full text-brand"
+              viewBox="0 0 100 100"
+              preserveAspectRatio="none"
+              fill="none"
               aria-hidden="true"
-            />
+            >
+              <path
+                d="M 14 0 L 0 100"
+                stroke="currentColor"
+                strokeWidth="3.2"
+                strokeLinecap="round"
+                vectorEffect="non-scaling-stroke"
+              />
+            </svg>
           </div>
         </div>
       </section>

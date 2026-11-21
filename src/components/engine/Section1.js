@@ -53,7 +53,7 @@ export default function Section1({ data }) {
         />
       </div>
 
-      <div className="relative z-10 px-5 pb-10 pt-7 md:px-8 md:pb-12 lg:min-h-[705px] lg:px-10 lg:pb-[39px] lg:pt-[38px] xl:px-[60px]">
+      <div className="relative z-10 px-5 pb-5 pt-7 md:px-8 md:pb-8 lg:min-h-[705px] lg:px-10 lg:pb-[39px] lg:pt-[38px] xl:px-[60px]">
         <div className="lg:max-w-[520px] xl:max-w-[650px]">
           <nav aria-label="Breadcrumb">
             <ol className="flex flex-wrap items-center gap-x-2.5 gap-y-1 text-[13px] font-medium">
@@ -111,34 +111,50 @@ export default function Section1({ data }) {
             />
           </div>
 
-          <div className="mt-[6px] flex max-w-[648px] items-center gap-[37px] rounded-[14px] border border-brand/55 bg-[#15171a] px-[10px] py-4 shadow-[0_10px_30px_rgba(0,0,0,0.35)]">
+          <div className="mt-[6px] flex max-w-[648px] items-center gap-[2px] rounded-[14px] border border-brand/55 bg-[#15171a] px-[10px] py-3 shadow-[0_10px_30px_rgba(0,0,0,0.35)] sm:gap-3 sm:py-4 lg:gap-[37px]">
             <Icon
               name={data.priceNote.icon}
-              className="h-[52px] w-[52px] shrink-0 text-brand"
+              className="h-10 w-10 shrink-0 text-brand sm:h-[52px] sm:w-[52px]"
               strokeWidth={1.4}
             />
-            <p className="text-[15px] leading-[1.4] text-white/90 xl:text-[17px]">
+            <p className="min-w-0 text-[13.5px] leading-[1.35] text-white/90 sm:text-[15px] sm:leading-[1.4] xl:text-[17px]">
               <HighlightText content={data.priceNote.text} highlightClassName="font-bold text-brand" />
             </p>
           </div>
 
-          <ul className="mt-[40px] flex max-w-[650px] flex-col gap-4 sm:flex-row sm:items-center sm:gap-0">
+          <ul className="mt-5 grid max-w-[650px] grid-cols-3 gap-x-3 sm:mt-[40px] sm:flex sm:items-center sm:gap-x-0">
             {data.stats.map((item, i) => (
-              <li key={item.value} className="flex items-center">
-                {i > 0 && <span className="mx-[34px] hidden h-[52px] w-px shrink-0 bg-white/20 sm:block" aria-hidden="true" />}
-                <div className="flex items-center gap-3.5">
-                  <Icon name={item.icon} className="h-[36px] w-[36px] shrink-0 text-brand" strokeWidth={1.5} />
+              <li
+                key={item.value}
+                className={`flex min-w-0 items-center justify-center sm:justify-start ${
+                  i > 0 ? "sm:border-l sm:border-white/20 sm:pl-[34px] sm:ml-[34px]" : ""
+                }`}
+              >
+                <div className="flex min-w-0 flex-col items-center gap-1 text-center sm:flex-row sm:items-center sm:gap-3.5 sm:text-left">
+                  <Icon
+                    name={item.icon}
+                    className="h-7 w-7 shrink-0 text-brand sm:h-[36px] sm:w-[36px]"
+                    strokeWidth={1.5}
+                  />
                   <div className="min-w-0">
-                    <p className="text-[20px] font-extrabold leading-none tracking-[-0.02em]">{item.value}</p>
-                    <p className="mt-1 text-[13px] font-medium leading-tight text-white/90">{item.label}</p>
-                    {item.sub && <p className="mt-[3px] text-[11px] leading-tight text-white/55">{item.sub}</p>}
+                    <p className="text-[15px] font-extrabold leading-none tracking-[-0.02em] sm:text-[20px]">
+                      {item.value}
+                    </p>
+                    <p className="mt-0.5 text-[10px] font-medium leading-tight text-white/90 sm:mt-1 sm:text-[13px]">
+                      {item.label}
+                    </p>
+                    {item.sub && (
+                      <p className="mt-[2px] hidden text-[11px] leading-tight text-white/55 sm:block">
+                        {item.sub}
+                      </p>
+                    )}
                   </div>
                 </div>
               </li>
             ))}
           </ul>
 
-          <div className="mt-[38px]">
+          <div className="mt-4 sm:mt-6 lg:mt-[38px]">
             <Button
               href={data.cta.href}
               size="lg"

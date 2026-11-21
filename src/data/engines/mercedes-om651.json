@@ -51,5 +51,592 @@
       "mobile": "/test-images/hero-om651-mobile.jpg",
       "alt": "Mercedes OM651 diesel engine on a workshop stand"
     }
+  },
+  "section2": {
+    "id": "model-coverage",
+    "eyebrow": "MODEL COVERAGE",
+    "heading": [
+      { "text": "Which Mercedes Models Have the " },
+      { "text": "OM651 Engine?", "highlight": true }
+    ],
+    "intro": [
+      "The OM651 is a four-cylinder common-rail diesel family. The 2,143 cc version is commonly described as 2.1 or 2.2 litres. Some compact-car applications use a smaller 1.8-litre OM651, so the engine code alone does not establish the capacity or repair scope.",
+      "We cover the relevant OM651 installations in the model groups below. These are application routes, not a claim that every diesel in each generation has this engine. Badges, build dates and specifications change, including transitions to the separate OM654 family."
+    ],
+    "image": {
+      "src": "/mercedes/Mercedes.webp",
+      "alt": "Mercedes-Benz front grille and headlight"
+    },
+    "columns": {
+      "model": "Model group",
+      "generation": "Generation to identify",
+      "confirm": "What we confirm before quoting"
+    },
+    "tables": [
+      [
+        {
+          "model": "A-Class and B-Class",
+          "generation": "W176 and W246",
+          "confirm": "OM651 capacity and exact version; some cars have a different diesel engine",
+          "image": {
+            "src": "/home-s2-images/mercedes-benz-a-class-w168-a-class facelift-hatchback-2001–2004-revised front rear styling-horizon blue metallic-a-class w168 a-class fl-45-angle-front-view.webp",
+            "alt": "Mercedes-Benz A-Class"
+          }
+        },
+        {
+          "model": "CLA and GLA",
+          "generation": "C117/X117 and X156",
+          "confirm": "Correct OM651 derivative, installation and build date",
+          "image": {
+            "src": "/test-images/car-image.webp",
+            "alt": "Mercedes CLA and GLA"
+          }
+        },
+        {
+          "model": "C-Class",
+          "generation": "W205/S205/C205/A205",
+          "confirm": "OM651-equipped version, not a later OM654 or another engine",
+          "image": {
+            "src": "/test-images/car-image.webp",
+            "alt": "Mercedes-Benz C-Class"
+          }
+        },
+        {
+          "model": "E-Class",
+          "generation": "W212/S212/C207/A207",
+          "confirm": "Actual four-cylinder diesel specification and body style",
+          "image": {
+            "src": "/test-images/car-image.webp",
+            "alt": "Mercedes-Benz E-Class"
+          }
+        },
+        {
+          "model": "CLS",
+          "generation": "C218/X218",
+          "confirm": "OM651 diesel application and the relevant installation",
+          "image": {
+            "src": "/test-images/car-image.webp",
+            "alt": "Mercedes-Benz CLS"
+          }
+        },
+        {
+          "model": "GLC",
+          "generation": "X253/C253",
+          "confirm": "OM651-equipped diesel, drivetrain and build date",
+          "image": {
+            "src": "/test-images/car-image.webp",
+            "alt": "Mercedes-Benz GLC"
+          }
+        }
+      ],
+      [
+        {
+          "model": "ML and GLE",
+          "generation": "W166",
+          "confirm": "OM651 four-cylinder diesel; this does not include every GLE or the C292 coupé",
+          "image": {
+            "src": "/test-images/car-image.webp",
+            "alt": "Mercedes-Benz ML and GLE"
+          }
+        },
+        {
+          "model": "SLK and SLC",
+          "generation": "R172",
+          "confirm": "Diesel version and engine identity, not a petrol roadster",
+          "image": {
+            "src": "/test-images/car-image.webp",
+            "alt": "Mercedes-Benz SLK and SLC"
+          }
+        },
+        {
+          "model": "V-Class and Vito",
+          "generation": "W447",
+          "confirm": "OM651 version; smaller or later diesel engines need a different assessment",
+          "image": {
+            "src": "/test-images/car-image.webp",
+            "alt": "Mercedes-Benz V-Class and Vito"
+          }
+        },
+        {
+          "model": "Sprinter",
+          "generation": "W906",
+          "confirm": "Engine code, vehicle specification and access requirements",
+          "image": {
+            "src": "/test-images/car-image.webp",
+            "alt": "Mercedes-Benz Sprinter"
+          }
+        },
+        {
+          "model": "GLK / imported vehicles",
+          "generation": "X204 or other individually identified vehicle",
+          "confirm": "Import specification and exact installation, quoted individually",
+          "image": {
+            "src": "/home-s2-images/mercedes-benz-a-class-w168-a-class facelift-hatchback-2001–2004-revised front rear styling-horizon blue metallic-a-class w168 a-class fl-45-angle-front-view.webp",
+            "alt": "Mercedes-Benz GLK"
+          }
+        }
+      ]
+    ],
+    "note": {
+      "icon": "info",
+      "text": "The main coverage here concerns generations still produced in 2015 or later. Earlier cars and applications outside these groups can be discussed individually. Send the registration and, if available, the VIN or engine number. A registration lookup helps identify the vehicle; it does not guarantee which engine is now installed."
+    }
+  },
+  "section3": {
+    "id": "rebuild-costs",
+    "eyebrow": "REBUILD COSTS",
+    "heading": [
+      { "text": "How Much Does a Mercedes " },
+      { "text": "OM651 Engine", "highlight": true },
+      { "text": " Rebuild Cost?" }
+    ],
+    "intro": "The rebuild starting guide is £4,000 for the supported OM651 2.1 diesel applications. It is a guide for rebuilding an engine with recoverable major components, rather than a fixed price for every OM651 failure.",
+    "image": {
+      "src": "/headers/m-power-build.webp",
+      "alt": "Mercedes engine rebuild workshop"
+    },
+    "columns": {
+      "work": "Work required",
+      "price": "Price route",
+      "quote": "What determines the written quote"
+    },
+    "rows": [
+      {
+        "icon": "engine",
+        "work": "OM651 2.1 full rebuild in the supported applications above",
+        "price": "From £4,000",
+        "priceTone": "brand",
+        "quote": "Vehicle installation, damage, serviceable block/crankshaft and the agreed parts/machining scope"
+      },
+      {
+        "icon": "car",
+        "work": "OM651 1.8, imported or other unlisted installation",
+        "price": "Quoted after assessment",
+        "quote": "Exact derivative, vehicle and recoverability"
+      },
+      {
+        "icon": "link",
+        "work": "Timing-chain/tensioner repair before internal damage",
+        "price": "Quoted separately",
+        "quote": "Confirmed wear, access and the components actually required"
+      },
+      {
+        "icon": "droplet",
+        "work": "Injector sealing, coolant leak or other contained repair",
+        "price": "Quoted separately",
+        "quote": "Diagnosis and whether internal engine damage exists"
+      },
+      {
+        "icon": "piston",
+        "work": "Major block, crankshaft or cylinder-head replacement",
+        "price": "Additional work quoted before authorisation",
+        "quote": "Inspection results and available repair options"
+      }
+    ],
+    "note": {
+      "icon": "info",
+      "text": "The rebuild guide includes standard engine removal/refitting and standard fluids/consumables. The written quotation identifies the parts and machining. Turbochargers, injectors and other ancillaries are separate unless itemised; collection is separately quoted. If strip-down exposes significant additional damage, we explain the revised work before proceeding."
+    },
+    "cards": [
+      {
+        "eyebrow": "STARTING GUIDE",
+        "heading": "Is £4,000 the Average OM651 Rebuild Price?",
+        "text": "It is our starting guide for the relevant rebuild, not a measured national average. A usable core and a severely damaged engine are different jobs. We explain the condition and scope behind your quotation so you can decide whether repairing the vehicle is worthwhile.",
+        "image": {
+          "src": "/engine-images/engine-1.webp",
+          "alt": "Engine components prepared for rebuild assessment"
+        }
+      },
+      {
+        "eyebrow": "CHAIN WORK",
+        "heading": "How Much Does OM651 Timing-Chain Repair Cost?",
+        "text": "Timing-chain work is assessed as its own repair. A confirmed tensioner issue, worn chain and a failed timing drive with valve damage do not have the same scope. We quote after identifying the vehicle and damage; the full-rebuild guide should not be read as a chain-only repair price.",
+        "image": {
+          "src": "/Repair-images/common-engine-problems-timing-chain-rattle.webp",
+          "alt": "Timing chain and gear components"
+        }
+      }
+    ]
+  },
+  "section4": {
+    "id": "faults",
+    "eyebrow": "OM651 DIAGNOSIS & COMMON FAULTS",
+    "heading": [
+      { "text": "OM651 Engine Failure Symptoms and Problems " },
+      { "text": "We Investigate", "highlight": true }
+    ],
+    "intro": "A noise, warning light or fault code is a reason to investigate. It is not proof that the whole engine needs rebuilding. The following sections distinguish documented timing/cooling concerns from other symptoms that need mechanical diagnosis.",
+    "image": {
+      "src": "/headers/timing-setup.webp",
+      "alt": "Precision timing assembly in the workshop"
+    },
+    "cards": [
+      {
+        "icon": "link",
+        "title": "OM651 Timing-Chain Rattle, Wear and Loss of Timing",
+        "paragraphs": [
+          "A rattle around the timing drive, particularly at start-up, warrants assessment. The OM651 timing drive is at the gearbox end, so access and the condition of associated components matter. Mercedes workshop guidance documents a chain/tensioner assessment route on specified OM651 van applications; the appropriate procedure must match the vehicle.",
+          "We establish where the noise originates and assess timing condition rather than assuming every rattle needs a full rebuild. If timing has been lost, the inspection extends to possible valve, piston and cylinder-head damage. Stop using a car with a serious mechanical noise or suspected timing failure and arrange assessment."
+        ],
+        "image": {
+          "src": "/Repair-images/common-engine-problems-timing-chain-rattle.webp",
+          "alt": "OM651 timing inspection"
+        }
+      },
+      {
+        "icon": "piston",
+        "title": "OM651 Knocking, Low Oil Pressure and Bearing Damage",
+        "paragraphs": [
+          "Deep knocking or an oil-pressure warning needs urgent attention. Oil supply, contamination and internal bearing condition may need checking, but a noise alone cannot identify the failed component. We also distinguish combustion-related noise from mechanical damage.",
+          "Where internal wear is confirmed, inspection considers the crankshaft journals, bearings, oil supply and recoverability of the main structure. Replacing bearings without understanding the cause can leave the underlying problem unresolved. A badly damaged crankshaft or block changes the repair options and price."
+        ],
+        "image": {
+          "src": "/engine-images/engine-2.webp",
+          "alt": "Crankshaft and bearing inspection"
+        }
+      },
+      {
+        "icon": "thermometer",
+        "title": "OM651 Coolant Loss, Overheating and Head-Gasket Concerns",
+        "paragraphs": [
+          "Coolant loss does not automatically mean head-gasket failure. Mercedes has documented an OM651 coolant-leak repair at the EGR bypass-flap seal. Cooling-system checks should establish the leak source before an engine rebuild is recommended.",
+          "If the engine has overheated, the assessment also considers sealing, compression and cylinder-head condition. An external leak caught early may be a contained repair; overheating with internal damage can require strip-down. Tell us whether the temperature warning appeared and how long the engine continued running."
+        ],
+        "image": {
+          "src": "/Repair-images/common-engine-problems-coolant-in-oil-porous-block.webp",
+          "alt": "Cylinder bores and cooling inspection"
+        }
+      },
+      {
+        "icon": "droplet",
+        "title": "OM651 Injector Faults, Injector-Seal Leakage and Rough Running",
+        "paragraphs": [
+          "Difficult starting, rough running and combustion leakage around an injector need different checks. An injector sealing problem is not the same as an electrically or mechanically faulty injector, and neither should be diagnosed from a rebuild price list.",
+          "We assess the symptom, relevant fuel-system evidence and cylinder condition. A sealing or fuelling repair may be sufficient when the engine is mechanically sound. Injectors are not automatically replaced or included in every engine rebuild; any separate work is itemised."
+        ],
+        "image": {
+          "src": "/Repair-images/mercedes-om651-injector-failure.webp",
+          "alt": "OM651 injector inspection"
+        }
+      },
+      {
+        "icon": "turbo",
+        "title": "OM651 Smoke, Oil Consumption and Turbo-Related Symptoms",
+        "paragraphs": [
+          "Smoke or rising oil use can involve external leaks, ventilation, turbocharger sealing or internal cylinder wear. The repair decision depends on finding the source and checking the condition of the connected systems.",
+          "Where testing points to internal wear, piston, ring and bore condition help determine the rebuild scope. A turbocharger-related fault is assessed separately; rebuilding the engine does not automatically renew the turbocharger. Avoid repeated running if oil loss or mechanical damage is suspected."
+        ],
+        "image": {
+          "src": "/Repair-images/common-engine-problems-turbo-whistle-plus-blue-smoke.webp",
+          "alt": "Turbocharger assembly"
+        }
+      },
+      {
+        "icon": "alertTriangle",
+        "title": "OM651 Loss of Power, EGR/DPF Faults and Limp Mode",
+        "paragraphs": [
+          "Limp mode can arise from air, boost, exhaust-treatment or fuel-system faults without requiring an internal rebuild. We use the symptoms and diagnostic findings to decide which system needs attention.",
+          "Where an engine is being rebuilt, connected faults still need addressing so the original problem is not left behind. EGR and DPF work is separately specified. A warning message alone is not a reason to replace an otherwise serviceable engine."
+        ],
+        "image": {
+          "src": "/Repair-images/limp-mode-egr-faults.webp",
+          "alt": "Engine management warning display"
+        }
+      }
+    ]
+  },
+  "section5": {
+    "id": "rebuild-components",
+    "eyebrow": "REBUILD COMPONENTS",
+    "heading": [
+      { "text": "Which Parts Are Changed During an " },
+      { "text": "OM651 Engine Rebuild?", "highlight": true }
+    ],
+    "intro": [
+      "The replacement list follows inspection and the agreed quotation. A rebuild is more than fitting a chain or repainting the engine, but it does not mean every component must be replaced regardless of condition.",
+      "We select OEM or appropriate OE-quality components for the actual engine specification. Parts suitability, clearances and assembly matter more than a generic shopping list. The written quotation is the record of what your rebuild includes."
+    ],
+    "image": {
+      "src": "/headers/D. Timing Setup Precision Timing Assembly.webp",
+      "alt": "Engine rebuild components laid out for assembly"
+    },
+    "cards": [
+      {
+        "title": "Timing Components",
+        "text": "Chain, tensioner, guides and sprockets assessed as a system; replacement matched to wear, damage and the engine variant.",
+        "image": {
+          "src": "/Orange/Timing Component-01.webp",
+          "alt": "Timing chain components"
+        }
+      },
+      {
+        "title": "Pistons & Rings",
+        "text": "Reused, repaired or replaced only where technically appropriate; major replacement is separately agreed.",
+        "image": {
+          "src": "/Orange/piston (1)-01.webp",
+          "alt": "Piston and ring set"
+        }
+      },
+      {
+        "title": "Bearings",
+        "text": "Main and big-end bearings specified from journal measurements, condition and the overhaul specification.",
+        "image": {
+          "src": "/Orange/engine bearing-01.webp",
+          "alt": "Engine bearing shells"
+        }
+      },
+      {
+        "title": "Cylinder Head Parts",
+        "text": "Valves and associated components inspected for sealing, wear and timing or overheating damage.",
+        "image": {
+          "src": "/Orange/Component-01.webp",
+          "alt": "Cylinder head valves"
+        }
+      },
+      {
+        "title": "Gaskets & Seals",
+        "text": "Gaskets, crankshaft seals and valve-stem seals renewed where required for dismantling and the agreed overhaul.",
+        "image": {
+          "src": "/Orange/gasket-01.webp",
+          "alt": "Engine gasket"
+        }
+      },
+      {
+        "title": "Service Items",
+        "text": "Oil pump and lubrication passages inspected for damage and contamination; pump replacement stated in the quote.",
+        "image": {
+          "src": "/Orange/Oil Pressure-01.webp",
+          "alt": "Oil filter and service items"
+        }
+      }
+    ]
+  },
+  "section6": {
+    "id": "rebuild-process",
+    "eyebrow": "OUR PROCESS",
+    "heading": [
+      { "text": "Our Mercedes OM651 " },
+      { "text": "Engine Rebuild Process", "highlight": true }
+    ],
+    "intro": "Each rebuild follows a controlled sequence from booking through strip-down, measurement and assembly — matched to the OM651 application and the damage found on inspection.",
+    "image": {
+      "src": "/headers/C. M-Power Build Performance Engine Rebuild.webp",
+      "alt": "Mercedes OM651 engine rebuild in the workshop"
+    },
+    "steps": [
+      {
+        "number": "01",
+        "icon": "towTruck",
+        "title": "Recovery or Booked Arrival",
+        "text": "We record the vehicle, symptoms, mileage and whether the engine runs. If it should not be driven, collection arrangements and charges are discussed before booking.",
+        "image": {
+          "src": "/Repair-images/Engine Rebuilds.webp",
+          "alt": "Vehicle arrival and workshop booking"
+        }
+      },
+      {
+        "number": "02",
+        "icon": "search",
+        "title": "Diagnosis and Engine Identification",
+        "text": "We confirm the engine version and choose checks suited to the symptoms. The aim is to establish whether the fault is contained or internal.",
+        "image": {
+          "src": "/Repair-images/limp-mode-egr-faults.webp",
+          "alt": "Engine diagnosis and identification"
+        }
+      },
+      {
+        "number": "03",
+        "icon": "engineHoist",
+        "title": "Engine Removal and Installation Checks",
+        "text": "When the agreed scope requires removal, the vehicle's layout, drivetrain and connected components are considered across cars and vans.",
+        "image": {
+          "src": "/Repair-images/A. BMW S54 Cylinder Head Inspection.webp",
+          "alt": "Engine removal and installation checks"
+        }
+      },
+      {
+        "number": "04",
+        "icon": "wrench",
+        "title": "Strip-Down, Cleaning and Damage Inspection",
+        "text": "The engine is dismantled sufficiently to establish the rebuild scope. Components are cleaned and examined for wear, damage and contamination.",
+        "image": {
+          "src": "/Repair-images/common-engine-problems-coolant-in-oil-porous-block.webp",
+          "alt": "Engine strip-down and inspection"
+        }
+      },
+      {
+        "number": "05",
+        "icon": "caliper",
+        "title": "Measurement and Machining Decisions",
+        "text": "Bores, crankshaft journals and relevant head components are measured against the applicable repair requirements. Machining is specified where justified.",
+        "image": {
+          "src": "/Repair-images/common-engine-problems-timing-chain-rattle.webp",
+          "alt": "Measurement and machining"
+        }
+      },
+      {
+        "number": "06",
+        "icon": "cog",
+        "title": "Correct Components and Controlled Assembly",
+        "text": "The engine is assembled with the agreed parts and the correct specification for its derivative, addressing the identified failure cause.",
+        "image": {
+          "src": "/Repair-images/mercedes-om651-injector-failure.webp",
+          "alt": "Controlled engine assembly"
+        }
+      }
+    ]
+  },
+  "section7": {
+    "id": "worthwhile",
+    "eyebrow": "REBUILD DECISION",
+    "heading": [
+      { "text": "Is Rebuilding an " },
+      { "text": "OM651", "highlight": true },
+      { "text": " Engine Worthwhile?" }
+    ],
+    "paragraphs": [
+      "A rebuild can be a sensible route when the original engine's main structure is recoverable and the rest of the vehicle supports the investment. You retain the known installation while the internal condition and agreed repairs can be assessed directly.",
+      "The decision changes with a damaged block or crankshaft, extensive ancillary failure or other major vehicle repairs. A smaller timing, cooling or injector-seal repair may be enough if the internals remain sound. We discuss those options before treating a whole-engine rebuild as compulsory.",
+      "For replacement-engine enquiries, our role remains assessment and workshop repair. Tell us what happened to your original engine first; this page is not a supply-only engine catalogue."
+    ],
+    "image": {
+      "src": "/headers/m-power-build.webp",
+      "alt": "Mercedes OM651 engine prepared for rebuild assessment"
+    }
+  },
+  "section8": {
+    "id": "why-boby",
+    "eyebrow": "WHY CHOOSE BOBY",
+    "heading": [
+      { "text": "Why Choose Boby for an " },
+      { "text": "OM651", "highlight": true },
+      { "text": " Engine Rebuild?" }
+    ],
+    "intro": "Boby is the mechanic behind Boby Engine Work. The business brings more than ten years' experience and over 1,000 clients across its work on German and premium British cars.",
+    "quote": "For an OM651 owner, the useful difference is a repair tied to the actual engine: identify the derivative, investigate the cause, examine the damage and agree the parts and machining. We explain what can be retained, what needs replacing and what lies outside the engine rebuild, rather than promising a universal fix for every diesel symptom.",
+    "image": {
+      "src": "/s-5-6-7/owner.webp",
+      "alt": "Boby working on an engine in the workshop"
+    }
+  },
+  "section9": {
+    "id": "warranty",
+    "eyebrow": "WARRANTY & COLLECTION",
+    "heading": [
+      { "text": "OM651 Rebuild Warranty, Fitting and " },
+      { "text": "Collection", "highlight": true }
+    ],
+    "image": {
+      "src": "/mercedes/Mercedes.webp",
+      "alt": "Mercedes-Benz grille"
+    },
+    "items": [
+      {
+        "icon": "shieldCheck",
+        "text": "Covered rebuild components and associated workmanship have a 12-month unlimited-mileage warranty, subject to the full conditions. Turbochargers, injectors and other excluded ancillaries are not covered simply because the engine has been rebuilt."
+      },
+      {
+        "icon": "calendar",
+        "text": "A chargeable running-in service at 2,000 miles, within the stated 200-mile tolerance, must be completed at Boby's workshop. The published terms state that missing it voids the warranty. Read the conditions before booking; your statutory rights are unaffected."
+      },
+      {
+        "icon": "towTruck",
+        "text": "Optional collection and delivery are quoted separately. If the vehicle is used for hire, discuss that use before agreeing the work."
+      }
+    ],
+    "cta": {
+      "label": "Read Warranty & Full Terms",
+      "href": "#",
+      "icon": "clipboardCheck"
+    }
+  },
+  "section10": {
+    "id": "faqs",
+    "eyebrow": "FAQ",
+    "heading": [
+      { "text": "Mercedes " },
+      { "text": "OM651", "highlight": true },
+      { "text": " Engine Rebuild FAQs" }
+    ],
+    "image": {
+      "src": "/test-images/c-class-w205-c63 amg-performance saloon-2015–2018-special-designo mocha black metallic-wide amg treatment-c-class w205 c63 amg-45-angle-front-view.webp",
+      "alt": "Mercedes-Benz C-Class W205"
+    },
+    "items": [
+      {
+        "question": "Is the OM651 a 2.1 or 2.2-litre diesel?",
+        "answer": "The common 2,143 cc version is described both ways. There are also smaller 1.8-litre OM651 applications, so we confirm the fitted derivative before applying a rebuild guide. The separate OM654 family should not be identified by a similar diesel badge alone."
+      },
+      {
+        "question": "Can an OM651 timing-chain problem be repaired without a full rebuild?",
+        "answer": "Yes, a contained timing-drive problem may be repairable if there is no internal damage. Access, wear and the components involved determine the work. Suspected lost timing requires an assessment for additional damage before we can recommend the limited repair route."
+      },
+      {
+        "question": "Are new injectors and a turbocharger included in the rebuild?",
+        "answer": "Not automatically. Those are ancillary components with their own condition and repair decisions. If testing shows that either needs attention, the additional work and cost are listed in the quotation rather than hidden in a generic rebuild promise."
+      },
+      {
+        "question": "Do you rebuild OM651 engines in vans as well as cars?",
+        "answer": "We assess relevant Sprinter W906, Vito W447 and V-Class W447 installations as well as passenger cars. Provide the engine details and how the vehicle is used. Different van versions can have different engines, installation requirements and warranty considerations."
+      },
+      {
+        "question": "How long does an OM651 rebuild take?",
+        "answer": "We give an estimated schedule after assessing the vehicle and likely scope. Strip-down findings, machining and the supply of correct parts affect completion. A fixed turnaround promised before the damage is known would not reflect every rebuild."
+      }
+    ]
+  },
+  "section11": {
+    "id": "engine-quote",
+    "eyebrow": "GET IN TOUCH",
+    "heading": [
+      { "text": "Book Your Mercedes " },
+      { "text": "OM651 Engine Assessment", "highlight": true }
+    ],
+    "intro": "Send your registration, mileage, symptoms, location and whether the vehicle runs, together with any existing inspection report. Add the VIN or engine code if available and tell us how you prefer to be contacted.",
+    "workshop": {
+      "icon": "mapPin",
+      "label": "Workshop",
+      "value": "Unit D1, Windsor Road, Ramsden Heath, Billericay CM11 1QE"
+    },
+    "image": {
+      "src": "/s-5-6-7/workshop.webp",
+      "alt": "Boby's Engine Work workshop"
+    },
+    "form": {
+      "title": [
+        { "text": "Email Boby About Your " },
+        { "text": "OM651", "highlight": true }
+      ],
+      "subtitle": "Provide a few details and we will get back to you with the next steps.",
+      "email": "info@bobyenginework.co.uk",
+      "storageKey": "om651EnquiryRegistration",
+      "fields": {
+        "registration": {
+          "label": "Vehicle Registration",
+          "placeholder": "AB12 CDE"
+        },
+        "modelYear": {
+          "label": "VIN or Engine Code (if available)",
+          "placeholder": "e.g. WDD… or OM651"
+        },
+        "mileage": {
+          "label": "Mileage (approx.)",
+          "placeholder": "e.g. 95,000"
+        },
+        "runs": {
+          "label": "Preferred Contact Method",
+          "options": ["Select", "Email", "Phone", "Either"]
+        },
+        "symptoms": {
+          "label": "Symptoms / Issue",
+          "placeholder": "e.g. timing-chain rattle, knocking, coolant loss, limp mode…"
+        }
+      },
+      "submitLabel": "Send Your Enquiry",
+      "errors": {
+        "identity": "Please enter a registration or VIN/engine code.",
+        "symptoms": "Please describe the symptoms or issue."
+      }
+    }
   }
 }
